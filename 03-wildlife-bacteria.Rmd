@@ -1,0 +1,811 @@
+---
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+    citation_package: biblatex
+bib-humanities: true
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# Microbiome of ticks and wildlife {#wildlife-bacteria}
+\chaptermark{Wildlife biome}
+
+\newpage
+
+## Preface {.unnumbered}
+
+**Attribution Statement**
+
+The following chapter has been drafted in accordance with the journal *Microbial Genomics*. 
+
+The following manuscript has been published: **Egan, S.**, Taylor, C., Banks, P., Northover, A., Alhstrom, L., Ryan, U., Irwin, P., and Oskam C. 2021. The bacterial biome of ticks and their wildlife hosts at the urban-wildland interface. *Microbial Genomics*, **7**(12): 000730. DOI: [10.1099/mgen.0.000730](https://doi.org/10.1099/mgen.0.000730)
+
+The following authors contributed to this manuscript as outlined below^[Contribution indicates the total involvement the author has had in this project. Placing an ‘X’ in the remaining boxes indicates what aspect(s) of the project each author engaged in.].
+
+```{r, include=FALSE}
+library(readxl)
+library(tidyverse)
+attrib <- read_excel("front-and-back-matter/preface/attributions-microbiome.xlsx")
+```
+```{r, echo=FALSE}
+library(kableExtra)
+knitr::kable(attrib, booktabs = TRUE, linesep = "") %>%
+  kable_styling(font_size = 7) %>%
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+By signing this document, the Candidate and Principal Supervisor acknowledge that the information provided is accurate and has been agreed to by all other authors. 
+
+\vspace{3mm}
+
+\raggedright
+
+| __________________ &nbsp; &nbsp; &nbsp; __________________
+|   Candidate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Principal Supervisor
+
+<!-- 
+>____________________________
+>Candidate                            
+
+\centering
+____________________________
+
+\centering 
+Principal Supervisor                           
+
+\raggedright
+____________________________
+
+Principal Supervisor 
+
+\raggedright
+
+| ______________ &nbsp; &nbsp; &nbsp; ______________
+|   Candidate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Principal Supervisor
+|   
+|   __________  
+|   Principal Supervisor  -->
+
+
+\newpage
+
+**Chapter linking statement:**
+This chapter looks at the bacterial microbiome of wildlife samples. Using amplicon metabarcoding targeting the 16S rRNA gene to characterise the suite of bacteria in blood, tick and tissue samples. It provides an unbiased approach to investigate (i) what microbes are present in these wildlife samples and (ii) uncover overlap between sample types to provide insight into potential bacteria that maybe transmitted into wildlife which act as reservoir hosts. To obtain more detailed genetic information on 'taxa of interest' further sequencing was performed. This chapter provides important insights into tick (and potentially other vector) associated microbes in Australia.
+
+\vspace{5mm}
+
+**Acknowledgment statement:** 
+This work was supported by resources provided by the Pawsey Supercomputing Centre with funding from the Australian Government and the Government of Western Australia. 
+We thank Dr David Chandler, Dr Christopher Noune and Dr Matthew Stevens at the Australian Genomics Research Facility for their assistance. 
+We thank the Department of Biodiversity, Conservation and Attractions staff for their invaluable assistance in Western Australian fieldwork, in particular Rebecca Kay, Douglas Giles and Hannah Kilian. 
+We also thank Jade Kelly and volunteers for assistance in fieldwork and sample collection.
+
+\vspace{5mm}
+
+**Funding statement:** 
+This study was part-funded by the Australian Research Council (LP160100200), Bayer HealthCare (Germany) and Bayer Australia. 
+S.L.E. was supported by an Australian Government Research Training Program (RTP) Scholarship. 
+C.L.T. was supported by a scholarship from the Northern Beaches Council. 
+This project was also part supported by The Holsworth Wildlife Research Endowment from The Ecological Society of Australia (awarded to S.L.E.) and the Paddy Pallin Science Grant from The Royal Zoological Society (awarded to C.L.T.).
+
+\vspace{5mm}
+
+**Data availability:** 
+Raw Illumina MiSeq data has been deposited in the European Nucleotide Archive under project number PRJEB46006 (16S rRNA bacteria) and PRJEB46056 (12S rRNA ticks). 
+Nucleotide data produced by Sanger sequencing has been submitted to NCBI GenBank nucleotide database under accession numbers MW633074, MW633076–MW633082, MW633160–MW633167. 
+A subset of representative zOTUs generated from tick 12S rRNA metabarcoding have been submitted to GenBank under accession numbers MW665133–MW665150.
+Additional information is available within supplementary files including links to electronic files which have been deposited on FigShare [repository](https://doi.org/10.6084/m9.figshare.14363627.v1). 
+Code used for analysis and RData files used for bioinformatics and statistical analysis are available on GitHub repositories [siobhon-egan/wildlife-bacteria](https://github.com/siobhon-egan/wildlife-bacteria) and [siobhon-egan/wildlife-ticks](https://github.com/siobhon-egan/wildlife-ticks).
+
+\vspace{5mm}
+
+**Animal ethics:** Murdoch University Animal Ethics Committee permit number R3026/18. Department of Biodiversity Conservation and Attractions permit numbers 2018/54B, 2018/55B, 2018/57D and 2017/30. University of Sydney Animal Ethics Committee Permit number 2018/1429.
+
+\vspace{5mm}
+
+**Author contributions::**
+Conceptualization: S.L.E., U.M.R., P.J.I., C.L.O.
+Data curation: S.L.E., C.L.T.
+Formal Analysis: S.L.E.
+Funding acquisition: S.L.E., C.L.T., P.B.B., L.A.A., U.M.R., P.J.I., C.L.O.
+Investigation: S.L.E., C.L.T.
+Methodology: S.L.E., C.L.T., A.S.N.
+Project administration: P.J.I., C.L.O.
+Resources: A.S.N., P.B.B., P.J.I., C.L.O.
+Software: S.L.E.
+Supervision: P.B.B., U.M.R., P.J.I., C.L.O.
+Visualization: S.L.E.
+Writing – original draft: S.L.E.
+Writing – review & editing: S.L.E., C.L.T., P.B.B., A.S.N., L.A.A., U.M.R., P.J.I., C.L.O.
+
+\vspace{5mm}
+
+**Keywords:** Tick, microbiome, wildlife, sylvatic cycle, tick-borne diseases, 
+
+\newpage
+
+
+## Abstract
+
+Advances in sequencing technologies have revealed the complex and diverse microbial communities present in ticks (Ixodida). 
+As obligate blood feeding arthropods, ticks are responsible for a number of infectious diseases that can affect humans, livestock, domestic animals and wildlife. 
+While cases of human tick-borne diseases continue to increase in the northern hemisphere, there has been relatively little recognition of zoonotic tick-borne pathogens in Australia. 
+Over the past five years, studies using high-throughput sequencing technologies have shown that Australian ticks harbour unique and diverse bacterial communities. 
+In the present study, free-ranging wildlife (n = 203), representing ten mammal species, were sampled from urban and peri-urban areas in New South Wales (NSW), Queensland (QLD), and Western Australia (WA). 
+Bacterial metabarcoding targeting the 16S rRNA locus was used to characterise the microbiomes of three sample types collected from wildlife; blood, ticks and tissue samples. 
+Further sequence information was obtained for selected taxa of interest. Six tick species were identified from wildlife: _Amblyomma triguttatum_, _Ixodes antechini_, _Ixodes australiensis_, _Ixodes holocyclus_, _Ixodes tasmani_ and _Ixodes trichosuri_. 
+Bacterial 16S rRNA metabarcoding was performed on 536 samples and 65 controls, generating over 100 million sequences. 
+Alpha diversity was significantly different between the three sample types, with tissue samples displaying the highest alpha diversity (P < 0.001). 
+*Proteobacteria* was the most abundant taxon identified across all sample types (37.3%). 
+Beta diversity analysis and ordination revealed little overlap between the three sample types (P < 0.001). 
+Taxa of interest included *Anaplasmataceae*, _Bartonella_, _Borrelia_, *Coxiellaceae*, _Francisella_, _Midichloria_, _Mycoplasma_ and _Rickettsia._ *Anaplasmataceae* bacteria were detected in 17.7% (95/536) of samples and included _Anaplasma_, _Ehrlichia_ and _Neoehrlichia_ species. 
+In samples from NSW '*Ca*. Neoehrlichia australis', '*Ca.*. Neoehrlichia arcana', _Neoehrlichia_ sp. and _Ehrlichia_ sp were identified. 
+A putative novel _Ehrlichia_ sp. was identified from WA and _Anaplasma platys_ was identified from QLD. 
+Nine rodent tissue samples were positive for a novel _Borrelia_ sp. which formed a phylogenetically distinct clade separate from the Lyme _Borrelia_ and relapsing fever groups. 
+This novel clade included recently identified rodent-associated _Borrelia_ genotypes, which were described from Spain and North America. 
+_Bartonella_ was identified in 12.9% (69/536) of samples. 
+Over half of these positive samples were obtained from black rats (*Rattus rattus*), and the dominant bacterial species identified were _Bartonella coopersplainsensis_ and _Bartonella queenslandensis_. 
+The results from the present study show the value of using unbiased high throughput sequencing applied to samples collected from wildlife. 
+In addition to understanding the sylvatic cycle of known vector associated pathogens, surveillance work is important to ensure preparedness for potential zoonotic spillover events.
+
+
+
+## Introduction
+
+Ticks carry a diverse range of infectious microbes such as viruses, piroplasms, spirochaetes and Rickettsiales [@pfaffleEcologyTickborneDiseases2013]. 
+Globally recognised infectious human tick-borne diseases include Lyme borreliosis, ehrlichiosis, babesiosis, tick-borne encephalitis and Powassan viral disease.
+Additionally, tick bite can cause reactions such as paralysis and anaphylaxis [@vannunenAssociationTickBite2009]. 
+The incidence of tick-borne diseases is rapidly increasing in both prevalence and geographic distribution [@madison-antenucciEmergingTickBorneDiseases2020]. 
+The sylvatic cycles of tick-borne pathogens in the northern hemisphere are generally well understood with respect to competent tick vectors and the reservoir hosts (e.g. *Babesia microti* [@westbladeBabesiaMicrotiMice2017] and *Borrelia burgdorferi* sensu lato [@radolfTicksMiceMen2012]). 
+The value of wildlife health surveillance as a tool for the detection of emerging zoonotic infectious disease has been demonstrated in outbreaks historically, such as malaria [@rondonPrevalencePlasmodiumParasites2019], and more recently with SARS-CoV-2 [@plowrightLandUseinducedSpillover2021].
+
+In Australia, three human tick-borne diseases are recognised; Queensland tick typhus (*Rickettsia australis*), spotted fever (*Rickettsia honei* subspp.) and Q fever (*Coxiella burnetii*) [@gravesTickborneInfectiousDiseases2017]. 
+Over the past decade there have been increasing concerns about unidentified tick-borne illness (syn. Lyme-like disease) in Australia [@chaladaThereLymelikeDisease2016], recently designated 'Debilitating Symptom Complexes Attributed To Ticks' (DSCATT) by the Australian Government Department of Health [@radcliffeGrowingEvidenceEmerging2016]. 
+Presently, 74 tick species have been described in Australia, including five introduced species [@barkerIxodesBarkeriSp2019;@evansAutomaticBarcodeGap2019], of which 22 species have been identified biting humans [@kwakFirstRecordsHuman2018]. 
+However, data show that *Ixodes holocyclus* and *Amblyomma triguttatum* account for >90% of human tick bites, with the remainder of reports largely attributed to *Ixodes tasmani*, *Haemaphysalis bancrofti*, *Haemaphysalis longicornis* and *Bothriocroton hydrosauri* [@kwakFirstRecordsHuman2018].
+Small to medium-sized mammals are important in maintaining these tick populations, in particular during the immature life stages [@murdochEcologyCommonMarsupial2005;@lydeckerPeriurbanBlackRats2019;@taylorInvasiveRabbitsHost2020]. 
+While data on the incidence of human tick bites in Australia is limited, evidence suggests that tick bites are common in peri-urban areas, including residential yards (C Taylor, pers comms).
+
+Over the past decade, due to new technologies there is mounting evidence that Australian ticks harbor a unique array of microbes [@goftonInhibitionEndosymbiontCandidatus2015;@eganBacterialCommunityProfiling2020].
+In addition to these molecular studies, more targeted screening of potential reservoirs such as dogs [@irwinSearchingLymeBorreliosis2017] and sea bird ticks [@moonAustralianPenguinTicks2018] have added to the growing body of evidence suggesting that human tick-borne pathogens described in the northern hemisphere are not endemic in Australia. 
+Some of the microbes that have recently been identified from Australian ticks however include new species of *Borrelia* [@lohMolecularCharacterizationCandidatus2017;@panettaReptileassociatedBorreliaSpecies2017], *Ehrlichia* [@goftonDetectionPhylogeneticCharacterisation2017], *Neoehrlichia* [@goftonPhylogeneticCharacterisationTwo2016], *Babesia*, and *Theileria* [@greayEndemicExoticNovel2018;@lohMolecularSurveillancePiroplasms2018] and several viruses [@obrienDiscoveryNovelIflavirus2018;@harveyExtensiveDiversityRNA2019].
+Little is known about the sylvatic life cycle of these microbes or their wildlife species reservoir hosts. Even for the few tick-borne pathogens recognised in Australia (e.g. *Rickettsia* spp.), much of this information remains elusive.
+
+For a tick-borne disease to become established it requires a temporal and spatial overlap between the microbe (pathogens), competent vector tick(s), and one or more vertebrate reservoir hosts. 
+In the northern hemisphere studies have shown that there are important differences in the role of host species in maintaining the sylvatic cycle of tick-borne pathogens  [@leviQuantifyingDilutionAmplification2016;@huangHighBurdensIxodes2019;@stewartmerrillMechanisticUnderstandingCompetence2020]. 
+Broadly, reservoir hosts can be classified as amplification and dilution hosts. Amplification hosts, in most cases, are small mammals that host immature ticks (larvae or nymph stages) and increase the environmental density of infected nymphs [@leviQuantifyingDilutionAmplification2016].
+In contrast, dilution hosts are inefficient reservoirs of the microbial agent(s) [@takumiImpactVertebrateCommunities2019;@ginsbergWhyLymeDisease2021].
+An additional factor is the role of hosts throughout the tick life cycle. 
+Larger animals are considered important in maintaining adult stages of the tick; white-tailed deer (*Odocoileus virginianus*) and *Ixodes scapularis* [@ostfeldTickborneDiseaseRisk2018] for example. 
+In the Australian context it is generally assumed that small mammals such as bandicoots, possums and rodents are likely reservoirs for tick-associated microbes. 
+In turn, larger mammals such as kangaroos and wallabies may then play an important role in maintaining tick populations, filling a similar ecological niche as deer in the northern hemisphere.
+While studies have used molecular tools to investigate microbes present within ticks in Australia [@goftonPhylogeneticCharacterisationTwo2016;@lohMolecularSurveillancePiroplasms2018;@moonAustralianPenguinTicks2018], very little research has been conducted at the vertebrate host level to further elucidate the sylvatic cycle of tick transmitted bacteria. 
+Bacterial amplicon sequencing is valuable in the setting of wildlife epidemiology surveys where investigations are not confined to existing presumptions of microbes [@galan16SRRNAAmplicon2016], however such studies of the ticks alone, without concurrent analysis of vertebrate host tissues, cannot distinguish infectious components of the tick’s total microbiome from those that are non-transmissible.  
+Therefore, the search for tick-associated microbes in vertebrate host(s) is the next logical piece of information required to untangle the complex dynamics of tick-borne pathogens. 
+In addition to novel pathogen discovery, high throughput sequencing technologies applied concomitantly to tick and vertebrate host tissues can provide insights into the dynamics of microbial epidemiology and interactions within landscapes [@titcombHighThroughputSequencingUnderstanding2019].
+Identification of microbes may inform our understanding of the tick-borne disease risk and potential differences among temporal and spatial gradients.
+
+The present study used metabarcoding to explore the bacterial communities present in Australian wildlife and their ticks, with a focus on bacteria related to known (vector-borne) pathogens, to provide insights into the sylvatic life cycle of tick associated organisms. 
+This research was conducted in an ecological zone referred to as the urban-wildland interface, where there is a transition between wilderness and land developed by human activity – an area where a built environment meets or intermingles with a natural environment.
+
+## Methods
+
+### Study sites and sample collection
+
+**Small mammal trapping**
+
+Small mammal trapping was performed at various sites in Perth, Western Australia and Sydney, New South Wales (Figure \@ref(fig:F3map)). 
+Each site was targeted in urban and peri-urban areas to reflect the urban-wildland interface.
+Elliot and cage traps were set and baited with universal bait (rolled oats, peanut butter and sardines). 
+Traps were set at dusk and cleared at sunrise over three or four consecutive nights. To ensure a comprehensive assessment and sampling, target mammals were briefly anaesthetised in the field using isoflurane (I.S.O. 1mL/mL) vaporised in medical oxygen. 
+Animals were weighed and examined systematically for ectoparasites. 
+Up to 1 mL of blood was collected from either the caudal (tail) vein, femoral vein or ear capillary and stored in Mini Collect EDTA tubes. 
+If practical, a 2 mm punch biopsy was taken at the tick bite site; where possible, a biopsy was taken from the ear and stored in RNAlater or 80% ethanol. 
+Animals were systematically examined for ectoparasites which were removed and stored in 80% ethanol. 
+Animals were recovered from anaesthesia by providing medical oxygen, and once fully alert were released at trap point. 
+An individual mark was applied to identify animals using either a microchip administered subcutaneously or a unique patch of hair was removed. 
+The number of animals and samples analysed, and locations from the present study are available in Table \@ref(tab:T3hosts) and Figure \@ref(fig:F3map) respectively.
+
+**Opportunistic collection**
+
+In a small number of cases, animal carcasses were also obtained opportunistically. These specimens were collected through incidental findings during fieldwork or from situations where animals were humanely euthanised in accordance with animal ethics and state and federal guidelines.
+
+**Tick identification**
+
+Ticks were collected and stored in tubes containing 70--90% ethanol. Samples were visualised using an Olympus SZ61 stereomicroscope (Olympus, Centre Valley, PA, United States) with an external Schott KL 1500 LED (Schott AG Mainz, Germany) light source. 
+Photographs of tick specimens were taken using an Olympus SC30 digital camera (Olympus, Centre Valley, PA, United States) and analysis getIT software (Olympus, Centre Valley, PA, United States). 
+Instar, sex and species was identified using a combination of available morphological keys and species descriptions [@robertsAustralianTicks1970;@jacksonMorphologicalComparisonAdult2002;@laanObservationsBiologyDistribution2011;@barkerTicksAustraliaSpecies2014;@kwakPhylogeneticAnalysisAustralian2017].
+
+```{r include=FALSE}
+library(readxl)
+library(tidyverse)
+ch3_hosts <- read_excel("tables/Ch3-hostnumbers.xlsx")
+# ch3_hosts %>%
+#   mutate_all(~ replace_na(.x, ""))
+```
+
+```{r T3hosts, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+opts <- options(knitr.kable.NA = "")
+knitr::kable(ch3_hosts, align = "llcccc", booktabs = TRUE, linesep = "", caption = "Animal sampling numbers for bacterial microbiome sequencing. Number of individual animals (\\textit{n}) by host species with number of genomic DNA samples analysed in parentheses.",
+  caption.short = "Host sample numbers for bacterial microbiome study.") %>%
+  kable_styling(font_size = 8.5) %>%
+  row_spec(c(11),  bold = T) %>%
+  column_spec(c(2), italic = T)
+```
+
+```{r F3map, out.width='95%', out.align = 'left',fig.scap = "Map of study sites for wildlife samples.", fig.cap = "Map of study sites for collection of wildlife samples used in bacterial profiling. Sampling sites denoted by blue triangles and capital cities by pink circles (for geographical reference). Insert maps of sites in (1) Perth, Western Australia and (2) Sydney, New South Wales.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-map.png")
+```
+
+### DNA Extractions
+
+Total genomic DNA (gDNA) was extracted from 200 $\mu L$ of blood using a MasterPure DNA purification kit (Epicentre\textregistered Biotechnologies, Madison, Wisconsin, U.S.A) following the manufacturer's recommendations. Where 200 $\mu L$ of blood was not available, sterile DNA free phosphate-buffered saline (PBS) was used to make samples up to 200 $\mu L$. 
+Genomic DNA was eluted in 30--40 $\mu L$ of TE buffer and stored at -20$^\circ C$ until further processing.
+
+Tissue samples (skin and spleen) were first rinsed in sterile, DNA-free PBS and cut into small pieces (<1-2 mm) using a sterile scalpel blade. 
+Samples were homogenised in 180 $\mu L$ of buffer ATL and 20 $\mu L$ of proteinase K was added and incubated at 56$^\circ C$ for ~ 16 hours. gDNA was extracted using the QIAamp DNA Mini Kit (QIAGEN, Germany) following the manufacturer’s protocols with the exception that final elution volume was decreased to 40--50 $\mu L$ to increase gDNA yield.
+
+Once ticks were identified, they were surface-sterilised by washing in 10 % hypochlorite solution, rinsed in 70 % ethanol and DNA-free PBS, and then air-dried. 
+Genomic DNA was extracted using the DNeasy Blood and Tissue kit (QIAGEN, Germany) for adults, or the QIAamp DNA Mini Kit (QIAGEN, Germany) for nymphs and larvae. 
+Due to the large number of immature tick stages collected from some animals and the expected low DNA yield, up to 5 specimens were pooled for extraction based on host, instar, engorgement status and species identification as determined by morphological methods. 
+Ticks were placed in a 2 mL safe lock Eppendorf tube with a 5 mm steel bead, frozen in liquid nitrogen for 1 min and homogenised by shaking at 40 Hz in a Tissue Lyser LT (QIAGEN, Germany). 
+Final elution of DNA was adjusted according to tick size, between 30--150 $\mu L$ of AE buffer was added to the silicon membrane.
+
+Extraction controls (EXBs) consisting of 200 $\mu L$ sterile DNA-free PBS were included randomly in each extraction batch (total EXBs = 34). 
+Blood and tissue samples were extracted in a separate laboratory, away from where ticks were processed, to avoid cross-contamination between sample types. Sterile procedures were followed throughout the laboratory process.
+
+### Metabarcoding sequencing
+
+A high-throughput metabarcoding approach was used to sequence samples using the Illumina MiSeq platform. Libraries were built following the 16S Metagenomic Sequencing Library Preparation (Illumina Part \# 15044223 Rev. B), with amplicon PCR primers containing Illumina MiSeq adapter sequences (Table \@ref(tab:T32)). 
+A total of 536 samples from 203 individuals (159 blood, 205 tick pools, and 172 tissue samples) underwent bacterial profiling.
+
+Bacterial 16S rRNA libraries were built targeting the 16S hypervariable region 1-2 using primers 27F-Y and 338R [@goftonInhibitionEndosymbiontCandidatus2015]. 
+Reactions were carried out in 25 $\mu L$ volumes each containing: 1X buffer (KAPA Biosystems, South Africa), 1.5 mM MgCl~2~, 0.4 mg/mL of bovine serum albumin (Fisher Biotech), 0.4 $\mu M$ of each primer, 0.25 mM of each dNTP, 0.5 U of Taq (KAPA Biosystems, South Africa) and 2 $\mu L$ of gDNA. 
+Thermal cycling conditions were as follows; 95$^\circ C$ for 5 mins, followed by 35 cycles of 95$^\circ C$ for 30 secs, 55$^\circ C$ for 30 secs, 72$^\circ C$ for 45 secs; and a final extension of 72$^\circ C$ for 5 mins. 
+For a subset of samples where microbes of interest were identified after initial screening at the v1-2 hypervariable region, additional bacterial 16S rRNA libraries targeting the v3-4 hypervariable region were also prepared. 
+Primers 338F and 806R were used to target an \~450 bp product. 
+Reactions and thermal cycling conditions were carried out as per the 27F-Y / 338R assay, except for an increased concentration of MgCl~2~ to 2.0 mM.
+
+To confirm morphological identification tick gDNA underwent amplicon metabarcoding approach targeting the 12S rDNA gene.
+Pan-Ixodida primers T1B/T2A [@beatiAnalysisSystematicRelationships2001] were used to amplify an ~370 bp product of the 12S rRNA locus.
+Reactions were carried out as per the bacteria 27F-Y / 338R assay, except only 1 $\mu M$ of tick gDNA template was added.
+Thermal cycling conditions were as follows; 95$^\circ C$ for 5 mins, followed by 5 cycles of 95$^\circ C$ for 15 secs, 51$^\circ C$ for 30 secs, 68$^\circ C$ for 30 secs; 25 cycles of 95$^\circ C$ for 30 secs, 53$^\circ C$ for 30 secs, 72$^\circ C$ for 1 min; and a final extension of 72$^\circ C$ for 5 mins. 
+
+Amplicon PCR products were then indexed using the Nextera XT DNA library preparation kit in 25 $\mu L$ volumes following the manufacturer's recommendations. 
+All PCRs included no-template controls (NTC; total = 31) during each reaction set up and PCRs were performed under strict laboratory conditions. 
+Amplicons were then dual-indexed using the Nextera XT index kit. 
+Reactions were performed in 25 $\mu L$ volumes following manufacturers recommendations. 
+Libraries were purified with Axygen PCR clean up beads and quantified using Qubit High Sensitivity dsDNA assay kit (Thermo Fisher Scientific, Waltham, MA, USA) and pooled in equimolar amounts. 
+Libraries were shipped to the Australian Genomic Research Facility (Melbourne, Australia) for final QC and sequenced on an Illumina MiSeq using v2 chemistry (2 x 250 paired-end).
+
+(ref:primersT32) List of sequencing used for metabarcoding and target PCRs to screen blood, tissue and tick samples for bacteria. References **1.** Gofton et al. [-@goftonInhibitionEndosymbiontCandidatus2015], **2.** Turner et al. [-@turnerInvestigatingDeepPhylogenetic1999], **3.** Lopez et al. [-@lopezDesignEvaluationPCR2003], **4.** Caporaso et al.  [-@caporasoGlobalPatterns16S2011], **5.** Beard et al. [-@beardBartonellaSppFeral2011], **6.** Anderson et al. [-@andersonEhrlichiaChaffeensisNew1991], **7.** Paddock et al. [-@paddockIsolationCharacterisationEhrlichia1997], **8.** Kawahara et al. [-@kawaharaUltrastructurePhylogeneticAnalysis2004], **9.** Beati and Keirans 2001 [-@beatiAnalysisSystematicRelationships2001].
+
+
+```{r include=FALSE}
+library(readxl)
+library(tidyverse)
+ch3_primers <- read_excel("tables/ch3-primers.xlsx", 
+    col_types = c("text", "text", "numeric", 
+        "skip", "skip"))
+# ch3_primers %>%
+#   mutate_all(~ replace_na(.x, ""))
+```
+
+```{r T32, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+opts <- options(knitr.kable.NA = "")
+knitr::kable(ch3_primers, align = "lll", booktabs = TRUE, linesep = "", caption = "(ref:primersT32)",
+  caption.short = "Primers used for bacteria detection in samples from ticks and wildlife.") %>%
+  kable_styling(font_size = 8.5) %>%
+  row_spec(c(1, 6, 9),  bold = T)
+```
+
+### Bioinformatics
+
+Metabarcoding 16S rRNA sequence data was analysed using Quantitative Insights into Microbial Ecology (QIIME 2 2020.11) [@bolyenReproducibleInteractiveScalable2019]. Briefly, raw sequences were demultiplexed and quality filtered using the q2-demux plugin, followed by denoising using DADA2 (via q2-dada2) [@callahanDADA2HighresolutionSample2016] resulting in amplicon sequence variations (ASVs) (i.e. 100% identical operational taxonomic units or OTUs [@callahanExactSequenceVariants2017]). 
+Bacterial data taxonomy was assigned to ASVs using the q2‐feature‐classifier [@bokulichOptimizingTaxonomicClassification2018] classify‐sklearn naive Bayes taxonomy classifier against the SILVA database [@quastSILVARibosomalRNA2013] (release 132). 
+Taxonomic assignments were confirmed using BLAST analysis (BLASTN 2.11.0+ [@zhangGreedyAlgorithmAligning2000; @morgulisDatabaseIndexingProduction2008]) against the NCBI nucleotide collection (nt) database (accessed January 2021). 
+Taxonomic lineage was then retrieved from NCBI taxonomy database using TaxonKit [@weissHostReproductiveCycle2021] and adjusted to the lowest common ancestor based on percentage identity and e-value score.
+
+Tick 12S metabarcoding sequences generated were analysed USEARCH v11 [@edgarSearchClusteringOrders2010] pipeline.
+Briefly paired end reads were merged and sequences matching forward and reverse primers were retrieved (max number of mismatches = 2). 
+Sequences were then quality filtered and singletons were removed. 
+The unoise3 [@edgarUNOISE2ImprovedErrorcorrection2016] algorithm was used to perform denoising (error-correction) and generate zero-radius taxonomic units (zOTUs) equivalent to amplicon sequence variants (ASVs). 
+Taxonomy was assigned using BLAST analysis and lineage retrieved as outlined above for 16S metabarcoding.
+
+Data visualization and statistical analysis was performed in RStudio (v1.4) with R version 4.0.2. The main R packages used were ampvis2 v2.6.7, phyloseq v1.34.0, microbiomeutilities v1.00.12 and vegan v2.5-7. The R package decontam v1.10.0 [@davisSimpleStatisticalIdentification2018] was used to inspect data for cross-contamination and cross-talk between samples and to establish read cut-off thresholds (prevalence threshold = 0.05). Identified contaminant ASVs (n = 104), controls samples (n = 65) and sequence values < 100 were removed. Rarefaction curves were generated using a step size of 100. Alpha diversity was measured using four indexes (number of observed ASVs, Chao1, Shannon and invSimpson) and statistical analysis was calculated using Wilcoxon pairwise test (non-parametric) between sample types (blood, tick and tissue). Heatmaps were generated using ampvis2, where data was first aggregated to family level and transformed to relative abundance.
+
+Constrained ordination analysis was performed using two methods, canonical correspondence analysis and redundancy analysis (constrained principal component analysis), to investigate the relationships between sample types. 
+Prior to the analysis ASVs < 0.1 relative abundance and samples with < 1000 sequences were removed. 
+Data was first transformed using the Hellinger transformation and distance was measured using the Bray-Curtis method. 
+Beta diversity statistical analysis was performed using analysis of variance (ANOVA) and permutational multivariate analysis of variance (PERMANOVA) (999 permutations) via the adonis function in the vegan package [@oksanenVeganCommunityEcology2020], (Hellinger transformation and Bray-Curtis distance measure), the F statistic and P value are presented (full statistical output available in Supplementary Material \@ref(ch3stats)).
+Hierarchical cluster analysis was performed using euclidean distance measure (average), where data was first transformed using Hellinger transformation. 
+
+The composition for taxa of interest was aggregated to family level and compared between the three sample types. 
+Taxa of interest are defined as bacteria related to known pathogens associated with ticks and other vectors described globally, as outlined in Egan et al. [-@eganBacterialCommunityProfiling2020]. 
+Statistical analysis was performed using the Wilcoxon pairwise test (non-parametric). 
+To identify shared ASVs (i.e. core microbiome) between sample types and species, data was transformed to relative abundance and assigned to best taxonomic hit using the microbiomeutilities R package. 
+Similarities of the core microbiome between the three sample types were investigated using thresholds of abundance and prevalence between 0.0001–-0.001 and 0.001–-0.05 respectively. 
+For subsequent comparisons of the core microbiome between host and tick species, abundance and prevalence levels were set at 0.001 and 0.05 respectively.
+Prevalence data for taxa of interest is presented for samples based on 16S rRNA metabarcoding. Where ticks have been pooled, prevalence is reported based on minimum infection rates (i.e. assumes only one positive tick in each pool) [@estrada-penaPitfallsTickTickBorne2021].
+
+Scripts for data analysis are available at [siobhon-egan/wildlife-bacteria](https://github.com/siobhon-egan/wildlife-bacteria) and [siobhon-egan/wildlife-ticks](https://github.com/siobhon-egan/wildlife-ticks) and raw Illumina MiSeq data has been deposited in the European Nucleotide Archive under project accession number PRJEB46056 (16S rRNA bacteria) and PRJEB46056 (12S rRNA ticks).
+
+### Target PCRs
+
+A nested PCR was used to amplify ~1.4 kb fragment of 16S rRNA locus for *Neoehrlichia* and *Ehrlichia.* 
+Amplicon PCRs were carried out in 25 $\mu L$ reactions each containing: 1X buffer (KAPA Biosystems, South Africa), 2.5 mM MgCl~2~, 0.4 $\mu M$ of each primer, 0.25 mM of each dNTP, 0.5 U of Taq (KAPA Biosystems, South Africa) and 2 $\mu L$ of gDNA or 1 $\mu L$ of primary product. 
+Thermal cycling conditions were as follows; 95$^\circ C$ for 3 mins, followed by 40 cycles of 95$^\circ C$ for 30 secs, 48$^\circ C$ (primary) or 54$^\circ C$ (secondary) for 1 min, 72$^\circ C$ for 2 mins; and a final extension of 72$^\circ C$ for 5 mins.
+
+For *Bartonella*, a PCR was used to amplify a ~370-450 bp fragment of the 16S rRNA - 23S internal transcribed spacer (ITS) region. 
+Amplicon PCRs were carried out in 25 $\mu L$ reactions each containing: 1X buffer (KAPA Biosystems, South Africa), 2.0 mM MgCl~2~, 0.4 $\mu M$ of each primer, 0.25 mM of each dNTP, 0.5 U of Taq (KAPA Biosystems, South Africa) and 2 $\mu L$ of gDNA. 
+Thermal cycling conditions were as follows; 95$^\circ C$ for 3 mins, followed by 40 cycles of 95$^\circ C$ for 15 secs, 66$^\circ C$ 15 secs, 72$^\circ C$ for 18 secs; and a final extension of 72$^\circ C$ for 5 mins.
+
+Amplicons were visualised on agarose gel and products of the expected size were excised with a sterile scalpel blade and purified using an in-house filtered pipette tip method [@yangSpecificQuantitativeDetection2013]. 
+Sanger sequencing was performed at the Australian Genome Research Facility (Perth, Western Australia) on an Applied Biosystems 3730xl DNA Analyzer using BigDye(TM) Terminator v3.1 Cycle Sequencing Kit.
+
+### Phylogeny
+
+Nucleotide sequences were inspected and quality filtered using Geneious 10.2.6 (https://www.geneious.com). 
+Identity was confirmed using BLAST analysis (BLASTN 2.11.0+ [@zhangGreedyAlgorithmAligning2000; @morgulisDatabaseIndexingProduction2008]) against NCBI nucleotide collection (nt) database. 
+Sequences generated were aligned with references retrieved from GenBank [@bensonGenBank2017] using MUSCLE [@edgarMUSCLEMultipleSequence2004] (*Anaplasmataceae* and *Borrelia*) or clustalW [@larkinClustalClustalVersion2007] (*Bartonella*). 
+The clustalW aligment method was identified as most suitable for Bartonella analysis due to variable length of the 16S rRNA and ITS regions targeted. 
+Phylogenies were inferred using the maximum likelihood (ML) method. 
+The optimal evolutionary model was selected using ModelFinder [@kalyaanamoorthyModelFinderFastModel2017] based on the Bayesian information criterion. Phylogenetic analysis was performed in IQ-TREE v1.6.11 [@nguyenIQTREEFastEffective2015] and bootstrap support was calculated using ultrafast (UFBoot2) method with 10,000 replicates [@hoangUFBoot2ImprovingUltrafast2018].
+
+
+## Results
+
+### Next-generation sequencing
+
+The hosts species sampled in the present study were the black rat (*Rattus rattus*), brown antechinus (*Antechinus stuartii*), brush-tailed possum (*Trichosurus vulpecula*), bush rat (*Rattus fuscipes*), chuditch (*Dasyurus geoffroii*), Rusa deer (*Rusa timorensis*), long-nosed bandicoot (*Perameles nasuta*), quenda (*Isoodon fusciventer*), rabbit (*Oryctolagus cuniculus*) and swamp rat (*Rattus lutreolus*) (Table \@ref(tab:T3hosts)).
+Ticks identified from wildlife hosts were *Am. triguttatum*, *Ix. antechini*, *Ix. australiensis*, *Ix. holocyclus*, *Ix. tasmani* and *Ix. trichosuri*. 
+Molecular screening was performed on 257 ticks pooled into 205 gDNA extracts. 
+Metabarcoding of ticks at the 12S rRNA locus confirmed morphological analysis and accurate differentiation of morphologically similar species. 
+These results identified that mixed tick species were detected in five gDNA pools and in all cases, these were larvae of *Ix. holocyclus* and *Ix. trichosuri* (Table \@ref(tab:T3ticks)). 
+A subset of representative 12S rRNA tick zOTU sequences were deposited under accession numbers MW665133--MW665150.
+
+```{r include=FALSE}
+library(readxl)
+library(tidyverse)
+ch3_ticks <- read_excel("tables/Ch3-ticksummary.xlsx")
+# ch3_ticks %>%
+#   mutate_all(~ replace_na(.x, ""))
+```
+
+```{r T3ticks, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+opts <- options(knitr.kable.NA = "")
+knitr::kable(ch3_ticks, align = "llcccc", booktabs = TRUE, linesep = "", caption = "Summary of tick species collected from wildlife. Sample numbers in table refer to number of genomic DNA extracts with total number of tick specimens included in parenthesis.",
+  caption.short = "Summary of tick species collected from wildlife hosts for bacterial profiling.") %>%
+  kable_styling(font_size = 8.5) %>%
+  column_spec(c(2), italic = T)
+```
+
+### Bacteria 16S metabarcoding
+
+A total of 536 gDNA extracts from 203 individual animals (159 blood, 205 tick pools, and 172 tissue samples) underwent bacterial profiling. 
+An additional 65 control samples (EXB and NTC) were also sequenced to obtain background laboratory and reagent profiles. 
+Bacterial 16S metabarcoding produced 102,503,643 raw sequences (Table \@ref(tab:TA31) and Figure \@ref(fig:FA31); samples = 96,969,355, controls = 5,534,288). 
+Blood samples produced 35,160,160 sequences (mean = 185,053), tick samples produced 24,844,688 sequences (mean = 95,556) and tissue samples produced 36,964,507 sequences (mean = 197,671). 
+Following quality filtering, denoising and merging a total of 64,186,307 sequences (66.2%) were obtained from the samples; mean for blood samples 121,376 (65.6%) mean for tick samples 70,650 (73.9%) and mean for tissue samples 121,689 (61.6%).
+
+After contaminating taxa and controls were removed, a total of 31,194 bacterial ASVs were identified and, 5,243 ASVs had an abundance of over 1000 sequences. 
+Rarefaction curves (Figure \@ref(fig:FA32)) showed the number of ASVs generally plateaued at a depth of 60,000, 40,000 and 50,000 sequences for blood, tick and tissue samples respectively. 
+Alpha diversity analysis (Figure \@ref(fig:F3alpha)) identified significant variation between sample types (Wilcoxon pairwise test, P < 0.001). 
+The highest number of observed ASVs was in tissue samples (21,811), followed by blood (9,401) and ticks (3,568). 
+Tissue samples showed the highest level of alpha diversity across all measures of alpha diversity. 
+*Ixodes australiensis* and *Ix. trichosuri* had the highest alpha diversity of tick species sampled (Figure \@ref(fig:FA33)). 
+Once identified, contaminant taxa and controls were removed and the dominant phyla identified were Proteobacteria (37.3%), Firmicutes (27.8%), Actinobacteria (14.7%) and Bacteroidetes (10.7%) (Figures \@ref(fig:FA34) and \@ref(fig:FA35)). 
+
+```{r F3alpha, out.width='95%', out.align = 'left',fig.scap = "Alpha diversity of microbiome community for wildlife blood, tissue and ticks.", fig.cap = "Boxplot of Alpha-diversity indices. Diversity indexes (A) Observed number of ASVs, (B) Chao1 index, (C) Shannon index and (D) inverse Simpson index. Boxplots and violin plots represent the distribution of diversity among samples within their category - blood (159), tick (205 pools) and tissue (172). Statistical analysis between sample types calculated using Wilcoxon pairwise (non-parametric) test with significance values indicated as follows: NS for P > 0.05; * for P <= 0.05; ** for P <= 0.01; *** for P <= 0.001; **** for P <= 0.0001.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-alphadiv.png")
+```
+
+In blood samples, the most abundant families were *Bacillaceae* (22.9%), *Bartonellaceae* (11.3%), *Anaplasmataceae* (7.3%) and *Mycobacteriaceae* (2.6%) (Figure \@ref(fig:FA36)). 
+In tick samples the most abundant families were Coxiellaceae (33.8%), *Midichloriaceae* (31.0%), *Mycobacteriaceae* (6.0%), Flavobacteriaceae (2.6%) and *Anaplasmataceae* (1.8%) (Figure \@ref(fig:FA37)). 
+In tissue samples the most abundant families were Staphylococcaceae (8.2%), *Mycobacteriaceae* (6.5%), Ruminococcaceae (5.5%), Flavobacteriaceae (4.7%) and *Anaplasmataceae* (2.7%) (Figure \@ref(fig:FA38)). 
+Comparison of family taxa showed differences in abundance among sample types and species (and tick instar) (Figures \@ref(fig:F3heatmap) and \@ref(fig:F3heatmaptick)).
+
+```{r F3heatmap, out.width='95%', out.align = 'left',fig.scap = "Heatmap of bacterial family taxa in wildlife samples.", fig.cap = "Heatmap of the top 40 most prevalent bacterial family taxa identified in wildlife blood, tick and tissue samples. Data first transformed to relative sequence abundance.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-heatmap.png")
+```
+
+
+```{r F3heatmaptick, out.width='95%', out.align = 'left',fig.scap = "Heatmap of bacterial family taxa in tick samples from wildlife.", fig.cap = "Heatmap of the top 15 most prevalent bacterial family taxa identified in tick samples, showing abundance in species and instar. Data first transformed to relative sequence abundance. Tick samples consisting of mixed species pools were excluded.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-heatmap-tick.png")
+```
+
+The overlap of samples at the ASV level was investigated using various thresholds to define the 'core microbiome', with two out of three models showing only seven shared ASVs between all three sample types (Figure \@ref(fig:F3venn)). 
+Shared core microbiome ASVs of blood and tissue samples were compared between the four most abundant hosts samples and tick species (Figure \@ref(fig:F3venn)).
+
+```{r F3venn, out.width='95%', out.align = 'left',fig.scap = "Venn diagram of taxa present in blood, tick and tissues.", fig.cap = "Venn diagram of core taxa present within samples presented as detection of amplicon sequence variants (ASVs) using abundance and prevalence. Data first transformed to relative abundance and ASVs assigned to best hit. (A) Impact of similarity based on detection thresholds of abundance and prevalence as (i) 0.001 and 0.05, (ii) 0.001 and 0.001, (iii) 0.0001 and 0.05. (B) Core taxa present within sample types using detection levels set at 0.001 and 0.05 for abundance and prevalence respectively for (i) blood (ii) tissue and (iii) ticks. For within sample comparison only the four most abundant vertebrate host/tick species were selected. Tick species abbreviations: \\textit{Amblyomma triguttatum} (\\textit{Am. tri}), \\textit{Ixodes holocyclus} (\\textit{Ix. hol}), \\textit{Ixodes tasmani} (\\textit{Ix. tas}), \\textit{Ixodes trichosuri} (\\textit{Ix. tri}). Tick samples consisting of mixed species pools were excluded.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-venn_combine.png")
+```
+
+Ordination analysis revealed a distinct difference between the bacterial composition of blood, tick and tissue samples (Figure \@ref(fig:F3ord)). Hierarchical cluster analysis (Figure \@ref(fig:FA39)) and statistical analysis (PERMANOVA F = 36.209, P = 0.001, see Supplementary Material \@ref(ch3stats)) also supported this finding showing that there was a statistical difference in sample types, and there was little overlap in the microbiome composition of blood and tick samples. 
+Tissue samples were identified as an intermediate sample type and showed some (albeit low) similarities to blood and tick samples. Ordination analysis of tick samples showed distinction between tick species (Figure \@ref(fig:F3ord)). 
+Tick species *Ix. holocyclus* and *Ix. trichosuri* showed the most similar bacterial composition with ordination analysis demonstrating overlap between these two species (PERMANOVA, F = 14.01, P = 0.001, see Supplementary Material \@ref(ch3stats)). 
+Although sampling numbers were uneven among host species, which limited statistical inference, hierarchical cluster analysis did show that samples grouped were based on host (and tick) species (Figure \@ref(fig:FA310)).
+
+```{r F3ord, out.width='95%', out.align = 'left',fig.scap = "Constrained ordination plot of microbiome composition from wildlife blood, tissue and ticks.", fig.cap = "Constrained ordination plot of microbiome composition from using constrained methods (A) Canonical Correspondence Analysis and (B) Redundancy Analysis (constrained Principal Component Analysis). (i) Ordination analysis of all samples N = 536 (159 blood, 205 tick pools, and 172 tissue) by sample type. (ii) Ordination of all tick samples by tick species (iii) Ordination of three co-habiting tick species in Sydney Northern Beaches area. Prior to the analysis ASVs < 0.1 relative abundance were removed. Analysis using the Hellinger transformation and Bray-Curtis distance measure. The relative contribution (eigen value) of each axis to the total inertia in the data as well as to the constrained space only, respectively, are indicated in percent at the axis titles. Tick species abbreviations: \\textit{Amblyomma triguttatum} (\\textit{Am. tri}),\\textit{Ixodes antechinus} (\\textit{Ix. ant}), \\textit{Ixodes australiensis} (\\textit{Ix. aus}), \\textit{Ixodes holocyclus} (\\textit{Ix. hol}), \\textit{Ixodes tasmani} (\\textit{Ix. tas}), \\textit{Ixodes trichosuri} (\\textit{Ix. tri}).", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-ord_combine.png")
+```
+
+
+### Taxa of interest
+
+Nine family taxa were chosen for comparison among sample types (Figure \@ref(fig:F3tois)). *Anaplasmataceae* bacteria were most prevalent in blood samples (both by relative abundance and prevalence). Blood and tissue samples showed no statistical difference in relative abundance (Wilcoxon pairwise test, P = 0.26), with significantly lower abundance in tick samples (Wilcoxon pairwise test, P < 0.001).
+There was weak support for differences in *Mycoplasmataceae* between sample types (Wilcoxon pairwise test, P = 0.023--0.43). 
+*Midichloriaceae*, *Coxielleaceae*, and *Rickettsiaceae* were all significantly more abundant in ticks than blood or tissue samples. 
+Statistical comparisons of *Borreliaceae* and *Francisellaceae* were not made due to the small number of positive samples.
+
+For subsequent prevalence analysis only taxa of interest that could be accurately defined to the genus level were retained (as per BLAST results). This identified 235 ASVs from 364 samples and 159 individuals see Table \@ref(tab:T3prev) and full sequence data and BLAST results in [Supplementary Table E1.1](#supplementary-table-e1.1).
+
+```{r F3tois, out.width='95%', out.align = 'left',fig.scap = "Relative abundance for select bacteria taxa from wildlife samples.", fig.cap = "Relative abundance for select bacteria taxa of interest (aggregated to family level) from wildlife samples. Statistical analysis between sample types calculated using Wilcoxon pairwise (non-parametric) test with significance values indicated as follows: NS for P > 0.05; * for P <= 0.05; ** for P <= 0.01; *** for P <= 0.001; **** for P <= 0.0001.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-toiboxplot.png")
+```
+
+```{r include=FALSE}
+library(readxl)
+library(tidyverse)
+ch3_prev <- read_excel("tables/Ch3-prevalence-tois.xlsx", 
+    sheet = "condensed_table")
+# ch3_prev %>%
+#   mutate_all(~ replace_na(.x, ""))
+```
+
+```{r T3prev, echo=FALSE, message=FALSE, warning=FALSE}
+library(kableExtra)
+opts <- options(knitr.kable.NA = "")
+knitr::kable(ch3_prev, booktabs = TRUE, linesep = "", caption = "Presence of 'taxa of interest'(a) by bacteria metabarcoding. Prevalence reported as proportion of individual hosts positive and proportion of samples positive in parenthesis (accounting for instances where more than one sample type was collected from an individual).",
+  caption.short = "Bacteria 'taxa of interest' prevalence in wildlife and ticks.") %>%
+  kable_styling(font_size = 8.5) %>%
+  column_spec(c(2),  bold = T) %>%
+  column_spec(c(1), italic = T) %>% 
+  landscape() %>%
+  footnote(alphabet = c("Taxa of interest are defined as bacteria related to known pathogens associated with ticks and other vectors described globally, as outlined in Egan et al. 2020."))
+```
+
+#### *Anaplasmataceae*
+
+The *Anaplasmataceae* family was identified in 95 samples from 59 individuals. 
+The most prevalent genera were *Neoehrlichia* (43 individuals), followed by *Ehrlichia* (eight individuals) than *Anaplasma* (three individuals).
+
+'*Candidatus* Neoehrlichia arcana' was identified in 52 samples: 29 blood, seven ticks (*Ix. holocyclus*), and 16 tissue. '*Candidatus* Neoehrlichia australis' was identified in 33 samples: eight blood, six ticks (*Ix. holocyclus*, *Ix. trichosuri*), and 19 tissue. 
+Sixteen samples had mixed infections of '*Ca*. N. arcana' and '*Ca*. N. australis' (six blood and ten tissue). 
+No ticks had mixed *Neoehrlichia* infections. 
+Three putative novel *Anaplasmataceae* species were identified from the present study, two *Ehrlichia* spp. and a single *Neoehrlichia* sp. 
+The novel *Neoehrlichia* sp. was identified in three samples: a tissue sample from a black rat and a corresponding tick from the same individual (*Ix. tasmani*); and a tick from a brown antechinus (*Ix. antechini*). 
+One novel *Ehrlichia* sp. was identified in five samples from two brush-tailed possums: two blood, one tick (*Ix. holocyclus*) and two tissue. 
+A second novel *Ehrlichia* sp. was identified in seven samples from six chuditch (six blood and one tissue). Only one chuditch was positive in corresponding tissue and blood samples. 
+Three deer tissue samples were infected with *Anaplasma platys* ([Supplementary Table E1.1](#supplementary-table-e1.1)). 
+Detection of *Anaplasmataceae* bacteria differed between tick species and instars. 
+*Ixodes holocyclus* females had the highest prevalence of this taxon, followed by nymph and larval ticks, while no males were positive (Figure \@ref(fig:F3heatmaptick)). 
+Only *Ix. tasmani* nymph samples were positive and in the case of *Ix. trichosuri*, females and nymphs were identified with *Anaplasmataceae* and all larvae were negative.
+
+Phylogenetic analysis was performed using a 1,244 bp fragment of the 16S rRNA locus (Figure \@ref(fig:F3anaplas)). 
+All '*Ca*. N. arcana' amplified were identical to each other and showed 100% similarity to '*Ca*. Neoehrlichia arcana' isolate HT94 from *Ix. holocyclus*, Australia (KU865447). 
+*Ehrlichia* sequences from chuditch blood samples were 100% identical to each other and most similar to *Ehrlichia* sp. Anan from *Ix. ovatus*, Japan (AB028319, 98.94% similarity). 
+The nearest named species was *Ehrlichia muris* (CP006917, 98.86% similarity) isolated from a wild mouse (*Eothenomys kageus*) in Japan (genetic distances [Supplementary Table E1.2](#supplementary-table-e1.2)).
+
+```{r F3anaplas, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of \\textit{Anaplasmataceae} species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of \\textit{Anaplasmataceae} based on a 1,244 bp alignment of the 16S rRNA locus. Substitution model K80 + F with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by shaded circles. Number of substitutions per nucleotide position is represented by the scale bar. Sequences generated in the present study are in bold.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-anaplasmataceaetree.png")
+```
+
+#### *Midichloria*
+
+A total of 103 samples were positive for *Midichloria* which were identified in 94 tick samples from 62 individual animals. 
+Positive tick species included *Ix. holocyclus*, *Ix. tasmani*, *Ix. trichosuri* from black rats, brown antechinuses, brush-tailed possums, long-nosed bandicoots and rabbits from New South Wales. 
+While *Midichloria* was identified in 13 *Ix. tasmani*, the relative abundance was low (108--363 sequences; 0.1-0.4% relative abundance). 
+Nine tissue samples (nine individuals) were positive for *Midichloria* however the number of sequences was generally low (111--14,002) when compared to tick samples; hosts included black rats (five), a brush-tailed possum (one) and long-nosed bandicoots (two).
+Only two individuals had positive tissue and tick samples, one brush-tailed possum and one long-nosed bandicoot. 
+*Midichloria* was identified in all instars of *Ix. holocyclus* but only female and nymph stages of *Ix. trichosuri* (Figure \@ref(fig:F3heatmaptick)).
+No blood samples were positive for *Midichloria* (Figure \@ref(fig:F3heatmap)).
+
+#### Coxiellaceae
+
+The Coxiellaceae family was identified in 183 samples from 113 individuals. Eleven individuals had positive blood samples, although there was a relatively low number of sequences (100--2,819), from hosts including the black rat (seven), brush-tailed possum (one) and long-nosed bandicoot (three). 
+One hundred and six ticks from 88 individuals were positive; *Am triguttatum* (one), *Ix. tasmani* (90) *Ix. holocyclus* (nine), and *Ix. trichosuri*. 
+Fifty-seven individuals were positive for Coxiellaceae in tissue samples, including the black rat (33), brush-tailed possum (two), bush rat (two) and long-nosed bandicoot (20). 
+Forty-five individuals had at least two sample types positive for Coxiellaceae, and only two black rats had positive blood, tick and tissue samples. 
+All instars of *Ix. tasmani* sampled (female, nymph, larva) were positive for Coxiellaceae, but only female *Ix. holocyclus* were positive.
+
+#### *Rickettsiaceae*
+
+*Rickettsia* was identified exclusively in 24 tick samples from 22 individuals. 
+Positive samples from Western Australia were all identified as originating in *Am. triguttatum* (three) from brush-tailed possums and quenda. 
+Ticks identified as positive from New South Wales were: *Ix. holocyclus* (nine) from black rats and long-nosed bandicoots, *Ix. tasmani* (15) from black rats, bush rats, long-nosed bandicoots and rabbits, and *Ix. trichosuri* (three) from long nosed bandicoots. 
+No tissue or blood samples were positive for *Rickettsia*.
+
+#### *Borrelia*
+
+A novel *Borrelia* sp. was identified in nine tissue samples: seven black rats, one bush rat and one swamp rat. The identity of these *Borrelia* sequences showed they were most similar to *Borrelia* R57 (AY626138, 95.68--96.70% similarity, [Supplementary Table E1.1](#supplementary-table-e1.3)).
+Corresponding blood and ticks from these individuals were negative and no other *Borrelia* sequences were identified from any other samples.
+
+Attempts to amplify and perform Sanger sequencing on the *flaB* gene using pan-*Borrelia* primers [@lohNovelBorreliaSpecies2016] were unsuccessful. 
+Given these failed attempts and the small volume of gDNA from samples (tissue biopsy punch only 2 mm), an alternative approach was employed to amplify additional fragments of the 16S rRNA v3-4 hypervariable region on the Illumina MiSeq.
+
+After bioinformatic analysis outlined above, a single ASV was generated from all nine samples. 
+Phylogeny was reconstructed using the maximum likelihood method (GTR + R model) based on 426 bp alignment of the 16S rRNA locus (hypervariable region v3-4) (Figure \@ref(fig:F3borrelia)). The novel *Borrelia* sequence showed 98.4% similarity with *Borrelia* sp. ALEPB216 (KF957671) from *R. rattus* in California, U.S.A (genetic distances [Supplementary Table E1.3](#supplementary-table-e1.3)). The next most similar sequences were *Borrelia* sp. CA682 (KF957670, similarity 98.1%) and *Borrelia* sp. R57 (AY626138, similarity 97.6%). 
+The topology showed these sequences formed a distinct 'rodent' clade, basal to the three major groups currently described (Figure \@ref(fig:F3borrelia)). The nearest named species was *Borrelia theileri* (U38375, similarity 94.50%).
+
+```{r F3borrelia, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of rodent \\textit{Borrelia} species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of \\textit{Borrelia} genus based on a 431 bp alignment of the 16S rRNA locus (hypervariable region 3-4). Substitution model K2P + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 indicated by shaded circles. Number of substitutions per nucleotide position is represented by the scale bar. Sequence generated in the present study in bold.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-borreliatree.png")
+```
+
+#### *Bartonella*
+
+*Bartonella* sp. was identified in 69 samples from 47 individuals. Blood samples represented the majority of *Bartonella* positives with 35 individuals which included black rats (22), brush-tailed possums (seven), bush rats (two), and long-nosed bandicoots (four). 
+Nineteen individuals had positive tissue samples; black rats (four), brown antechinus (one), brush-tailed possums (nine), bush rats (two) and long-nosed bandicoots (three); seven individuals had positive tissue and blood samples.
+Six tick samples were positive for *Bartonella* (from five individuals) with three tick species (*Ix. holocyclus*, *Ix. tasmani* and *Ix. trichosuri*) from black rats and long-nosed bandicoots. All tick samples that were positive also had corresponding positive blood or tissue samples.
+
+Targeted sequencing on a subset of positive samples showed two genotypes of *Bartonella queenslandensis* that were 97.2% similar to each other with ten SNPs (genetic distances [Supplementary Table E1.4](#supplementary-table-e1.4). 
+The next most similar sequence to genotype BR025 and BR048 was *Ba. queenslandensis* strain AUST/NH8 (EU111767) at 96.1% and 94.8% similarity respectively. 
+Comparison of *Ba. queenslandensis* type sequences showed divergence up to 7.2%% (between EU111765 and EU111766) within the species. Five genotypes of *Ba. coopersplainsensis* were identified with 94.4--99.2% similarity to each other; and between 96.7--98.7% similarity to *Ba. coopersplainsensis* type sequence (EU111770) (Figure \@ref(fig:F3bartonella)).
+
+```{r F3bartonella, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of  \\textit{Bartonella} species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of \\textit{Bartonella} genus based on a 533 bp alignment of the 16S-23S internal transcribed space (ITS) region. Substitution model HKY + F with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 indicated by shaded circles. Number of substitutions per nucleotide position is represented by the scale bar. Sequences generated in the present study in bold.", echo=FALSE}
+knitr::include_graphics("figures/ms-figs/Ch3-bartonellatree.png")
+```
+
+#### *Francisella* and *Mycoplasma*
+
+*Francisella* was identified in four ticks, *Am. triguttatum* (three) and *Ix. australiensis* (one) from brush-tailed possums and quenda in Western Australia (Table \@ref(tab:T3prev), [Supplementary Table E1.1](#supplementary-table-e1.1)).
+*Mycoplasma* was present in three samples, from three individuals: two blood samples from a black rat and a swamp rat and one tissue sample from a black rat (Table \@ref(tab:T3prev), [Supplementary Table E1.1](#supplementary-table-e1.1)).
+
+## Discussion
+
+This body of work represents the first large scale investigation into tick (and vector)-associated bacteria concurrently with their vertebrate hosts in urban and peri-urban locations, and identified novel tick-associated bacteria in Australian wildlife. 
+Bacterial amplicon sequencing showed that there were limited taxa shared between blood, tick and tissue samples. 
+The identification of bacterial taxa of interest was generally confined to certain hosts and/or sample types. 
+To the best of the authors’ knowledge, this study represents the first report of *Neoehrlichia* and *Ehrlichia* from Australian wildlife (blood and/or tissue samples). 
+The first identification of the rodent-associated *Borrelia* clade in Australia is also described. 
+These findings show that geographic boundaries and host associations influence the prevalence of tick-associated bacteria. 
+Importantly, these findings also provide support for the absence of northern hemisphere tick-borne pathogens, adding to the overwhelming body of evidence that any potential human tick-borne pathogens in Australia are likely endemic and genetically distinct from currently described pathogens in parts of North America and Europe.
+
+Although a comparatively deep level of sequencing was achieved compared to similar studies [@rynkiewiczConcordanceBacterialCommunities2015;@geSpleenMicrobiotaSmall2018], rarefaction plots showed that blood samples did not reach the same asymptote as tick and tissue, indicating that deeper sequencing of these samples is needed to ensure complete coverage of bacterial diversity.
+Across all four alpha diversity measures, tissue samples showed the highest diversity and variance. 
+In comparison, tick samples showed a less diverse bacterial composition. 
+This is likely due to the dominance of endosymbiont bacteria in the tick microbiome, which has been demonstrated in previous studies of the same tick species as identified in the present study [@goftonInhibitionEndosymbiontCandidatus2015;@eganBacterialCommunityProfiling2020], and in tick species globally [@lalzarCompositionSeasonalVariation2012;@gilIxodesScapularisMicrobiome2020]. 
+The overall lack of similarity in bacterial communities between sample types observed in the present work has been reported in previous studies on small mammals and their vectors (ticks and fleas), indicating the complexity of microbial assemblages inhabiting these biological niches [@cohenSimilaritiesSeasonalVariations2015;@rynkiewiczConcordanceBacterialCommunities2015;@liStochasticProcessesGovern2018]. 
+The diagnostic value of 16S rRNA amplicon sequencing methods has not been thoroughly validated for tick-borne pathogens. 
+One study however showed that ticks which tested positive for *Borrelia* using qPCR methods also had a high abundance of *Borrelia* using amplicon bacterial metabarcoding  [@sperlingMicrobiomeCompositionBorrelia2020]. 
+Therefore, even though *Ix. holocyclus* and *Ix. tasmani* had abundant endosymbionts, and the presence of bacterial species in lower abundance cannot be ruled out completely, it is likely that our finding of the absence of some bacterial species here reflects the true situation.
+
+The microbiome of *Ix. holocyclus* and *Ix. tasmani* was dominated by a limited number of highly abundant ASVs. 
+Other tick species, such as *Ix. trichosuri* and *Ix. australiensis*, showed a more diverse bacterial composition. 
+The interaction between bacterial endosymbionts and pathogens in ticks is not yet fully understood. 
+The presence of endosymbiont bacteria is thought to inhibit the colonisation by other potentially pathogenic bacterial species. 
+For example, colonisation by the rickettsial endosymbiont (*Rickettsia peacockii*) in *Dermacentor andersoni* tick ovaries is thought to render the ticks more resistant to co-infection by a second rickettsial species (*Rickettsia rickettsii*), which is the main cause of Rocky Mountain Spotted Fever
+[@burgdorferNonpathogenicRickettsiaeDermacentor1981]
+[@burgdorferNonpathogenicRickettsiaeDermacentor1981;@macalusoRickettsialInfectionDermacentor2002].
+
+Likewise, *Dermacentor variabilis* ticks infected with one strain of Rickettsia were shown to be less susceptible to secondary rickettsial infections [@macalusoRickettsialInfectionDermacentor2002]. 
+However, this theory is not uniformly accepted, and there is some rejection of Burgdorfer’s [@burgdorferNonpathogenicRickettsiaeDermacentor1981] initial findings. 
+Instead, it is hypothesised that differences in *R. peacockii* prevalence in *De. andersoni* are due to microclimatic factors [@telfordStatusEastSide2009]. 
+Additionally, in recent years microbiome profiling has led to conflicting conclusions about the interaction between endosymbiont and pathogens [@bonnetUpdateIntricateTango2020]. 
+Based on what is known from the northern hemisphere examples, tick species without a dominant endosymbiont may pose a greater risk of harbouring potentially pathogenic microbes [@bonnetUpdateIntricateTango2020].
+
+Equivalent studies from the northern hemisphere using 16S rRNA metabarcoding methods and wildlife surveillance to identify tick-borne pathogens are limited. 
+Instead, pathogen surveillance studies are generally targeted to well-known pathogens.
+For example, studies of *B. burgdorferi* sensu lato have shown infection is not detrimental to the health of natural rodent reservoirs  [@voordouwLymeDiseasePathogen2015], which have been shown to harbour a diverse range of *Borrelia* species [@bunikisThirdBorreliaSpecies2005].
+In the present study, chuditch and long-nosed bandicoots had a high abundance of *Anaplasmataceae* in blood samples, while brush-tailed possums had the highest abundance of this taxon in tissue samples. 
+In addition, *Anaplasmataceae* bacteria were mostly absent from larval ticks. 
+
+This suggests that the *Anaplasmataceae* bacteria identified are likely maintained via horizontal transmission (i.e. between host and tick) and transstadial routes, which has been observed with related bacteria in companion animals [@fourieTransmissionEhrlichiaCanis2013;@almazanExperimentalIxodesRicinusSheep2020]. 
+In contrast, the identification of *Midichloria* across all life stages of *Ix. holocyclus* shows evidence of vertical (transovarial) transmission. 
+Both horizontal and vertical transmission have been identified previously in other tick species with *Midichloria* [@maricontiHumansParasitizedHard2012;@serraMolecularSerologicalEvidence2018]. 
+The absence of *Midichloria* in vertebrate hosts (blood and skin) in the present study suggests the horizontal infection route is not a major contributor to the presence of this endosymbiont in *Ix. holocyclus* and is consistent with previous studies [@mukhachevaBacteriaFamilyCandidatus2017].
+
+```{r eval=FALSE, include=FALSE}
+Megafauna decline have reduced pathogen dispersal which may have increased emergent infectious diseases [@doughtyMegafaunaDeclineHave2020]
+
+Studies that indicate the presence of pathogens alters the microbiome compsotion [@adegokeTickBornePathogensShape2020;@sperlingMicrobiomeCompositionBorrelia2020]
+
+Microbiome Composition and Borrelia Detection in Ixodes scapularis Ticks at the Northwestern Edge of Their Range [@sperlingMicrobiomeCompositionBorrelia2020]
+
+Microbiome of chiggers from wildlife in Thailand [@chaisiriEcologicalMicrobiologicalDiversity2019]
+
+Statewide Passive Surveillance of <i>Ixodes scapularis</i> and Associated Pathogens in Maine [@rounsvilleStatewidePassiveSurveillance2021]
+
+Characterization of the bacterial microbiota in wild-caught Ixodes ventalloi
+[@diaz-sanchezCharacterizationBacterialMicrobiota2019a]
+
+Pathogens, endosymbionts, and blood-meal sources of host-seeking ticks in the fast-changing Maasai Mara wildlife ecosystem [@oundoPathogensEndosymbiontsBloodmeal2020a]
+
+
+Effect of habitat and climate - for antechinus found that ectoparasite infestation was positively correlated with increased litter depth and cooler habitats [@lorchVariationEctoparasiteInfestation2007].
+
+
+Molecular detection of Bartonella in ixodid ticks collected from yaks and plateau pikas (Ochotona curzoniae) in Shiqu County, China[@haoMolecularDetectionBartonella2020]
+
+Hedgehogs, Squirrels, and Blackbirds as Sentinel Hosts for Active Surveillance of Borrelia miyamotoi and Borrelia burgdorferi Complex in Urban and Rural Environments [@majerovaHedgehogsSquirrelsBlackbirds2020]
+```
+
+### Taxa of interest
+
+#### *Anaplasmataceae*
+
+The present study has provided the first identification of *Neoehrlichia* spp. from Australian wildlife. Two *Neoehrlichia* species, '*Ca*. N. arcana' and '*Ca*. N. australis', were recently characterised from *Ix. holocyclus* along the east coast of Australia at a prevalence of 11.3% (44/391) [@goftonPhylogeneticCharacterisationTwo2016]. 
+This finding is consistent with other species of *Neoehrlichia* globally, which have been described circulating in a range of mammals and associated ticks [@kawaharaUltrastructurePhylogeneticAnalysis2004;@mullerCandidatusNeoehrlichiaChilensis2018]. 
+In contrast to Gofton et al. [-@goftonPhylogeneticCharacterisationTwo2016], the results presented here show that '*Ca*. N. arcana' is more prevalent than '*Ca*. N. australis' in small mammals, which is consistent with a recent study of Australian wildlife ticks [@eganBacterialCommunityProfiling2020]. 
+The main reservoir host for '*Ca*. N australis' is likely to be medium to large macropods (e.g. eastern grey kangaroo (*Macropus giganteus*) or swamp wallaby (*Wallabia bicolor*)), which were not sampled in the present study. 
+
+The identification of three putative novel *Anaplasmataceae* species further demonstrates the high diversity of *Anaplasmataceae* from Australian ticks and wildlife. 
+This finding adds to recent discoveries identifying new species from *Am. triguttatum* [@goftonDetectionPhylogeneticCharacterisation2017], *Bothriocroton concolor*, [@lohIdentificationCharacterisationMicroorganisms2018], *Ix. holocyclus* [@goftonPhylogeneticCharacterisationTwo2016], and from the platypus (*Ornithorhynchus anatinus*) and its associated ticks *Ix. ornithorhynchi* [@goftonNovelEhrlichiaSpecies2018]. 
+The novel *Anaplasmataceae* species were less readily identified in tick vectors compared to '*Ca*. N. arcana' and '*Ca*. N. australis'; however more targeted studies are needed to understand their prevalence and distribution.
+
+The first identification of *Anaplasma platys* (formerly *Ehrlichia platys*) in Australia was made in 2001 [@brownDetectionEhrlichiaPlatys2001], and has since been described from dogs throughout the country [@brownDetectionAnaplasmaPlatys2006;@hiiCanineVectorborneDisease2012]. 
+To date it has not been identified in any native Australian wildlife, although *Anaplasma platys* has been reported from deer overseas [@yuPrevalenceCommonTickborne2020]. 
+To the best of the authors’ knowledge, this is the first report of *A. platys* from wild deer in Australia. The vector of *A. platys* overseas, *Rhipicephalus sanguineus*  [@snellgroveVectorCompetenceRhipicephalus2020], is likely also the vector in Australia.
+The brown dog tick, syn. *Rh. sanguineus* tropical lineage was recently named *Rhipicephalus linnaei* [@slapetaTropicalLineageBrown2021]. Importantly, *Ehrlichia canis*, which was first identified in dogs and brown dog ticks in northern Australia during 2020, was not identified in ticks, tissue or blood from wildlife in this study.
+
+#### *Midichloria*
+
+While '*Ca*. M. mitochondrii' (CMm) is known to be highly prevalent and abundant in ticks identified in the present study, the present study did not employ a blocking primer as used in previous studies [@goftonInhibitionEndosymbiontCandidatus2015;@eganBacterialCommunityProfiling2020]. 
+The justification for this was a deliberate choice to include CMm in the 'taxa of interest' investigation, i.e. provide insight into the ecology of this microbe. 
+The absence of CMm in both blood and tissue was surprising, especially given the high proportion and abundance of the bacteria in *Ix. holocyclus* in the present study. 
+Studies in France have identified CMm from roe deer blood samples (*Capreolus capreolus*) using molecular and serology techniques [@serraMolecularSerologicalEvidence2018]; while that study reported a higher sensitivity for serology, molecular methods were also successful at identifying infection.
+In vitro studies of *Ix. ricinus* and rabbits suggest that the endosymbiont replicates within the vertebrate host [@cafisoMidichloriaMitochondriiEndosymbiont2019]. 
+The bacterial microbiome of many tick species is generally dominated by the presence of one (or a few) highly abundant endosymbiont microbes [@claytonCharacterizationManipulationBacterial2015;@goftonInhibitionEndosymbiontCandidatus2015;@varela-stokesMicrobialCommunitiesNorth2017]. 
+This suggests that rare, less abundant bacteria are not easily identified using standard 16S rRNA bacterial metabarcoding methods. 
+While the possibility cannot be ruled out, given the high abundance of CMm in tick samples, it is likely that the methods employed here would have identified it in wildlife hosts (either blood or tissue) if present. 
+Therefore, given the absence of CMm in the hosts sampled in the present study, vertical transmission may be the primary source of *Midichloria* infection for *Ix. holocyclus*. Alternatively, the reservoir host for CMm may not have been sampled.
+
+#### Coxiellaceae
+
+All Coxiellaceae ASVs identified were most similar to members of the *Rickettsiella* genus and dominated the microbiome of *Ix. tasmani*. 
+*Coxiella* was not detected in the present study. 
+The absence of *Coxiella* from host blood and tissue samples likely reflects a low abundance of this bacteria in the small mammal hosts sampled. 
+Serological methods are more commonly used to detect exposure to *C. burnetii* [@cooperSerologicalEvidenceCoxiella2012] but lack the ability to detect acute infections.
+A recent study using molecular techniques detected *C. burnetii* in kangaroo meat samples [@shapiroMolecularDetectionCoxiella2020]. This suggests that animals sampled in the present study were negative for an active infection with *Coxiella*.
+
+#### *Rickettsiaceae*
+
+While several forms of rickettsiosis are amongst the few recognised human tick-borne diseases in Australia, remarkably little is known about the sylvatic life cycle of these intracellular bacteria. 
+At least five agents of human rickettsial disease have been described in Australia [@tadepalliMolecularEvidenceNovel2021], together with several additional species and genotypes with unknown pathogenicity [@vilcinsDetectionSpottedFever2008;@vilcinsEvidencePresenceFrancisella2009;@tadepalliMolecularEvidenceNovel2021].
+Bandicoots and other small mammals have previously been described as reservoirs for Queensland tick typhus (*R. australis*), and *Ix. holocyclus* and *Ix. tasmani* are known vectors [@campbellRickettsiosesAustraliaIsolation1974;@sextonSpottedFeverGroup1991].
+Although the relationship between bandicoots and rickettsial infections is largely accepted there has been little validation of this association since the early publications. 
+
+In the present study, the genus *Rickettsia* was predominately identified from ticks, with a low prevalence and abundance in four tissue samples and was absent from all blood samples. 
+Areas sampled in Sydney’s northern beaches are endemic for Queensland tick typhus and spotted fever. 
+Therefore, the absence of spotted fever or typhus group *Rickettsia* from mammal hosts in the present study was unexpected. 
+Recent studies utilising qPCR have reported *Rickettsia* in 15.4% (23/149) *Ix. holocyclus* from NSW [@gravesIxodesHolocyclusTicktransmitted2016] and 6.4% (13/203) ticks collected from wildlife in north-east Queensland [@hussain-yusufScreeningRickettsiaCoxiella2020]. 
+Additional reports also recognise the presence of spotted fever group *Rickettsia* in Australian ticks [@cookScrubTyphusOther1967;@campbellRickettsiosesAustraliaIsolation1974;@gravesRickettsiosesAustralia2006].
+
+The lack of *Rickettsia* identified in ticks may be due to the highly abundant endosymbionts *Midichloria* or Coxiellaceae in *Ix. holocyclus* and *Ix. tasmani* respectively. 
+While there are limited comparable studies that have used bacterial metabarcoding on wildlife blood samples, previous research has shown that molecular methods successfully identify *Rickettsia* in reservoir hosts [@ndeerehMolecularSurveillanceSpotted2017;@martelloBorreliaBurgdorferiSensu2019;@chaorattanakaweeAmpliconBasedNextGeneration2021]. Flinders Island Spotted Fever, caused by *R. honei* is associated with reptiles and the southern reptile tick *Bo. hydrosauri* [@stenosAponommaHydrosauriReptileassociated2003]. 
+A closely related strain, named *R. honei marmionii*, has been identified from various regions in Australia and is associated with *Haemaphysalis novaeguineae* [@laneEvidenceSpottedFeverlike2005a;@unsworthFlindersIslandSpotted2007]. 
+Interestingly no *Haemaphysalis* ticks were identified from hosts in the present study.
+Further investigation into the sylvatic cycle of *Rickettsia* in Australia would benefit from the inclusion of samples from reptile hosts and vertebrate hosts of *Haemaphysalis* ticks.
+
+```{r eval=FALSE, include=FALSE}
+Amplicon-Based Next Generation Sequencing for Rapid Identification of Rickettsia and Ectoparasite Species from Entomological Surveillance in Thailand [@chaorattanakaweeAmpliconBasedNextGeneration2021]
+
+Role of reptiles and associated arthropods in the epidemiology of rickettsioses: A one health paradigm [@mendoza-roldanRoleReptilesAssociated2021].
+
+PCR of wildlife in Kenya [@ndeerehMolecularSurveillanceSpotted2017]
+
+Diversity of rickettsiae in domestic, synanthropic, and sylvatic mammals and their ectoparasites in a spotted fever‐epidemic region at the western US‐Mexico border [@lopez-perezDiversityRickettsiaeDomestic2021]
+```
+
+#### *Borrelia*
+
+The novel *Borrelia* identified here came exclusively from black rats and was found at two sites in Sydney’s Northern Beaches area. All samples that tested positive were tissue, and no *Borrelia* sequences were identified from corresponding blood or tick samples.
+
+The *Borrelia* species identified from black rats formed a clade with other described *Borrelia* species identified from rodents. *Borrelia* sp. R57 was identified from bank voles (*Myodes glareolus*; formerly *Clethrionomys glareolus*) and wood mice (*Apodemus sylvaticus*) in Spain at a prevalence rate of 8.5--12.0% using PCR methods [@gilIdentificationNewBorrelia2005]. 
+That study identified serological cross-reactivity of this species with *B. burgdorferi* sensu lato using western blot testing. 
+A follow-up study (in Spain) further identified the genotype from 24.5% (62/253) of rodent tissue samples [@barandikaTickBorneZoonoticBacteria2007]. 
+Identification of similar sequences was subsequently made from black rats (*R. rattus*) in California, U.S.A., with a prevalence of 43.5% (10/23) in tissue (skin) biopsy samples [@fedorovaRemarkableDiversityTick2014]. 
+The absence of this *Borrelia* species from our tick samples is interesting and mirrors the previous studies in Europe and the U.S.A [@gilIdentificationNewBorrelia2005;@fedorovaRemarkableDiversityTick2014]. 
+Despite multiple attempts during this study, amplification at the *flaB* locus was unsuccessful, consistent with previous research of members within the clade [@gilIdentificationNewBorrelia2005]. 
+
+The extensive geographical range of this clade, yet tight host associations identified to date (i.e. confined to the Order Rodentia), raises questions regarding its origin. 
+Particularly interesting is the paucity of reports globally, despite small mammals being the most widely studied reservoir host of tick-borne diseases [@zikeliWhyResearchLyme2020]. 
+Our phylogenetic analysis shows strong support for these *Borrelia* sequences forming a distinct clade and is consistent with other studies [@margosControversiesBacterialTaxonomy2019].
+Its basal phylogenetic position may provide important insights into the evolutionary history of the *Borrelia* genus. 
+The lack of its identification in tick samples means that the vector for this *Borrelia* sp. remains unknown, and the transmissibility and pathogenicity of this microbe requires further research. 
+Importantly, no identifications were made of the recently characterised *Borrelia* species from Australia, '*Ca*. B. tachyglossi' [@lohMolecularCharacterizationCandidatus2017] or reptile *Borrelia* sp. [@panettaReptileassociatedBorreliaSpecies2017], nor any sequences from the *B. burgdorferi* sensu lato group.
+
+Currently there is no evidence that the novel rodent-associated *Borrelia* genotype identified in the present study is transmissible to humans or capable of causing disease. 
+Phylogenetic reconstruction indicates that it is distinct from the *B. burgdorferi* sensu lato and relapsing fever groups [@margosControversiesBacterialTaxonomy2019].
+The absence of detection from tick samples and its identification only in rodents, more likely implies another vector that presumably has a tight host relationship with *Rattus* species.
+
+```{r eval=FALSE, include=FALSE}
+Addition to novel echidna and reptile group [@binetruyNovelBorreliaSpecies2020].
+```
+
+#### *Bartonella*
+
+*Bartonella* spp. was identified in a relatively high proportion of wildlife blood samples, and most prevalent in blood samples from black rats (31.0%). 
+*Bartonella coopersplainsensis* and *Ba. queenslandensis* were described from native Australian rodents (*Melomys* spp. and *Rattus* spp.) in Queensland [@gundiBartonellaRattaustralianiSp2009]. 
+Since then, a number of novel *Bartonella* strains have been identified from Australia, including novel species described from marsupials and their ectoparasites (ticks and fleas) [@vilcinsBartonellalikeDNADetected2009;@kaewmongkolCandidatusBartonellaAntechini2011;@kaewmongkolGeneticCharacterizationFleaderived2011]. 
+While generally considered to be transmitted by fleas, reports of *Bartonella* species isolated from ticks are increasing, as studies take a broader approach to surveillance of vector-associated microbes [@rynkiewiczConcordanceBacterialCommunities2015;@asyikhaDetectionBartonellaSp2020;@krolEvaluatingTransmissionPaths2021]. 
+Identification of *Bartonella* in fed ticks does not mean they are a viable vector, but it does highlight that future studies should include ticks when exploring candidate vectors. 
+The high identification of *Bartonella* in rodents has been reported in other metabarcoding studies from blood samples [@cohenSimilaritiesSeasonalVariations2015].
+
+```{r eval=FALSE, include=FALSE}
+*Bartonella* sp. from black rats and cats on Christmas Island [@dybingBartonellaSpeciesIdentified2016].
+*Bartonella* sp. from ticks and small mammals in Malaysia [@asyikhaDetectionBartonellaSp2020].
+
+
+The identification of *B. coopersplainsensis* adds to a number of reports showing it is ubiqutous with rodents globally including New Zealand [@helanMolecularDetectionBartonella2018], Brazil [@goncalvesLowOccurrenceBartonella2020], Thailand [@klangthongDistributionDiversityBartonella2015].
+
+Bartonella, rodents, ticks, fleas [@silaghiBartonellaRodentsFleas2016]. Concordance of bacterial communities of two tick species and blood of their shared rodent host [@rynkiewiczConcordanceBacterialCommunities2015]
+Pathogens and symbionts in ticks: a survey on tick species distribution and presence of tick-transmitted micro-organisms in Sardinia, Italy [@sattaPathogensSymbiontsTicks2011]
+[@kaewmongkolDiversityBartonellaSpecies2011]
+[@vilcinsBartonellalikeDNADetected2009]
+```
+
+#### *Francisella* and *Mycoplasma*
+
+*Francisella* was identified exclusively from ticks in Western Australia, *Am. triguttatum* and *Ix. australiensis*. 
+Previous bacterial profiling of *Am. triguttatum* has shown a high proportion of *Francisella* species [@goftonBacterialProfilingReveals2015;@eganBacterialCommunityProfiling2020]. 
+Given its high abundance in tick samples, the absence of *Francisella* in corresponding host may indicate a lack of transmission. 
+Tularemia (caused by *Francisella tularensis*) can cause disease in humans and animals. 
+While the infection is more commonly acquired via handling infected animal material or aerosol inhalation, *F. tularensis* has been reported in ticks [@regierCombinationMicrobiomeAnalysis2019]. 
+*Francisella* has been reported in several tick species [@garcia-vozmedianoDermacentorMarginatusDermacentor2020]. 
+While the species identified in the present study is not closely related to *F. tularensis*, considering the significance of this genera [@regierCombinationMicrobiomeAnalysis2019], further characterisation should be of high importance. 
+
+The present study did not identify any haemoprotic *Mycoplasma* species. The *Mycoplasma* sequences identified were most closely related to *Mycoplasma arthritidis*, which is recognised as a common pathogen in rats [@dybvigGenomeMycoplasmaArthritidis2008]. 
+It was identified in two black rats and a single identification in the native swamp rat.
+
+
+### Limitations and recommendations
+
+While the cost of next-generation or second-generation sequencing platforms continues to decline, analysis of large numbers of samples is still constrained by resources and funds. 
+Amplicon high throughput sequencing remains a cost-effective approach for characterising bacterial microbiomes. 
+With the advent of long-read sequencing technologies (e.g. PacBio), more studies are moving towards obtaining full-length 16S rRNA sequences which allow for more robust phylogenetic reconstruction and in many cases identification of bacteria to strain/genotype level [@earlSpecieslevelBacterialCommunity2018;@callahanHighthroughputAmpliconSequencing2019]. 
+In addition to describing the bacteria present, the idea of the functional tick microbiome has been suggested [@estrada-penaTaxonomicVariabilityFunctional2020]. 
+While adaption of these methods can seem promising, their use outside of human microbiome studies is questionable due to the reliability of databases [@bonnetUpdateIntricateTango2020;@sunInferencebasedAccuracyMetagenome2020]. 
+An alternative approach such as the "common core" or ecological "core microbiome" may be more suitable in the context of tick microbiome research [@riselyApplyingCoreMicrobiome2020]. 
+Studies incorporating transcriptomics will likely also prove useful for understanding the functional components of the microbiome.
+
+While the present study reported on the relative abundance of microbes between ticks sampled, it is well known that differences in the 16S copy number limit inferences [@brooksTruthMetagenomicsQuantifying2015;@loucaCorrecting16SRRNA2018]. 
+In the context of the present study, relative abundance of taxa was compared among samples, as it was considered a suitable measure given samples were processed in the same manner. 
+Calculations of absolute abundance using 16S rRNA metabarcoding are challenging. While copy number is one factor that can be modelled it relies on information that in many cases is not accurately known. 
+Using mock communities can help assess bias without baseline data on copy number, however, these analysis methods are still limited. 
+
+The sensitivity of molecular diagnostic testing for tick-borne pathogens has been shown to vary greatly. 
+Factors that can influence molecular detection of pathogens include level of parasitaemia/bacteremia, sample type, time of sample collection from initial infection, and and pre-analytical preparation techniques; additionally, this is compounded by differences between taxa due to host-pathogen interactions [@delafuenteTickPathogenInteractionsVector2017;@estrada-penaFunctionalRedundancyEcological2017;@bonnetEditorialTickHostPathogenInteractions2018]. 
+A strong advantage of using generic metabarcoding assays is their unbiased approach; in the context of the present study, the most important factor was to achieve unbiased characterisation of bacterial communities from Australian wildlife. 
+However, it is acknowledged that the use of bacterial metabarcoding for the identification of low abundant and rare organisms is limited.
+The lack of recognised endemic bacterial pathogens such as *Coxiella burnetii*, and *Rickettsia* spp. was surprising. 
+Future studies should use serological and culture methods in addition to these highly specific and sensitive molecular tools (e.g. qPCR). 
+
+Another limitation of the present study was the bias in animals sampled.
+Small mammals were chosen as it was hypothesised they would have the highest prevalence of potential tick-borne pathogens based on what is known from the northern hemisphere [@bastianAntibodyPrevalenceMolecular2012;@bouchardHarvestedWhitetailedDeer2013;@sweiEvidenceTransmissionZoonotic2019]. 
+Further sampling with expanded host and spatial aspects are vital to understand the full epidemiology of tick (and vector) associated microbes. Likewise, alternative trapping methods (e.g., differing trap type, bait) may expand the suite of hosts captured, importantly those with territorial overlap (e.g., semi-arboreal marsupials). 
+
+In the present study, most taxa of interest were confined to specific sample types. For example, *Borrelia* was identified from tissue samples of rats but absent from any blood or tick samples. 
+This finding has also been reported in white-footed mice (*Peromyscus leucopus*) [@zawadaOptimizationTissueSampling2020]. 
+While in many cases disease surveillance is targeted to known pathogens where sampling protocols and diagnostics are well defined, in scoping studies such as the present one, a range of sample types are essential. 
+This is evident in the different ways pathogens act within their host. 
+As the first line of defense, the innate immune system has a key role in protecting against cutaneous and systemic infection [@coatesInnateAntimicrobialImmunity2018]. 
+Alternatively pathogens can quickly evade host innate immune responses by rapidly disseminating into the blood stream after invasion [@kumarIntravitalImagingVascular2015;@hydeBorreliaBurgdorferiKeeps2017]. 
+In the context of Australia however, many wildlife species are endangered and therefore their capture and sampling in the wild is subject to strict ethical conditions and government regulations. 
+As such, collection of multiple sample types is restricted to those requiring only a minimally invasive method and is also dependent on the availability of trained personnel and resources. 
+In many instances it is standard procedure to collect a tissue biopsy for animal genetic (population) purposes, this presents a simple alternative to other procedures which may require field anaesthesia. 
+The results here highlight the value of this sample type for use in pathogen surveillance.
+
+```{r eval=FALSE, include=FALSE}
+Need to keep an open mind regarding what we recognise as human pathogens and constantly re-evaluate diagnostics as new species come to light. For example Ehrlichia chaffeensis/ewingii/canis qPCR used - subset sequenced and fond actually *E. muris* [@murphyPrevalenceDistributionHuman2017].
+In addition complementary molecular diagnostic tools such as Fluorescence in situ hybridization will also prove helpful in eluding the agent of disease in animals and humans [@prudentFluorescenceSituHybridization2019].
+
+While some studies have hypotheised fed ticks can act as surrogates for infections of the animal, targeted studies have shown that this is not a realiable means for diagnostics [@hemidaLackDetectionMiddle2021].
+
+Whole genome capture of vector-borne pathogens from mixed DNA samples: a case study of Borrelia burgdorferi [@carpiWholeGenomeCapture2015]
+[@raviMetagenomicProfilingTicks2019].
+```
+
+## Conclusions
+
+Increased land-use and climate change will continue to affect the spread of vectors and associated diseases globally. 
+There is an urgent need for expanded disease surveillance, particularly at the urban interface with wildlife. 
+Through collaborative approaches, discoveries of novel microbes and important epidemiological links will be critical to ensure adequate and timely responses to human and animal diseases. 
+Investigations into taxa of interest in the present study showed *Anaplasmataceae* bacteria had a relatively high prevalence in the vertebrate hosts examined here and a wide geographical distribution. 
+This group of bacteria is therefore a viable candidate for continued research into Australian zoonotic tick-borne diseases.

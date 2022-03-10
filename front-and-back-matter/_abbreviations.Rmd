@@ -1,0 +1,61 @@
+\item[16S] 16S ribosomal RNA
+\item[18S] 18S ribosomal RNA
+\item[ANIC] Australian National Insect Collection
+\item[ASV] Amplicon sequence variant 
+\item[bp] Base pair
+\item[BIC] Bayesian Information Criterion
+\item[BLAST] Basic Local Alignment Search Tool 
+\item[COX1] Cytochrome c oxidase subunit I
+\item[DNA] Deoxyribonucleic acid
+\item[dNTP] Deoxynucloside triphosphate
+\item[EXB] Extraction blank
+\item[FISF] Flinders Island/Australian spotted fever
+\item[gDNA] Genomic DNA
+\item[gGAPDH] Glycosomal glyceraldehyde phosphate dehydrogenase gene
+\item[GTR] General time reversible
+\item[Hz] Hertz
+\item[ITS2] Internal transcribed spacer 2 region
+\item[LB] Lyme Borreliosis
+\item[MCMC] Markov chain Monte Carlo
+\item[MDS] Multidimensional scaling plot
+\item[MgCl2] Magnesium chloride
+\item[min(s)] Minute(s)
+\item[mL] Millilitre
+\item[ML] Maximum likelihood
+\item[MLST] Multi-locu sequence typing
+\item[mM] Millimolar
+\item[mt] Mitochondrial gene
+\item[n] Samlpe number
+\item[NCBI] National Centre for Biotechnology Information
+\item[NGS] Next Generation Sequencing
+\item[NJ] Neighbour joining 
+\item[NSW] New South Wales
+\item[NT] Northern Territory
+\item[NTC] No-template control
+\item[Nu]  Nuclear gene 
+\item[OTU] Operational Taxonomic Unit
+\item[PCR] Polymerase chain reaction
+\item[QIIME2] Quantitative Insights Into Microbial Ecology
+\item[QLD] Queensland
+\item[QTT] Queensland tick typhus
+\item[OTU]  Operational Taxonomic Units
+\item[rDNA]  Ribosomal deoxyribonucleic acid
+\item[rRNA] Ribosomal ribonucleic acid
+\item[SA] South Australia
+\item[sec(s)] Second(s)
+\item[SFG] Spotted fever group
+\item[SNP] Single nucleotide polymorphism
+\item[sp.] Species singular
+\item[spp.] Species multiple
+\item[ssp.] Subspecies
+\item[TAS] Tasmania
+\item[Taq] Thermus aquaticus deoxyribonucleic acid polymerase
+\item[TBD] Tick-borne disease
+\item[TBP] Tick-borne pathogen
+\item[U] Unit
+\item[USA] United States of America
+\item[UV] Ultraviolet
+\item[VIC]  Victoria
+\item[WA] Western Australia
+\item[WGS]  Whole genome sequencing
+\item[ZOTU]  Zero-radius Operational Taxonomic Units

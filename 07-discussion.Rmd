@@ -1,0 +1,323 @@
+---
+#########################################
+# options for knitting a single chapter #
+#########################################
+output:
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+  bookdown::pdf_document2:
+    template: templates/brief_template.tex
+documentclass: book
+#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+---
+
+# Discussion{#gendiscussion}
+
+## Synthesis of key findings in thesis chapters
+
+The main aims of this thesis were to understand the diversity of ticks parasitising urban wildlife and to characterise the microbial communities associated with these ticks and their wildlife hosts. 
+To address the aims, this thesis was divided into three major themes: (1) Australian ticks, (2) bacteria and haemoprotozoa present in wildlife and ticks, and (3) molecular characterisation of microbes. 
+
+This thesis has provided insights into the tick fauna present in Australia, particularly at the urban fringe which is a high-risk area for potential spillover events [@plowrightLandUseinducedSpillover2021]. 
+Zoonotic spillover events occur when pathogens jump from animals to humans; over 70% of these spillover events have originated in wildlife [@jonesGlobalTrendsEmerging2008].
+The public health significance of spillover events has never been more relevant than at the time of writing this thesis. 
+The COVID-19 pandemic caused by the SARS-CoV-2 virus [@luGenomicCharacterisationEpidemiology2020a], has brought to the forefront the fragility of current human society and the devastating health and financial consequences these emerging pathogens have.
+Additionally in 2020, the exotic canine tick-borne disease canine monocytic ehrlichosis, caused by the *Ehrlichia canis*, was identified in Australian dogs; and has been identified in dogs from Western Australia, Northern Territory and South Australia^[https://www.outbreak.gov.au/current-responses-to-outbreaks/ehrlichiosis-dogs].
+
+In Chapter \@ref(austicks) the low diversity of tick species within the Australian environments examined was highlighted. 
+A review of human tick bites in Australia is also included in Chapter \@ref(austicks), and this informed the subsequent focus on: the Australian paralysis tick *Ixodes holocyclus* and the ornate kangaroo tick *Amblyomma triguttatum*.
+Chapter \@ref(austicks) described a high-throughput tool kit to identify ticks and the development of barcode sequences which can be used as references to identify Australian ticks.
+
+Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa) described the bacterial and haemoprotozoal communities in wildlife and their ticks. 
+In these chapters, molecular tools were used to investigate potential agents of tick-borne disease that are present in wildlife. 
+These chapters identified that the bacterial and haemoprotzoal organisms present were mostly unique between wildlife species, and there was little overlap between microbes present in ticks and host blood and tissue samples. 
+The main exception to this finding was the Anaplasmataceae family. 
+To the best of my knowledge, Chapter \@ref(wildlife-bacteria) represents the first report of *Neoehrlichia* and *Ehrlichia* from Australian wildlife (blood and/or tissue samples). 
+In this bacterial family, *Neoehrlichia* was more prevalent in blood samples from hosts than ticks but was identified in tick species that are known to bite humans, including *Ix. holocyclus*. 
+At Sydney sites, '*Ca*. Neoehrlichia arcana' was readily identified in black rats and long-nosed bandicoots. 
+At Perth study sites, a novel species of *Ehrlichia* from chuditch blood was identified. Common ‘taxa of interest’ shared between samples from the west and east coast were not identified. 
+Therefore, from the results generated in this thesis, it suggests that human tick-borne pathogens, if any, are likely to be different between these areas of Australia due to differences in bacteria identified as a consequences of tick species and vertebrate hosts.
+
+In Chapters \@ref(black-rat) and \@ref(tas-devil), haemoprotozoa in Australian wildlife were further investigated.
+*Trypanosoma lewisi*-like sequences were identified in the blood of black rats in Sydney, New South Wales.
+As this trypanosome has been implicated in the extinction of rodents in some localities [@wyattHistoricalMammalExtinction2008], further genetic information was obtained to provide insight into the phylogeny of this species. 
+Analysis revealed the sequences were distinct from the *Tr. lewisi* sensu stricto clade and were most closely related to genotypes from Europe.
+Chapter \@ref(tas-devil) was the result of a collaborative research project with the University of Tasmania and provided molecular insights into blood parasites from the Tasmanian devil. 
+Within the broader context of this thesis, this research is also of interest for zoonotic disease surveillance. 
+As a large carnivore, devils fill a unique ecological niche and these findings add further information about the identification of unique parasites from Australian wildlife.
+
+## A One Health approach
+
+As the importance of a One Health approach gains increasing attention globally, the implementation of policy and programs still proves challenging [@predictconsortiumImplementingOneHealth2020]. 
+Development of national platforms and policies which facilitate coordination and integration of activities and programs across sectors is required. 
+
+### Australian Programs
+
+On a national level in Australia there is a One Health program that focuses on a number of subjects, including zoonoses, in the Indo-Pacific region^[https://aciar.gov.au/one-health]. This program is a joint initiative through the Australian Centre for International Agriculture (ACIAR) and the Department of Foreign Affairs and Trade (DFAT).
+The Australian Centre for Disease Preparedness (ACDP), formerly known as the Australian Animal Health Laboratory is run by the Commonwealth Scientific and Industrial Research Organisation (CSIRO). Its aim is to protect Australia's livestock and aquaculture industries, and the general public, from emerging infectious disease threats. All state and territories in Australia also have government bodies relating to health and agriculture. 
+Wildlife Health Australia is a non-government organisation (NGO) that operates on a national level. 
+It has a strong One Health focus and provides a platform to link the environment, animal health and public health sectors, across government and non-government organisations^[https://wildlifehealthaustralia.com.au].
+
+These organisations coordinate important programs, however, there is still much room for improvement in regard to surveillance programs in Australia [@woodsImportanceWildlifeDisease2019].
+In most cases surveillance programs run by these organisations are centred around diseases of economic importance (e.g. transmissible spongiform encephalopathy (TSE) Freedom Assurance Project^[https://www.animalhealthaustralia.com.au/what-we-do/disease-surveillance/tse-freedom-assurance-program/]) or the identification of known pathogens (e.g. arbovirus surveillance program^[https://ww2.health.wa.gov.au/Articles/A_E/Arbovirus-surveillance-program]).
+As has been shown by the growing body of evidence over the last five years, and from the results presented in this thesis, it is most likely that any agent(s) of human tick-borne disease in Australia are likely novel and currently unrecognised. 
+Techniques that are able to identify a broad range of microbes need to be used in these surveillance programs. 
+The practical implementation of this is difficult for logistical and financial reasons. 
+As a result, research into novel microbes is generally carried out in the university sector in Australia. 
+Funding for research by university academics is highly competitive, and most often these researchers do not have access to government and NGO infrastructure or networks for conducting surveillance and monitoring programs on the ground. 
+Cooperation between university and government sectors would improve technical support and research methodology for all parties, ensuring a robust surveillance program, with efficient use of resources and expertise.
+
+### Value of notifiable disease inclusion
+
+The Australian National Notifiable Diseases Surveillance System (established 1990) co-ordinates the surveillance on an agreed list of communicable diseases and disease groups in Australia. 
+The list includes a number of mosquito-borne viruses and some tick-associated diseases such as Q-fever (*Coxiella burnetti*) and tularaemia (*Francisella tularensis*) ^[https://www1.health.gov.au/internet/main/publishing.nsf/Content/cda-surveil-nndss-casedefs-distype.htm].
+There are a number of tick (and vector) associated agents that are not included in this list, including *Babesia*, *Borrelia*, *Bartonella*, and *Rickettsia* spp. 
+State and territory jurisdictions have an expanded list of notifiable diseases, where some of the infectious agents mentioned above are included.
+For example, in Western Australia, *Rickettsia* infection (including spotted fevers and all forms of typhus fever) is notifiable ^[https://ww2.health.wa.gov.au/Articles/N_R/Rickettsia-typhus-and-others].
+Notifiable diseases are accompanied by a clear case definition and requirements for reporting (e.g. inclusion of confirmed and suspected cases).
+The geographical location where infection occurred (acquired overseas or locally) does not influence the requirement to provide notification of a case. 
+Once infectious agents (or putative pathogens) have been identified, their inclusions on the list of nationally notifiable diseases will be a useful step towards obtaining a clearer picture of the impact of tick-borne diseases in Australia.
+
+The incorporation of human case data adds another layer to wildlife surveillance studies. 
+This type of holistic approach to understanding disease dynamics has started to provide important insights into Australian mosquito borne diseases [@ongMosquitoBorneVirusesNonHuman2021]. 
+For example, a study of 31 species of nonhuman vertebrates in southeast Queensland found that seropositivity of Ross river virus (alphavirus, *Togaviridae* family) was highly correlated with human notification data [@skinnerSpeciesTraitsHotspots2020].
+A similar approach with the causative agent of human buruli ulcer (*Mycobacterium ulcerans*), has shown that there was a high geographical correlation between human cases of this disease and the positive identification of the bacteria in possum faecal samples [@carsonPotentialWildlifeSentinels2014]. 
+Thus, a central recording system of tick-borne infection in Australia will be a useful step towards obtaining a better understanding of the impact and distribution of disease.
+
+
+## Wildlife at urban interfaces 
+
+The emergence of vector-borne diseases is driven by changes in human factors as much as by enhanced enzootic cycles; in contrast, pathogen invasion results from anthropogenic movements (such as trade and travel) where conditions (such as host(s), vector(s), and climate) are suitable for a pathogen [@kilpatrickDriversDynamicsControl2012]. 
+Current surveillance of infectious diseases generally targets threats to human and livestock health. 
+This thesis demonstrates that the additional inclusion of wildlife health is important for surveillance programs. 
+
+In particular, there has been little recent research on the potentially zoonotic pathogens of the invasive black rat in Australia [@banksReviewEvidencePotential2012]. 
+The present thesis identified a number of novel microbes from black rats and reported new host records.
+For example, a novel *Borrelia* sp. was identified from tissue samples in Sydney. 
+Phylogenetic analysis showed this genotype formed a distinct clade with other rodent-associated sequences reported from Spain and United States of America.
+It was interesting that this species was not identified in any of the ticks that were collected at the same time, which indicates that transmission may involve another vector or route.
+The main vectors of the relapsing fever *Borrelia* group are the soft ticks (family Argasidae), while *Borrelia recurrentis* is transmitted by the human body louse (*Pediculus humanus*) [@gilIdentificationNewBorrelia2005]. 
+Possible vectors of the rodent associated *Borrelia* clade may include fleas, chiggers, mites, and lice.
+
+The long-nosed bandicoot and black rat had similarities with regard to their tick fauna, and bacterial and haemoprotozoal taxa of interest. 
+Results in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa) identified *Ix. holocyclus*, *Ix. tasmani* and *Ix. trichosuri* ticks on both hosts.
+In Chapter \@ref(wildlife-bacteria) *Neoehrlichia* spp. were identified from both hosts and Chapter \@ref(wildlife-haemoprotozoa) identified overlap with species of *Theileria* and *Trypanosoma*. 
+Overall, the arboreal hosts, possums and chuditch, exhibited differences in the microbes and 'taxa of interest' identified, compared to the non-arboreal hosts.
+The separation of hosts by ecological niche (i.e. arboreal vs non-arboreal) is an interesting finding.
+Although the sampling bias and relatively low numbers in the present thesis limit statistical inferences, it does provide support that future studies should explore this relationship in a systematic way.
+For example, dual trapping regimes at sites which target (i) small, ground dwelling animals and (ii) small-medium sized semi-arboreal/arboreal animals may help overcome this sampling bias.
+
+Recent research in Australia has provided insights into the relationship between ticks and local invasive animals, such as black rats and rabbits [@lydeckerPeriurbanBlackRats2019;@taylorInvasiveRabbitsHost2020].
+For example, the prevalence of zoonotic pathogens in mice and rats overseas has been reported to vary markedly over short geographical distances [@rothenburgerEnvironmentalFactorsZoonotic2017].
+In the present study, there was a higher diversity of 'taxa of interest' in black rats than native animals.
+Attempts to understand the movement and establishment of pathogens or microbes between vertebrate hosts are difficult in the urban landscape.
+The adaptation of black rats to urban life, means that this species should actually be regarded as a native species (or commensal) of urban landscapes [@banksEcologicalImpactsCommensal2015]. 
+In other words it is the native wildlife that are invasive when they encroach on urban areas.
+Where there are long periods of co-habitation between vertebrate species, it can make it difficult to understand the true movement of pathogens and untangle the dynamics of spillover events.
+In the case of the *Tr. lewisi*-like sequences reported in Chapters \@ref(wildlife-haemoprotozoa) and \@ref(black-rat), it is most likely that spillover of this protozoan occurred from black rats to native rodents, however the timing and impact of this event(s) are unclear.
+The movement of *Theileria* cf. *peramelis* identified in Chapter \@ref(wildlife-haemoprotozoa) is most likely to have occurred from long-nosed bandicoots into black rats. 
+This is due to the phylogenetic position of the parasite species within the native marsupial *Theileria* clade, consistent with coevolution within the bandicoot.
+Further genomic sequencing will be useful to understand the dynamics of microbial spillover events between introduced and native wildlife hosts [@zohdyCoevolutionEffectDriver2019].
+
+A striking find described in Chapter \@ref(wildlife-bacteria) was the absence of specific bacterial species in wildlife (blood or tissue) samples.
+A number of species, including *Rickettsia australis* and *Rickettsia gravesi*, have been identified from the ticks that were sampled in Chapter \@ref(wildlife-bacteria) and bandicoots have long been described as the main vertebrate reservoir for *R. australis* along the east coast [@campbellRickettsiosesAustraliaIsolation1974;@sextonSpottedFeverGroup1991].
+In the present study however, none of the tissue or blood samples screened were positive for *Rickettsia*.
+Similarly, '*Ca*. M. mitochondrii' (CMm) has been previously shown to be highly prevalent and abundant in the same tick species that were sampled in the present thesis [@goftonInhibitionEndosymbiontCandidatus2015;@eganBacterialCommunityProfiling2020], similar to findings reported in Chapter \@ref(wildlife-bacteria), however CMm was not identified in any blood samples from the respective hosts.
+The absence of these two genera in particular, in blood samples, was surprising and highlights the need for more research into tick-associated microbes in Australia.
+As discussed in Chapter \@ref(wildlife-bacteria) transovarial transmission appears to be the main source of CMm infection in ticks, with possible reservoirs being large macropods or other large vertebrates that host adult life stages of *Ix. holocyclus* and *Ix. trichosuri* which were not samples in this thesis.
+
+
+```{r eval=FALSE, include=FALSE}
+The Contribution of Wildlife Hosts to the Rise of Ticks and Tick-Borne Diseases in North America [@tsaoContributionWildlifeHosts2021].
+
+Impact of Anthropogenic Disturbance on Native and Invasive Trypanosomes of Rodents in Forested Uganda [@salzerImpactAnthropogenicDisturbance2016]
+
+
+Small-scale spatial variation in infection risk shapes the evolution of a Borrelia resistance gene in wild rodents [@cornettiSmallscaleSpatialVariation2018]
+
+
+Animal migrations and parasitism: reciprocal effects within a unified framework [@poulinAnimalMigrationsParasitism2021]
+
+Co-Infection of Blacklegged Ticks with Babesia microti and Borrelia burgdorferi Is Higher than Expected and Acquired from Small Mammal Hosts
+ [@hershCoInfectionBlackleggedTicks2014]
+ 
+ 
+Towards integrated surveillance of zoonoses: spatiotemporal joint modeling of rodent population data and human tularemia cases in Finland
+Critical Importance of a One Health Approach to Antimicrobial Resistance
+ [@whiteCriticalImportanceOne2019]
+ 
+ [@rotejanaprasertIntegratedSurveillanceZoonoses2018]
+```
+
+## Unique microbes in Australia & pathogen evolution
+
+Research conducted in this thesis provides further supports for the growing body of evidence that there is an absence of known Northern hemisphere tick-borne pathogens in Australia.
+There have now been several studies using molecular tools (including both targeted and generic assays) demonstrating that Australian ticks and wildlife harbour a unique diversity of microbes, and not any of the recognised pathogens referred to above  [@goftonBacterialProfilingReveals2015;@eganBacterialCommunityProfiling2020;@hussain-yusufScreeningRickettsiaCoxiella2020].
+
+Human babesiosis is the most prevalent zoonotic protozoal tick-borne disease in the northern hemisphere. 
+However, the zoonotic potential of the many unique *Babesia* spp. and other tick-associated microbes detected from the very different Australian fauna remains unknown. 
+Despite its importance as a pathogen to both humans and animals, the taxonomic classification of the piroplasm group (i.e. genera *Babesia*, *Cytauxzoon* and *Theileria*) is unresolved [@papariniFirstMolecularCharacterization2015;@schreegMitochondrialGenomeSequences2016;@barbosaSequenceAnalysesMitochondrial2019]. 
+Importantly, with respect to any discussion about zoonotic potential, the *Babesia microti* group (responsible for human babesiosis), is distinct from the *Babesia* spp. identified in native Australian mammals [@schreegMitochondrialGenomeSequences2016;@barbosaSequenceAnalysesMitochondrial2019]. 
+Consistent with other recent descriptions, the present study did not identify *Babesia microti*, an important finding given it was the causative agent identified in the single case of endemic babesosis previously reported [@senanayakeFirstReportHuman2012].
+Phylogenetic analysis in Chapter \@ref(wildlife-haemoprotozoa) on the *Babesia* sp. from possums revealed that it was related to other *Babesia* sequences within the marsupial clade. 
+The potential of this organism to cause disease in either wildlife hosts or humans remains to be determined.
+
+As previously outlined, the unique *Borrelia* identified from rodents raises a number of questions, given that it is widespread in the northern hemisphere.
+Firstly, the large geographical distribution of this clade is striking.
+Presently, the clade appears to be rodent-specific and the vector and pathogenicity are not known.
+While a number of *Bartonella* species were identified in Chapter \@ref(wildlife-bacteria), despite the assumption it is generally transmission by fleas, the species responsible for cat scratch (*Bartonella henselae*) was not identified in wildlife or ticks.
+
+```{r eval=FALSE, include=FALSE}
+It is interesting to note that recent modeling indicated that extinction of megafauna has correlated with reduced pathogen and vector dispersal [@doughtyMegafaunaDeclineHave2020]. 
+Future research may show that the lack of megafauna in Australia may have influenced the prevalence of subsequent tick-borne diseases.
+
+Population genomics has been demonstrated as a promising tool to combine ecological and environmental parameters with demographic history and elucidate re-emergence of Lyme disease (*Borrelia burgdorferi*) [@seifertEvolutionPopulationGenomics2015].
+```
+
+## Limitations
+
+The challenges of implementing a One Health approach to pathogen discovery are well documented [@steeleWhatMakesEffective2019;@predictconsortiumImplementingOneHealth2020] and have been discussed above (\@ref(a-one-health-approach)). 
+Undertaking this thesis has required developing skills across a wide range of scientific disciplines including:
+
+- Wildlife biology and veterinary science
+    - Trapping of wildlife
+    - Anaesthesia and sample collection
+- Microscopy and parasitology
+    - Morphological identification of ticks and haemoprotozoa
+- Taxonomy and systematics
+    - Molecular systematics of ticks, bacteria and haemoprotozoa
+- Molecular biology
+    - Nucleic acid extraction from low biomass smal and small starting volumes (inc. museum specimens)
+    - Amplification of DNA using PCR and library preparation
+    - Sequencing of amplicons including high-throughput sequencing on the Illumina MiSeq
+- Bioinformatics and data analysis
+    - Analysis of sequences generated from high-throughput methods
+    - Visualisation of genomic data
+
+In conducting research on Australian wildlife, the first challenge relates to field work preparation and ethical approval. 
+All work involving animals must be done in accordance with the 8^th^ edition of the ‘Australian code for the care and use of animals for scientific purposes’ [@nationalhealthandmedicalresearchcouncilAustralianCodeCare2013] and with approval from an Animal Ethics Committee. 
+Delays in obtaining approval meant that field work could not begin until July and September in year 1 (2018), for New South Wales and Western Australia respectively. 
+Fieldwork has several logistical requirements and needs to be done by trained personnel; therefore it was conducted in conjunction with collaborators at the University of Sydney and Department of Biodiversity, Conservation and Attractions. 
+By year 2 (2019), fieldwork occurred at regular intervals and included visits to collaborators in New South Wales. 
+However, disruption in year 3 (2020) due to the COVID-19 pandemic meant that proposed field and laboratory work had to be restructured. 
+This context is provided as it has resulted in much lower numbers of wildlife being sampled than initially projected. 
+In addition, it was inititally anticipated that high-throughput sequencing was to be conducted on the NovaSeq and therefore it was planned to wait until a large number of samples could be sequenced at once. 
+However, in mid-2020, again due to COVID-19, this plan was changed to include multiple sequencing runs on the Illumina MiSeq platform, which resulted in a more intensive volume of laboratory work.
+This approach was chosen to ensure progress could be made on generating sequence data, while still allowing fieldwork to continue in order to obtain as many samples as possible.
+Wildlife and tick sampling is highly variable between seasons. 
+For example, sampling of Perth sites with high chuditch abundance was conducted along side DBCA during winter which resulted in a low tick abundance.
+Additionally, during the breeding season, any female *Antechinus* captured were immediately released without invasive sampling due to ethical considerations.
+
+Finally, pathogen identification in wildlife is not without its challenges even where diagnostic methods have been optimised previously. 
+Issues that can hinder pathogen (or microbial) detection can include low burden of infection, sequestration of pathogens in certain organs or tissue (tissue tropism), latent infections, short infectious periods, and low prevalence (thus requiring large sample sizes) [@gilbertDecipheringSerologyUnderstand2013].
+
+
+## Future direction and recommendations
+
+Even in areas in the northern hemisphere where Lyme disease (caused by *Borrelia burgdorferi* sensu lato) is recognised as an endemic pathogen, many challenges which prevent efficient management of the disease remain. 
+There is a growing recognition of the importance of convergent research programs which are based on ecological and evolutionary theory and integrate with perspectives spanning the health, social and natural sciences [@talbotConvergenceResearchEmerging2021].
+
+
+### New technologies
+
+The collection of samples from wildlife requires significant effort and needs to be considered carefully. 
+Australia's mammal fauna has a high level of endemism and has suffered the highest extinction rate globally [@flemingGoodBadUgly2016].
+As such, it is recommended that further investigation is undertaken to explore the value of utilising archived samples.
+Advancements in genomics have meant an expansion in the variety of tissue types, quantities, and genomic targets available for DNA sequencing [@fitakExpectationsChallengesWildlife2019].
+Methods including those described in the present thesis (e.g. amplicon metabarcoding) can be applied to historical samples.
+It is also recommended that where possible a streamlined system of sample storage and collection is implemented.
+This might be at the institutional, university, or state government level but needs to be appropriately funded. 
+It would facilitate sharing of samples and resources to answer different questions (e.g. population genetics and disease surveillance using tissue samples).
+
+
+Future studies using long read sequence platforms such as PacBio will benefit from improved taxonomic resolution [@jamyLongReadMetabarcoding2020].
+Metagenomics (shotgun sequencing) will help to provide more complete phylogenetic and evolutionary information with regards to microbial identification [@razzautiComparisonTranscriptomeSequencing2015].
+Transcriptomics can provide information regarding the activity and regulation of cellular processes.
+More broadly systems biology approaches use a range of -omic technologies to model the living system as a biological network [@eckhardtSystemsApproachInfectious2020].
+The integration of multiple platforms and technologies would provide insight into the effect of these bacterial and haemoprotozoal organisms.
+A 'systems approach' is gaining momentum in human medicine, however the same principles are applicable to animals more broadly.
+This would be particularly useful in wildlife disease, because at present describing specific consequences of infectious agents in free-ranging wildlife populations is difficult [@austenInvestigationMorphologicalDiversity2015;@goftonNovelEhrlichiaSpecies2018;@northoverIncreasedTrypanosomaSpp2019]. 
+
+
+### "New" pathogen discovery
+
+Past studies in Australia conducted with respect to understanding tick-associated illness in humans were largely focused on identifying the agent of Lyme disease, *Borrelia burgdorferi* sensu lato. 
+This was a period of focused searching for a very specific group of bacterium, the collective results of which did not provide any convincing evidence for its presence in Australian ticks [@chaladaThereLymelikeDisease2016]. 
+It is important that future researchers keep an open mind in terms of the definition of a "pathogen". 
+There is growing evidence that organisms previously not considered of clinical importance can cause disease.
+Suspected infection with *Rickettsia rickettsii* (Rocky Mountain spotted fever) in humans was later identified as *Rickettsia amblyommi* infection [@appersonTickBorneDiseasesNorth2008]. 
+Since the description of the genus *Neoehrlichia*, reports of human infection have grown with a number of novel genotypes identified [@wassCultivationCausativeAgent2019].
+Closely related to *Coxiella burnetti*, the bacterium '*Candidatus* Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite [@angelakisCandidatusCoxiellaMassiliensis2016].
+
+It is important that preconceived ideas of pathogens or disease aetiologies are continually challenged.
+A recent large-scale retrospective study on human blood samples in the United States which employed the bacterial profiling methods used in Chapter \@ref(wildlife-bacteria), identified a number of previously unrecognised tick-associated bacteria in clinical samples including *Anaplasma*, *Borrelia*, and *Rickettsia* species [@kingryTargetedMetagenomicsClinical2020].
+With on-going discoveries showing a high diversity of microbial agents in ticks, it is important that diagnostic tests are re-evaluated with these newly discovered microbes.
+For example, a commonly used qPCR assay was found to also detect a number of Anaplasmataceae species including *Aanaplasma phagocytophilum*, *Ehrlichia chaffeensis*, *Ehrlichia ewingii* and *Ehrlichia canis* [@murphyPrevalenceDistributionHuman2017].
+While it is helpful that diagnostic assays can detect related microbes it also means that the true aetiological agent can be incorrectly attributed to the disease.
+Thus, a broader approach to disease and more generally microbial^[microbe is used within the encompassing definition to include bacteria, protozoa, viruses and other microscopic organisms] surveillance using newer non-targeted molecular techniques is recommended for future studies.
+
+
+### Expanding "pathogen" host and vector knowledge
+
+The field of vector and host ecology is moving towards producing large-scale efforts to predict patterns of zoonotic disease for applied purposes.
+However, the value of these efforts is limited by the lack of underlying biological information that underpins them [@alberyFastlivedHostsZoonotic2020].
+In many cases, making assumptions based on northern hemisphere data is appropriate.
+However due to Australia's unique landscape and fauna, much of this underlying data remains unknown, as shown by the number of novel microbes identified in the present thesis.
+
+For example, the lack of detection of *Rickettsia australis* in Chapter \@ref(wildlife-bacteria) raises questions about the life history of this pathogen. 
+Despite sampling the recognised vectors and vertebrate reservoirs [@campbellRickettsiosesAustraliaIsolation1974;@sextonSpottedFeverGroup1991] in an area endemic for Queensland tick typhus, the aetiological agent was not detected.
+This result may be due to sampling bias however it may also indicate that there are additional vertebrate reservoirs involved in the life cycle of this bacterium. 
+
+Expanding host sampling to include medium and large sized mammals (e.g. *Macropus* and *Wallabia*), birds, and reptiles will be important for future studies.
+Sampling of a wider range of vectors such as ecto-parasites collected from hosts (e.g. fleas, mites and lice) and flying arthropods (e.g. march flies, mosquitoes) will also aid in providing insight into the life cycle of microbes identified in this thesis.
+
+
+### COVID lessons - the value of surveillance and catologing microbes
+
+The COVID-19 pandemic has brought to light, once again, the threat that zoonotic pathogens pose. 
+While pandemics are defined as the worldwide spread of a disease^[https://www.who.int/csr/disease/swineflu/frequently_asked_questions/pandemic/en/], it serves as an important reminder of the speed with which infectious diseases can move across country boarders.
+It highlights that the job of 'disease surveillance' is never finished, and requires continuous and rigorous scientific research. 
+These lessons are directly applicable in the context of tick-borne disease in Australia. 
+For many decades Australian research was largely focused on the very specific dynamics of *Borrelia burgdorferi* sensu lato and *Ix. holocyclus* [@chaladaThereLymelikeDisease2016]. 
+In the last ten years a more holistic approach to tick-associated microbes has uncovered numerous novel microbes, yet their significance with respect to human illness, if any, is unknown. 
+While this research is still underway, the lessons of COVID-19, and emergence of novel microbes cannot be forgotten.
+The effect of infectious diseases spread far beyond individual health, impacting financial, social and cultural aspects of human life. 
+
+The COVID-19 pandemic has shown that important decisions about human and animal health must be based on scientific fact and clear evidence and this includes open and transparent data. 
+The uncertain origin of the SARS-CoV-2 virus highlights the value of wildlife surveillance and documentation of the complete suite of microbes from wildlife [@burkiOriginSARSCoV22020], even if the significance of such microbes are not recognised at the time of discovery. 
+Work conducted in the present thesis did not identify any definitive human pathogens such as those known in the northern-hemisphere (e.g. *Borrelia burgdorferi* sensu lato, causative agent of Lyme disease).
+As the focus for this work was on wildlife reservoirs, no conclusions can be made about the ability for the microbes identified in this thesis to be transmitted or cause disease in people.
+However, it is hoped that data collected here will provide an important database and microbe catalogue to support future studies on the health of both humans and animals. 
+Pathogen genomics is becoming more common place in public health agencies [@armstrongPathogenGenomicsPublic2019].
+Should any new future disease outbreaks occur, data generated in this thesis could serve as an important reference catalog and potentially identify spillover scenarios.
+In addition, retrospective investigations into agents of disease from human samples could be compared with the data generated in this thesis.
+
+## Impact of this PhD research
+
+It is anticipated that research from this PhD will guide investigations into cases of zoonotic tick-borne diseases in Australia. 
+For example, the Vector and Water-borne Pathogen Research group at Murdoch University was awarded an NHMRC grant in 2019 after a targeted call for research (Grant # GNT1169949) https://tickstudy.murdoch.edu.au/. 
+The research conducted from the NHMRC study ultimately aims to discover the cause (s) of DSCATT in Australia. 
+Based on what is known about the ecology of tick-borne pathogens in the northern hemisphere, wildlife hosts are infected with microbial agents at a relatively high prevalence compared to human infection. 
+Data generated in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa) will help to narrow the scope of candidate microbes that might be responsible for zoonotic disease(s).
+
+```{r eval=FALSE, include=FALSE}
+sequences from leeches in Queensland, which included cultivation and molecular analysis. 
+These resulted agreed our findings and the subspecies *Tr. cyclops australiensis* was proposed by the authors [@ellisNewSubspeciesTrypanosoma2021]. 
+
+Another study also found that the *Herpetosoma* subgenus consists of two distinct lineages [@borges18SRDNASequenceStructure2020a]. 
+The first report of *Tryanosoma dionisii* in Australia [@austenFirstReportTrypanosoma2020] found that sequences of this bat associated trypanosome grouped closely to European isolates. These findings are inline with the *Trypanosoma lewisi*-like sequences described in chapter \@ref(black-rat). 
+
+Chapter \@ref(tas-devil) proposed that *Tr. cyclops*-like sequences identified from the Tasmanian devil should be given subspecies or genotype status. 
+This was as a result of comparative sequence similarity thresholds at the gGAPDH locus.
+Subsequently, identification was made of *Tr. cyclops* sequences from leeches in Queensland, which included cultivation and molecular analysis. 
+These resulted agreed our findings and the subspecies *Tr. cyclops australiensis* was proposed by the authors [@ellisNewSubspeciesTrypanosoma2021]. 
+```
+
+The molecular barcoding data gathered in Chapter \@ref(austicks) will also be useful for further research to classify ticks and identify new species. Adequate reference sequences for tick species are important for the molecular identification of immature and damaged specimens for identifying new species. 
+This sequence data has been made publicly available on sequence repositories.
+The data generated in the present thesis has already been supported and cited in recent literature. 
+For example, the polyphyly described within the *Herpetosoma* subgenus in Chapter \@ref(black-rat) has been cited in reviews of the phylum Euglenozoa [@kostygovEuglenozoaTaxonomyDiversity2021]. 
+Chapter \@ref(tas-devil) proposed that *Tr. cyclops*-like sequences identified from the Tasmanian devil should be given subspecies or genotype status, based on comparative sequence similarity thresholds at the gGAPDH locus.
+A recent study (which included cultivation and molecular analysis), subsequently identified *Tr. cyclops* from leeches in Queensland, supporting the findings in Chapter \@ref(tas-devil) and the subspecies *Tr. cyclops australiensis* was proposed by the authors [@ellisNewSubspeciesTrypanosoma2021]. 
+It is envisaged that future studies will continue to find the data generated in the present thesis a useful resource.
+
