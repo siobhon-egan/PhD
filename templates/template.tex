@@ -309,6 +309,7 @@ $endif$
 \renewcommand{\gapbeforecrest}{$gap-before-crest$}
 \renewcommand{\gapaftercrest}{$gap-after-crest$}
 
+%\def\unifoot{{\includegraphics[width=$university-footer-width$]{$university-footer$}}}
 
 % Leave this line alone; it gets things started for the real document.
 \setlength{\baselineskip}{\textbaselineskip}
@@ -395,6 +396,19 @@ $endif$
 \begin{acknowledgements}
  	$acknowledgements$
 \end{acknowledgements}
+
+$endif$
+
+%%%%% DECLARATION
+$if(declaration)$
+
+$if(show-declaration-in-toc)$
+\addcontentsline{toc}{chapter}{Declaration}
+$endif$
+
+\begin{declaration}
+ 	$declaration$
+\end{declaration}
 
 $endif$
 

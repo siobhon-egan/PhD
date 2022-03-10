@@ -1,4 +1,12 @@
-# NOTE Major change: To build the thesis, you now simply knit **index.Rmd** - see details below.
+# PhD Thesis
+
+Siobhon Egan, 2022 PhD Thesis.
+
+Customised for Murdoch University from the template [oxforddown]https://github.com/ulyngs/oxforddown).
+Compiled using [bookdown](https://bookdown.org/), [RMarkdown](https://bookdown.org/yihui/rmarkdown/) and [RStudio](https://www.rstudio.com/).
+
+
+<!--# NOTE Major change: To build the thesis, you now simply knit **index.Rmd** - see details below.
 
 # Contents
 
@@ -232,3 +240,4 @@ The file **templates/brief_template.tex** formats the chapter in the OxThesis st
 -   at the moment only PDF and HTML output have been properly implemented; I may improve on the Word output further down the line
 
 Enjoy!
+-->

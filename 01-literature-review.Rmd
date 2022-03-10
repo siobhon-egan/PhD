@@ -9,18 +9,22 @@ output:
   bookdown::html_document2: default
   bookdown::word_document2: default
 documentclass: book
-#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+always_allow_html: true
+bibliography: [bibliography/references.bib, bibliography/additional-references.bib, bibliography/bibtex.bib]
+nocite: |
+  @guglielmoneIxodidaeAcariIxodoidea2020, @lohIdentificationTheileriaFuliginosalike2018, @cooperDetectionCoxiellaBurnetii2013, @greayIlluminatingBacterialMicrobiome2021, @brodyCaseTickTyphus1946, @popeIsolationRickettsiaResembling1955, @owenDetectionIdentificationNovel2006, @owenPotentiallyPathogenicSpotted2006, @sentausaGenomeSequenceRickettsia2013, @liHighPrevalenceRickettsia2010, @abdadRickettsiaGravesiiSp2017, @owenDetectionCharacterisationRickettsiae2007; @bennettCoxiellaBurnetiiWestern2011
 ---
-::: {.invisible style="display:none"}
-@lohIdentificationTheileriaFuliginosalike2018
-@cooperDetectionCoxiellaBurnetii2013
-:::
 
 # Literature Review{#litrev}
 \chaptermark{Review}
 \minitoc <!-- this will include a mini table of contents-->
 
 ## Preface {-}
+
+\nocite{guglielmoneIxodidaeAcariIxodoidea2020}
+\nocite{lohIdentificationTheileriaFuliginosalike2018}
+\nocite{cooperDetectionCoxiellaBurnetii2013} \nocite{greayIlluminatingBacterialMicrobiome2021} \nocite{brodyCaseTickTyphus1946} \nocite{popeIsolationRickettsiaResembling1955} \nocite{owenDetectionIdentificationNovel2006} \nocite{owenPotentiallyPathogenicSpotted2006} \nocite{sentausaGenomeSequenceRickettsia2013} \nocite{liHighPrevalenceRickettsia2010} \nocite{abdadRickettsiaGravesiiSp2017} \nocite{owenDetectionCharacterisationRickettsiae2007} \nocite{bennettCoxiellaBurnetiiWestern2011}
+\nocite{jefferiesTwoSpeciesCanine2003}
 
 Ticks (Acari: Ixodida) are a group of blood-feeding arthropods and represent one of the most important vector groups that affect human and animal health. Almost 900 species of tick have been described globally, and 10% have been documented to transmit a variety of pathogens to livestock, companion animals and humans [@jongejanGlobalImportanceTicks2004]. 
 Ticks can carry a diverse range of infectious microbes such as viruses, piroplasms, spirochaetes and rickettsiales [@pfaffleEcologyTickborneDiseases2013]. 
@@ -140,9 +144,9 @@ The summary provided is by no means exhaustive, it is given in the context to ex
 The review will then reflect on human tick-borne pathogens currently documented and characterised in Australia.
 Finally it will conclude by providing a summary of recent research that has been done in relation to novel microbes in Australian ticks and how they relate to potential causative agents of human disease.
 
-The scope of this review is confined to infectious microorganisms transmitted by ticks.
-
->An in-depth and exhaustive review of each individual microbe is beyond the scope of this literature review. Instead the following is presented to provide context to microbes which are explored in more detail throughout the thesis. In the first instance, a general introduction of tick-associated organisms are introduced within a global context focusing on zoonotic significance. Following this, more detail is provided from an Australian context.
+This review is confined to infectious microorganisms transmitted by ticks. An in-depth and exhaustive review of each individual microbe is beyond the scope of this literature review. Instead the following is presented to provide context to microbes which are explored in more detail throughout the thesis. 
+In the first instance, a general introduction of tick-associated organisms are introduced within a global context focusing on zoonotic significance. 
+Following this, more detail is provided from an Australian context.
 
 ### Worldwide summary
 
@@ -321,7 +325,7 @@ knitr::kable(ch1_anaplasm, booktabs = TRUE, linesep = "", caption.short = "Anapl
   kable_styling(font_size = 8.0) %>%
   column_spec(1, italic = T, width = "10em") %>%
   column_spec(2, italic = T, width = "10em") %>%
-  column_spec(3, width = "10em") %>%
+  column_spec(3, width = "8em") %>%
   column_spec(4, width = "6em") %>%
   column_spec(5, width = "6em") %>%
   column_spec(6, width = "6em") %>%
@@ -336,7 +340,7 @@ knitr::kable(ch1_anaplasm, booktabs = TRUE, linesep = "", caption.short = "Anapl
 At present four species of borreliae have been identified in Australia (Table \@ref(tab:T1borrelia)). 
 Two species were introduced *Borrelia theileri* and *Borrelia anserine* with the importation of livestock. 
 Avian spirochaetosis is associated with disease in poultry caused by *B. anserina* and is transmitted by the soft tick *Argas persicus*. 
-Bovine spirochaetosis is caused by *B. theileri* and is transmitted with the cattle tick, *Rhipicephalus australis* (formerly *Boophilus microplus* [@estrada-penaReinstatementRhipicephalusBoophilus2012]). 
+Bovine spirochaetosis is caused by *B. theileri* and is transmitted with the cattle tick, *Rhipicephalus australis* (formerly *Boophilus microplus*) [@estrada-penaReinstatementRhipicephalusBoophilus2012]. 
 The first native Australian *Borrelia* was described from long-haired rats (*Rattus villosissimus*) in north-western Queensland [@carleyNewSpeciesBorrella1962] and named *Borrelia queenslandica*. 
 The authors suggested the spirochaete was transmitted by the soft kangaroo tick (*Or. gurneyi*), however this was never confirmed. 
 To date *B. queensandica* has not been isolated since and as such no molecular data is available.
@@ -354,7 +358,7 @@ knitr::kable(T1borrelia, booktabs = TRUE, linesep = "", caption.short = "\\texti
   kable_styling(font_size = 8.0) %>%
   column_spec(1, italic = T, width = "10em") %>%
   column_spec(2, italic = T, width = "10em") %>%
-  column_spec(3, width = "10em") %>%
+  column_spec(3, width = "8em") %>%
   column_spec(4, width = "6em") %>%
   column_spec(5, width = "6em") %>%
   column_spec(6, width = "6em") %>%
@@ -384,7 +388,7 @@ knitr::kable(ch1_coxiella, booktabs = TRUE, linesep = "", caption.short = "\\tex
   kable_styling(font_size = 8.0) %>%
   column_spec(1, italic = T, width = "10em") %>%
   column_spec(2, italic = T, width = "10em") %>%
-  column_spec(3, width = "10em") %>%
+  column_spec(3, width = "8em") %>%
   column_spec(4, width = "6em") %>%
   column_spec(5, width = "6em") %>%
   column_spec(6, width = "6em") %>%
@@ -433,7 +437,7 @@ knitr::kable(ch1_rickettsia, booktabs = TRUE, linesep = "", caption.short = "\\t
   kable_styling(font_size = 8.0) %>%
   column_spec(1, italic = T, width = "10em") %>%
   column_spec(2, italic = T, width = "10em") %>%
-  column_spec(3, width = "10em") %>%
+  column_spec(3, width = "8em") %>%
   column_spec(4, width = "6em") %>%
   column_spec(5, width = "6em") %>%
   column_spec(6, width = "6em") %>%
@@ -480,7 +484,7 @@ knitr::kable(T1virus, booktabs = TRUE, longtable = T, linesep = "", caption.shor
   kable_styling(font_size = 8.0) %>%
   column_spec(1, italic = T, width = "10em") %>%
   column_spec(2, italic = T, width = "10em") %>%
-  column_spec(3, width = "10em") %>%
+  column_spec(3, width = "8em") %>%
   column_spec(4, width = "6em") %>%
   column_spec(5, width = "6em") %>%
   column_spec(6, width = "6em") %>%
@@ -508,7 +512,7 @@ knitr::kable(T1eukaryotes, booktabs = TRUE, longtable = T, linesep = "", caption
   kable_styling(font_size = 8.0) %>%
   column_spec(1, italic = T, width = "10em") %>%
   column_spec(2, italic = T, width = "10em") %>%
-  column_spec(3, width = "10em") %>%
+  column_spec(3, width = "8em") %>%
   column_spec(4, width = "6em") %>%
   column_spec(5, width = "6em") %>%
   column_spec(6, width = "6em") %>%
@@ -596,7 +600,6 @@ Estimates of abundance in microbiology are widely used to describe microbial com
 The genomic copy number of the 16S gene varies considerably, from 1- 15 copies in some bacteria [@loucaCorrecting16SRRNA2018]. 
 Therefore, the variation in abundance of 16S genes is due to both actual relative abundance differences in samples and variation in genomic 16S copy number among bacteria present. 
 In part this can be overcome through ecological models, such as an assessment of beta-diversity, which can be divided into two components; (i) turnover: difference between communities based on species presence/absence; and (ii) nestedness: differences in the abundance of species composition between communities [@baselgaPartitioningTurnoverNestedness2010;@baselgaBetapartPartioningBeta2017].
-
 
 ## One Health & Wildlife Surveillance
 

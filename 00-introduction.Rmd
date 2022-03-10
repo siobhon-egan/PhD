@@ -38,7 +38,7 @@ All relevant data is made publicly available within this thesis.
 Data has been deposited to relevant repositories.
 Nucleotide sequence data has been deposited to GenBank, raw Illumina MiSeq sequence data has been deposited to the NCBI sequence read archive (SRA). 
 A data availability statement is provided at the start of each chapter.
-Additional tables, figures and information are available in the supplementary material \@ref(supplementary-material).
+Additional tables, figures and information are available in the Supplementary Material \@ref(supplementary-material).
 
 **Scientific nomenclature**
 
@@ -53,7 +53,8 @@ Where relevant previous mammal names (common or scientific) are included (denote
 
 This study was support by the Australian Research Council (LP160100200), Bayer HealthCare (Germany) and Bayer Australia.
 Funding was also obtained by The Holsworth Wildlife Research Endowment administered by The Ecological Society of Australia.
-Support throughout this PhD was also provided by an Australian Government Research Training Program (RTP) Scholarship (awarded by Murdoch University).
+This work was supported by resources provided by the Pawsey Supercomputing Centre with funding from the Australian Government and the Government of Western Australia. 
+This research was supported by an Australian Government Research Training Program (RTP) Scholarship.
 
 As this thesis includes a number of collaborative projects any additional project funding or support is outlined at the beginning of the chapter.
 
@@ -71,9 +72,9 @@ All animal samples undertaken as part of this project was approved by appropriat
 
 ## Funding and support {-}
 
-- Australian Government Research Training Program (RTP) Course fees and Stipend Scholarship
-- Ecological society of Australia - Holsworth Research Endowment 2018--2020
-- Australian Society for Parasitology - Student Travel Grant 2018 and 2019
+- Australian Government Research Training Program (RTP) Course fees and Stipend Scholarship.
+- Ecological society of Australia - Holsworth Research Endowment 2018--2020.
+- Australian Society for Parasitology - Student Travel Grant 2018 and 2019.
 - 5th National Postgraduate Training Workshop in Systematics from Society of Australian Systematic Biologists, Australian Biological Resources Study (ABRS), The University of Adelaide.
 - Concepts in Parasitology, Australian Society for Parasitology (place funded by Bayer Australia).
 
@@ -99,23 +100,16 @@ Work compiled in this thesis is a result of numerous collaborations and as such 
 **Oral Presentations**
 
   - **Egan, S.** 2021. The bacterial biome of ticks and their wildlife hosts at the urban-wildland interface. *Global Microbiome: West Coast Microbiome Network*, Perth, Western Australia.
-
   - **Egan, S.** 2021. What’s in the wildlife? Surveillance of ticks and their associated microbes in Australian wildlife. *14th International Symposium on Ticks and Tick-borne Diseases (Sinnecker-Kunz Early Career Researcher Award Session)*, Germany (hosted online).
-  
   - **Egan, S.**, Fontaine, J., Ryan, U., Irwin., and Oskam C. [2020 - rescheduled to 2022]. Molecular and ecological insights into the ornate kangaroo tick, *Amblyomma triguttatum*. *10th Tick and Tick-borne Pathogen Conference (TTP10)*, Romania.
-
   - **Egan, S.**, Fontaine, J., Veber, W., Ruthof, K., Ryan, U., Irwin, P., and Oskam, C. 2019. Insights into *Amblyomma triguttatum*. *Combined Biological Sciences Meeting*, Perth, Western Australia.
-
   - **Egan, S.**, Fontaine, J., Veber, W., Ruthof, K., Ryan, U., Irwin, P., and Oskam, C. 2019. The ecology of *Amblyomma triguttatum triguttatum* in Western Australia. *Australian Society for Parasitology Annual Conference*, Adelaide, South Australia.
-
   - **Egan, S.**, Evans, M., Irwin, P., and Oskam, C. 2019. Molecular barcoding of Australian hard ticks (Ixodidae). *Australian Society for Parasitology Annual Conference*, Adelaide, South Australia.
-
   - **Egan, S.**, Siew-May, L., Gillet, A., Banks, P., Ryan U., Irwin, P., and Oskam, C. 2018. Ticks parasitizing Australian wildlife and surveillance of potential tick-borne pathogens. *Australian Society for Parasitology Annual Conference*, Melbourne, Victoria.
 
 **Poster presentations**
 
   - **Egan, S.**, Loh, S-M., Banks, P., Gillett, A., Ahlstrom, L., Ryan, U., Irwin. P., and Oskam C. [2020 - rescheduled to 2022]. The Australian tick microbiome: highlighting the diversity down under. *10th Tick and Tick-borne Pathogen Conference (TTP10)*, Romania.
-
   - **Egan, S.**, Greay, T., Gofton, A., Ryan U., Irwin, P., and Oskam, C. 2018. What’s in a tick? Meta-analysis of microbial diversity in Australian ticks. *Global Microbiome II 2018 (West Coast Microbiome Network)*, Perth, Western Australia. 
 
 ### List of other publications arising during my candidature {-}

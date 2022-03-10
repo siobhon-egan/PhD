@@ -26,22 +26,18 @@ always_allow_html: true
 bibliography: [bibliography/references.bib, bibliography/additional-references.bib, bibliography/bibtex.bib]
 ---
 
-
-::: {.invisible style="display:none"}
-@guglielmoneIxodidaeAcariIxodoidea2020
-@krigeNewHostRecords2017
-@calabyObservationsBandedAnteater1960
-@clarkeTranslocationOutcomesWestern2011
-@turniParasitesBridledNailtail2001
-@beveridgeParasitesAssociatedPathology1985
-@speareParasitesAgileWallaby1983
-@northoverEcologyParasiteTransmission2019
-@pearceTickInfestationSoilders1987
-@andrewsDistributionDispersionAmblyomma2007
-@guglielmoneDifferencesNymphsAmblyomma1985
-@liHighPrevalenceRickettsia2010
-@petneyNewHostDisquieting2008
-:::
+\nocite{guglielmoneIxodidaeAcariIxodoidea2020}
+\nocite{krigeNewHostRecords2017} \nocite{calabyObservationsBandedAnteater1960}
+\nocite{clarkeTranslocationOutcomesWestern2011}
+\nocite{turniParasitesBridledNailtail2001}
+\nocite{beveridgeParasitesAssociatedPathology1985}
+\nocite{speareParasitesAgileWallaby1983}
+\nocite{northoverEcologyParasiteTransmission2019}
+\nocite{pearceTickInfestationSoilders1987}
+\nocite{andrewsDistributionDispersionAmblyomma2007}
+\nocite{guglielmoneDifferencesNymphsAmblyomma1985}
+\nocite{liHighPrevalenceRickettsia2010}
+\nocite{petneyNewHostDisquieting2008}
 
 # An update on records of Australian ticks {#austicks}
 \chaptermark{Austraian ticks}
@@ -557,6 +553,8 @@ A cross-sectional study of hard ticks (acari: ixodidae) on horse farms to assess
 -->
 
 \newpage
+
+<!--\begin{landscape}-->
 
 \begin{landscape}
 

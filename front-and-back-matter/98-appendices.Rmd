@@ -30,6 +30,8 @@ header-includes:
 
 ## Chapter 2 {#ch2supp}
 
+Supplementary material for Chapter \@ref(austicks) on Australian Ticks.
+
 ### Molecular methods for analysis of ticks
 
 #### DNA extraction
@@ -120,12 +122,17 @@ Genetic sequence similarity was calculated using the Kimura Two-Parameter method
 
 \newpage
 
+<!--\begin{landscape}-->
+
 \begin{landscape}
+
 ```{r FA21, out.width='95%', out.align = 'left',fig.scap = "Records of Australian ticks from Atlas of Living Australia", fig.cap = "Occurrence map of ticks (Acari: Ixodida) records sourced from the Atlas of Living Australia (www.ala.org.au), data has not been curated.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-2.1.png")
 ```
 
 \end{landscape}
+
+<!--\end{landscape}-->
 
 \newpage
 ```{r, include=FALSE}
@@ -142,7 +149,7 @@ App_Ch2_MLST <- read_excel("tables/App-Ch2-tickMLST.xlsx",
 library(kableExtra)
 opts <- options(knitr.kable.NA = "")
 knitr::kable(App_Ch2_MLST, booktabs = TRUE, longtable = T, linesep = "", caption = "Genetic sequences generated from Australian ticks using a multi-locus sequence typing approach. Nucleotide data has been deposited in GenBank with accession numbers of specimens included in the table.", 
-  caption.short = "Genetic sequences generated from Australian ticks") %>%
+  caption.short = "Genetic sequences generated from Australian ticks.") %>%
   kable_styling(font_size = 7.5) %>%
   kable_styling(latex_options = c("hold_position"))%>% 
   column_spec(c(2), italic = T) %>%
@@ -162,8 +169,8 @@ App_Ch2_genbank <- read_excel("tables/App-Ch2-tick12SgeneticDistances.xlsx",
 ```{r T2genbank, echo=FALSE, message=FALSE, warning=FALSE}
 library(kableExtra)
 opts <- options(knitr.kable.NA = "")
-knitr::kable(App_Ch2_genbank, booktabs = TRUE, longtable = T, linesep = "", caption = "GenBank accession numbers and species identification of sequences used to produce phylogenetic tree (Figure 2.5)", 
-  caption.short = "GenBank accession numbers and species identification of sequences used to produce phylogenetic tree") %>%
+knitr::kable(App_Ch2_genbank, booktabs = TRUE, longtable = T, linesep = "", caption = "GenBank accession numbers and species identification of sequences used to produce phylogenetic tree (Figure 2.5).", 
+  caption.short = "GenBank accession numbers and species identification of sequences used to produce phylogenetic tree.") %>%
   kable_styling(font_size = 7.5) %>%
   kable_styling(latex_options = c("hold_position"))%>% 
   column_spec(c(2,4), italic = T) %>%
@@ -175,6 +182,8 @@ knitr::kable(App_Ch2_genbank, booktabs = TRUE, longtable = T, linesep = "", capt
 
 ## Chapter 3 {#ch3supp}
 
+Supplementary material for Chapter \@ref(wildlife-bacteria) on the Microbiome of Ticks and Wildlife.
+
 ```{r include=FALSE}
 library(readr)
 library(tidyverse)
@@ -184,7 +193,7 @@ App_Ch3_seqs <- read_csv("tables/Ch3-appendix-sequences.csv")
 ```{r TA31, echo=FALSE}
 library(kableExtra)
 opts <- options(knitr.kable.NA = "")
-knitr::kable(App_Ch3_seqs, booktabs = TRUE, linesep = "", caption = "Summary of sequences obtained from bacterial next-generation sequencing", 
+knitr::kable(App_Ch3_seqs, booktabs = TRUE, linesep = "", caption = "Summary of sequences obtained from bacterial next-generation sequencin.g", 
   caption.short = "Summary of sequences obtained from bacterial amplicon sequencing.") %>%
   kable_styling(font_size = 8.5) %>%
   kable_styling(latex_options = c("hold_position"))
@@ -192,62 +201,62 @@ knitr::kable(App_Ch3_seqs, booktabs = TRUE, linesep = "", caption = "Summary of 
 
 \newpage
 
-```{r FA31, out.width='95%', out.align = 'left',fig.scap = "Summary of sequences obtained from bacterial 16S rRNA metabarcoding", fig.cap = "Summary of sequences obtained form bacterial 16S rRNA next-generation sequencing (Illumina MiSeq). (A) Library size (i.e. number of sequences) obtained from samples. (B) Prevalence of contaminant ASVs as identified by `decontam` analysis in controls and samples. (C) Distribution of the number of reads in sample categories blood, tick and tissue.", echo=FALSE}
+```{r FA31, out.width='95%', out.align = 'left',fig.scap = "Summary of sequences obtained from bacterial 16S rRNA metabarcoding.", fig.cap = "Summary of sequences obtained form bacterial 16S rRNA next-generation sequencing (Illumina MiSeq). (A) Library size (i.e. number of sequences) obtained from samples. (B) Prevalence of contaminant ASVs as identified by `decontam` analysis in controls and samples. (C) Distribution of the number of reads in sample categories blood, tick and tissue.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.1.png")
 ```
 
 \newpage
 
-```{r FA32, out.width='85%', out.align = 'left',fig.scap = "Rarefaction curves of bacterial 16S rRNA sequencing from wildlife samples", fig.cap = "Rarefaction curves (number of ASVs) of wildlife blood, tick and tissue samples from bacterial 16S rRNA profiling (step size = 100). Rarefaction curves were used to determine how adequate sequencing depth was in detecting the complete theoretical suite of bacterial organisms present; of note, rarefaction plots excluded OTUs considered environmental contaminants (described methods).", echo=FALSE}
+```{r FA32, out.width='85%', out.align = 'left',fig.scap = "Rarefaction curves of bacterial 16S rRNA sequencing from wildlife samples.", fig.cap = "Rarefaction curves (number of ASVs) of wildlife blood, tick and tissue samples from bacterial 16S rRNA profiling (step size = 100). Rarefaction curves were used to determine how adequate sequencing depth was in detecting the complete theoretical suite of bacterial organisms present; of note, rarefaction plots excluded OTUs considered environmental contaminants (described methods).", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.2.png")
 ```
 
 \newpage
 
-```{r FA33, out.width='95%', out.align = 'left',fig.scap = "Alpha diversity of microbiome community for tick samples", fig.cap = "Boxplot of Alpha-diversity indices for tick samples. Diversity indexes (A) Observed number of ASVs, (B) Chao1 index, (C) Shannon index and (D) inverse Simpson index. Boxplots and violin plots represent the distribution of diversity among tick species. Statistical analysis between sample types calculated using Wilcoxon pairwise (non-parametric) test. Pools of different tick species excluded from analysis.", echo=FALSE}
+```{r FA33, out.width='95%', out.align = 'left',fig.scap = "Alpha diversity of microbiome community for tick samples.", fig.cap = "Boxplot of Alpha-diversity indices for tick samples. Diversity indexes (A) Observed number of ASVs, (B) Chao1 index, (C) Shannon index and (D) inverse Simpson index. Boxplots and violin plots represent the distribution of diversity among tick species. Statistical analysis between sample types calculated using Wilcoxon pairwise (non-parametric) test. Pools of different tick species excluded from analysis.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.3.png")
 ```
 
 \newpage
 
-```{r FA34, out.width='95%', out.align = 'left',fig.scap = "Phylum level distribution plots", fig.cap = "Phylum level distribution plots of bacterial composition in wildlife samples.", echo=FALSE}
+```{r FA34, out.width='95%', out.align = 'left',fig.scap = "Phylum level distribution plots.", fig.cap = "Phylum level distribution plots of bacterial composition in wildlife samples.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.4.png")
 ```
 
 \newpage
 
-```{r FA35, out.width='95%', out.align = 'left',fig.scap = "Phylum level taxa abundance", fig.cap = "Abundance (no. of sequences) and prevalence in samples of bacterial phyla identified from wildlife samples (A) overall, (B) blood, (C) tick and (D) tissue.", echo=FALSE}
+```{r FA35, out.width='95%', out.align = 'left',fig.scap = "Phylum level taxa abundance.", fig.cap = "Abundance (no. of sequences) and prevalence in samples of bacterial phyla identified from wildlife samples (A) overall, (B) blood, (C) tick and (D) tissue.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.5.png")
 ```
 
 \newpage
 
-```{r FA36, out.width='80%', out.align = 'left',fig.scap = "Bacterial family taxa identified in wildlife blood samples", fig.cap = "Bacterial family taxa (top 6 most abundant) identified in wildlife blood samples.", echo=FALSE}
+```{r FA36, out.width='80%', out.align = 'left',fig.scap = "Bacterial family taxa identified in wildlife blood samples.", fig.cap = "Bacterial family taxa (top 6 most abundant) identified in wildlife blood samples.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.6.png")
 ```
 
 \newpage
 
-```{r FA37, out.width='80%', out.align = 'left',fig.scap = "Bacterial family taxa identified in wildlife tick samples", fig.cap = "Bacterial family taxa (top 6 most abundant) identified in wildlife tick samples.", echo=FALSE}
+```{r FA37, out.width='80%', out.align = 'left',fig.scap = "Bacterial family taxa identified in wildlife tick samples.", fig.cap = "Bacterial family taxa (top 6 most abundant) identified in wildlife tick samples.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.7.png")
 ```
 
 \newpage
 
-```{r FA38, out.width='80%', out.align = 'left',fig.scap = "Bacterial family taxa identified in wildlife tissue samples", fig.cap = "Bacterial family taxa (top 6 most abundant) identified in wildlife tissue samples.", echo=FALSE}
+```{r FA38, out.width='80%', out.align = 'left',fig.scap = "Bacterial family taxa identified in wildlife tissue samples.", fig.cap = "Bacterial family taxa (top 6 most abundant) identified in wildlife tissue samples.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.8.png")
 ```
 
 \newpage
 
-```{r FA39, out.width='95%', out.align = 'left',fig.scap = "Hierarchical cluster analysis of bacterial communities - all samples", fig.cap = "Hierarchical cluster analysis of bacterial communities from wildlife samples. Data points coloured by sample type; blood, tick and tissue. Cluster analysis was performed using euclidean distance measure (average), data was transformed using Hellinger transformation.", echo=FALSE}
+```{r FA39, out.width='95%', out.align = 'left',fig.scap = "Hierarchical cluster analysis of bacterial communities - all samples.", fig.cap = "Hierarchical cluster analysis of bacterial communities from wildlife samples. Data points coloured by sample type; blood, tick and tissue. Cluster analysis was performed using euclidean distance measure (average), data was transformed using Hellinger transformation.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.9.png")
 ```
 
 
 \newpage
 
-```{r FA310, out.width='95%', out.align = 'left',fig.scap = "Hierarchical cluster analysis of bacterial communities - by sample type", fig.cap = "Hierarchical cluster analysis of bacterial communities from wildlife samples, separated by sample types. (A) Blood, (B) Tick, (C) Tissue. Data points coloured by host species (and tick species (B)). Cluster analysis was performed using euclidean distance measure (average), data was transformed using Hellinger transformation.", echo=FALSE}
+```{r FA310, out.width='95%', out.align = 'left',fig.scap = "Hierarchical cluster analysis of bacterial communities - by sample type.", fig.cap = "Hierarchical cluster analysis of bacterial communities from wildlife samples, separated by sample types. (A) Blood, (B) Tick, (C) Tissue. Data points coloured by host species (and tick species (B)). Cluster analysis was performed using euclidean distance measure (average), data was transformed using Hellinger transformation.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.10.png")
 ```
 
@@ -415,7 +424,7 @@ The following electronic supplementary files are available for download on [FigS
 
 ## Chapter 4{#ch4-supp}
 
-Supplementary material for wildlife haemoprotozoa chapter.
+Supplementary material for Chapter \@ref(wildlife-haemoprotozoa) on Haemoprotozoa Surveillance.
 
 ```{r FA41, out.width='95%', fig.pos = 'h', out.align = 'left',fig.scap = "Sequence summary of trypanosome metabarcoding", fig.cap = "Summary of sequences obtained from trypanosome 18S rRNA metabatcoding (Illumina MiSeq). (A) Library size (i.e. number of sequences) obtained from samples. (B) Distribution of the number of reads in sample categories blood, tick and tissue.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-4.1.png")
@@ -447,7 +456,7 @@ The following electronic supplementary files are available for download on [FigS
 
 ## Chapter 6{#ch6-supp}
 
-Supplementary material for Tasmanian devil haemoprotozoa chapter.
+Supplementary material for Chapter \@ref(tas-devil) on Tasmanian Devil Haemoprotozoa.
 
 ```{r include=FALSE}
 library(readxl)
@@ -455,12 +464,11 @@ library(tidyverse)
 App_Ch6_seqs <- read_excel("tables/App-Ch6-seqs.xlsx")
 ```
 
-
 ```{r TA61, echo=FALSE, message=FALSE, warning=FALSE}
 library(kableExtra)
 opts <- options(knitr.kable.NA = "")
-knitr::kable(App_Ch6_seqs, longtable = T, booktabs = TRUE, linesep = "", caption = "\\textit{Trypanosoma} sequences used in phylogenetic analysis in the present study. Sequences produced in the present study indicated in bold. denotes short 18S rRNA sequences only, included for comparison within the \\textit{Trypanosoma cyclops} clade", 
-  caption.short = "Sequences used for phylogenetic analysis of \\textit{Trypanosoma} in Tasmanian devils") %>%
+knitr::kable(App_Ch6_seqs, longtable = T, booktabs = TRUE, linesep = "", caption = "\\textit{Trypanosoma} sequences used in phylogenetic analysis in the present study. Sequences produced in the present study indicated in bold. denotes short 18S rRNA sequences only, included for comparison within the \\textit{Trypanosoma cyclops} clade.", 
+  caption.short = "Sequences used for phylogenetic analysis of \\textit{Trypanosoma} in Tasmanian devils.") %>%
   footnote(general = "Country abbreviations: AU - Australia, GB - Brazil, MZ - Mozambique, UK - United Kingdom, MY - Malaysia, SL - Sri Lanka, PNG - Papua New Guinea, DE - Germany, JP- Japan, PL- Poland, BR - Brazil, CA- Canada, PT - Portugal.",
            threeparttable = T) %>%
   kable_styling(full_width = T) %>%
@@ -484,7 +492,7 @@ App_Ch6_pairwise <- read_excel("tables/App-Ch6-pairwise.xlsx")
 library(kableExtra)
 opts <- options(knitr.kable.NA = "")
 knitr::kable(App_Ch6_pairwise, longtable = T, booktabs = TRUE, linesep = "", caption = "Pairwise genetic similarity matrix of the \\textit{Trypanosoma cyclops} clade at the 18S rRNA locus. Analysis conducted over at 559 bp alignment of the V7-8 hypervariable using the Kimura Two-Parameter (K2P) method.", 
-  caption.short = "Pairwise genetic similarity matrix of the \\textit{Trypanosoma cyclops} clade") %>%
+  caption.short = "Pairwise genetic similarity matrix of the \\textit{Trypanosoma cyclops} clade.") %>%
   kable_styling(font_size = 8.5) %>%
   column_spec(1, italic = T) %>% 
   landscape()

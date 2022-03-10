@@ -208,13 +208,13 @@
     {{\Large \@author} \par}
 {\large \vspace*{1ex}
     {\it {\@qual} \par}
-\vspace*{1ex}
-    {\university \par}
     {\noindent\rule{15cm}{0.4pt}\par}
 \vspace*{20mm}
     {{\submittedtext} \par}
 \vspace*{1ex}
     {\it {\@degree} \par}
+\vspace*{1ex}
+    {{\university} \par}
 \vspace*{2ex}
     {\@degreedate} \par}
   \end{center}
@@ -247,6 +247,17 @@
   \thispagestyle{\numberstyleacks}
 	\pagestyle{\numberstyleacks}
 	\setlength{\baselineskip}{\frontmatterbaselineskip}
+}
+{\end{alwayssingle}}
+
+% DECLARATION
+%
+% The declaration environment puts a large, bold, centered 
+% "Declaration" label at the top of the page. The declaration
+% themselves appear in a quote environment, i.e. tabbed in at both sides, and on its own page.
+
+\newenvironment{declaration}%
+{ \begin{alwayssingle}\chapter*{Declaration}
 }
 {\end{alwayssingle}}
 
