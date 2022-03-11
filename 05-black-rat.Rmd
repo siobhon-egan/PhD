@@ -12,6 +12,10 @@ documentclass: book
 # Black rat trypanosome {#black-rat}
 \chaptermark{Rat trypanosome}
 
+```{r F5preface, out.width='95%', out.align = 'left', echo=FALSE}
+knitr::include_graphics("front-and-back-matter/preface/blackrat.pdf")
+```
+
 \newpage
 
 ## Preface {.unnumbered}

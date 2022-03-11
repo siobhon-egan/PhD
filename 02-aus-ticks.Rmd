@@ -564,6 +564,8 @@ knitr::include_graphics("figures/ms-figs/Ch2-mapallticks.png")
 
 \end{landscape}
 
+<!--\end{landscape}-->
+
 \newpage
 
 ```{r F2atrigmapsubp, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Am. triguttatum} subspecies.", fig.cap = "Occurrence map of the four \\textit{Am. triguttatum} subspecies recorded in Australia. Only records with a valid subspecies identified are included.", echo=FALSE}

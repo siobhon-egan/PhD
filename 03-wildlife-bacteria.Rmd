@@ -13,6 +13,10 @@ documentclass: book
 # Microbiome of ticks and wildlife {#wildlife-bacteria}
 \chaptermark{Wildlife biome}
 
+```{r F3preface, out.width='95%', out.align = 'left', echo=FALSE}
+knitr::include_graphics("front-and-back-matter/preface/Julimar_fieldwork.png")
+```
+
 \newpage
 
 ## Preface {.unnumbered}
