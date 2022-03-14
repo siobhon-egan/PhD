@@ -7,7 +7,7 @@
 # The format options are: 'pdf', 'bs4', 'gitbook', 'word'
 # E.g. you can build both pdf and html with 'thesis_formats <- c("pdf", "bs4")'
 knit: (function(input, ...) {
-    thesis_formats <- "pdf";
+    thesis_formats <- "bs4";
     
     source("scripts_and_filters/knit-functions.R");
     knit_thesis(input, thesis_formats, ...)
@@ -19,7 +19,7 @@ knit: (function(input, ...) {
 title: |
   Ecology of Ticks and Microbes in \
   Australia Wildlife
-author: Siobhon Egan
+author: Siobhon Lee Egan
 qual: Bachelor of Science (Honours)
 university: Murdoch University
 university-logo: templates/mulogo.png

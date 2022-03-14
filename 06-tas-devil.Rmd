@@ -26,7 +26,7 @@ header-includes:
 ---
   
 # Tasmanian devil haemoprotozoa {#tas-devil}
-\chaptermark{Devil haemiprotozoa}
+\chaptermark{Devil haemoprotozoa}
 
 
 ```{r F6preface, out.width='100%', out.align = 'left', echo=FALSE}
@@ -86,7 +86,7 @@ We thank Sarah Munns for extraction of DNA and A/Prof Chris Peacock (The Univers
 
 \vspace{5mm}
 
-**Keywords:** Tasmanian devil; *Sarcophilus harrisii*; Haemoprotozoa; *Trypanosoma*; Marsupial; Devil facial tumour disease (DFTD
+**Keywords:** Tasmanian devil; *Sarcophilus harrisii*; Haemoprotozoa; *Trypanosoma*; Marsupial; Devil facial tumour disease (DFTD)
 
 \newpage
 

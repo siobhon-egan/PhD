@@ -19,7 +19,7 @@ documentclass: book
 
 ## Thesis format {-}
 
-This thesis has been written to present data collected during the degree of Doctor of Philosophy as a coherent piece of work incorporating a series of stand-alone manuscripts. 
+This thesis has been written to present data collected during the degree of Doctor of Philosophy as a coherent piece of work incorporating a series of stand-alone manuscripts.
 Each manuscript is written according to the authorship guidelines of the journal that the manuscript is accepted for publication, submitted for review, or will be submitted to in the future. 
 A statement of author attribution precedes each manuscript. 
 All chapters are presented in a similar format with continuous referencing and table and figure numbering to maintain the continuity of the document.

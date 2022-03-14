@@ -1,4 +1,4 @@
-I *Siobhon Egan* verify that in submitting this thesis;
+I *Siobhon Lee Egan* verify that in submitting this thesis;
 
 - the thesis is my own account of the research conducted by me, except where other sources are fully acknowledged in the appropriate format,
 - the extent to which the work of others has been used is documented by a percent allocation of work and signed by myself and my Principal Supervisor,
@@ -6,3 +6,12 @@ I *Siobhon Egan* verify that in submitting this thesis;
 - the University supplied plagiarism software has been used to ensure the work is of the appropriate standard to send for examination,
 - any editing and proof-reading by professional editors comply with the standards set out on the Graduate Research School website, and
 - that all necessary ethics and safety approvals were obtained, including their relevant approval or permit numbers, as appropriate.
+
+\vspace{3mm}
+
+\raggedright
+__________________ 
+
+Siobhon Lee Egan
+
+*14th March 2022*

@@ -104,7 +104,7 @@ library(kableExtra)
 options(kableExtra.html.bsTable = T)
 knitr::kable(attrib, booktabs = TRUE, linesep = "") %>%
   kable_styling(font_size = 7) %>%
-  kable_styling(latex_options = c("hold_position"))
+  kable_styling(latex_options = c("striped", "hold_position"))
 ```
 
 By signing this document, the Candidate and Principal Supervisor acknowledge that the information provided is accurate and has been agreed to by all other authors. 
@@ -116,7 +116,6 @@ By signing this document, the Candidate and Principal Supervisor acknowledge tha
 | __________________ &nbsp; &nbsp; &nbsp; __________________
 |   Candidate &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Principal Supervisor
 
--->
 
 \newpage
 
@@ -132,14 +131,12 @@ It is presented in the context of a data centric chapter, and will be submitted 
 
 Discussion of the data presented here is provided however to avoid repetition from the previous chapter (literature review) and in accordance with journal requirements (2000 word limit for main text) the overarching aim here, is to provide a central forum for the synthesis of newly generated and curated data.
 
-
-
 \vspace{5mm}
 
 **Acknowledgment statement:** 
 Thank you to Dr. Bruce Halliday (Australian National Insect Collection, CSIRO) for access to records and loan of specimens, Dr. Mark Harvey (Western Australia Museum) and Dr. Owen Seeman (Queensland Museum) for access to records and Prof. Ian Beveridge (Melbourne University) for providing advice on tick records and collections. 
 We acknowledge the use of the Atlas of Living Australia, (https://www.ala.org.au/).
-We acknowledge that use of records presented in this manuscript has been made possible by the work of previous researchers, we thank them for data collection and curation that has allowed us to conduct this work..
+We acknowledge that use of records presented in this manuscript has been made possible by the work of previous researchers, we thank them for data collection and curation that has allowed us to conduct this work.
 
 \vspace{5mm}
 
@@ -154,8 +151,8 @@ This project was also part supported by The Holsworth Wildlife Research Endowmen
 
 The datasets generated during the current study have been made available in the public repositories and the code used in analysis is available on GitHub.
 Illumina MiSeq data generated from the metabarcoding of ticks targeting the 12S rRNA locus has been deposited in the European nucleotide archive under the project accession number PRJEB46056 (ERP130244), which includes the following sample accession numbers: ERS6635126--ERS6635348 (BioSample # SAMEA8952359--SAMEA8952582).
-Nucleotide data for subset of zOTUs generated are available in for the molecular identification of ticks has been uploaded to GenBank under accession numbers MW665133--MW665150.
-Nucleotide data for MSLT barcode sequence data produced by Sanger sequencing has been deposited in GenBank under the following accession numbers: OM791407--OM791437 (COI), OM756760--OM756765 (18S), OM830716--OM830764 (12S), OM830384--OM830429 (16S).
+Nucleotide data for a subset of zOTUs generated are available for the molecular identification of ticks and has been uploaded to GenBank under accession numbers MW665133--MW665150.
+Nucleotide data for multilocus sequence typing (MLST) barcode sequence data produced by Sanger sequencing has been deposited in GenBank under the following accession numbers: OM791407--OM791437 (COI), OM756760--OM756765 (18S), OM830716--OM830764 (12S), OM830384--OM830429 (16S).
 Code used for analysis and supporting data files used for bioinformatics and statistical analysis are available on GitHub repository [github.com/siobhon-egan/wildlife-ticks](https://github.com/siobhon-egan/wildlife-ticks) and the [project website](https://siobhonlegan.com/wildlife-ticks/).
 
 \vspace{5mm}
@@ -190,13 +187,13 @@ Much of the fundamental knowledge of Australian ticks such as species records an
 This scattered nature can it make it difficult for non-specialists to access basic information, thus, in the present study a synthesis of Australian tick records is provided. 
 A review of tick records and the incidences of humans as hosts, revealed a total of 28 species biting humans. 
 Updated occurrence maps revealed that three widespread tick species *Amblyomma triguttatum*, *Ixodes holocyclus* and *Ixodes tasmani* also represent the most common species identified biting humans.
-The present study also provides a review of records including curation of those provided in public databases, a [companion website](https://siobhonlegan.com/wildlife-ticks/) also provides interactive maps of these records for readers to investigate. 
-New genetic data has been generated for mitochondrial loci from Australian ticks. 
+The present study also provides a review of records including curation of those provided in public databases; a [companion website](https://siobhonlegan.com/wildlife-ticks/) also provides interactive maps of these records for readers to investigate. 
+In addition, new genetic data has been generated for mitochondrial loci from Australian ticks. 
 This information has been deposited in a public database (GenBank) and will assist in future efforts that seek to use molecular tools to confirm species identification. 
 The analysis of mitochondrial loci identified the 12S rDNA loci (~370 bp product) was particularly useful at delimitating species. 
 As a result, a next-generation sequencing assay was developed for high-throughput species identification. 
-The curation of records and genetic data generated here provide new insights in Australian ticks. 
-The findings reported here will be useful to shed new light on the ecology and systematics of ticks in Australia and be important in assessing the public health significance of ticks as vectors for disease.
+The curation of records and genetic data generated here provide new insights in Australian ticks.
+The findings reported here will be useful to shed new light for future studies on the ecology and systematics of ticks in Australia and be important in assessing public health significance of ticks as vectors for disease. 
 
 ## Introduction
 
@@ -216,13 +213,13 @@ Ticks (Acria: Ixodida) parasitise a range of vertebrate hosts and serve as vecto
 Occurrence records of tick species are a valuable tool that is of interest to medical and veterinary industries.
 
 Tick species distribution records provide fundamental information that is required to assess the public health risk in relationship to diseases that ticks can cause. 
-Curation of these records is a pain-staking process, and requires extensive searching not only in published journal articles but also in the 'grey' literature and unpublished data sets such as those contained within university theses, government reports, etc [@estrada-penaSpeciesOccurrenceTicks2019].
-Specimen collections housed by museums, universities and research groups also provide a wealth of information that may not be easily accessible. 
+Curation of these records is a pain-staking process and requires extensive searching not only in published journal articles but also in the 'grey' literature and unpublished data sets such as those contained within university theses, government reports, etc [@estrada-penaSpeciesOccurrenceTicks2019].
+Specimen collections housed by museums, universities, and research groups also provide a wealth of information that may not be easily accessible. 
 Online databases, particularly those where members of the public can submit records, can also provide useful information to build occurrence data [@belbinAtlasLivingAustralia2021]. 
 However, careful consideration of the content of such records may be required where non-experts are providing identifications.
 
 The aim of this study was to provide an update on records of Australian ticks. 
-The present study provides: (i) A list of tick species in Australia and identification of records for human biting ticks; (ii) updated distribution maps for three widespread tick species and occurrence map with records of all 74 Australian tick species; (iii) a review of host records for the most widespread tick species in Australia, *Amblyomma triguttatum*; (iv) new genetic data generated from ticks, useful as reference information for identifications; and finally (v) description and validation of high-throughput assay for molecular identification of species
+The present study provides: (i) a list of tick species in Australia and identification of records for human biting ticks; (ii) updated distribution maps for three widespread tick species and an occurrence map with records of all 74 Australian tick species; (iii) a review of host records for the most widespread tick species in Australia, *Amblyomma triguttatum*; (iv) new genetic data generated from ticks, useful as reference information for identifications; and finally (v) description and validation of a high-throughput assay for molecular identification of species
 
 <!--
 
@@ -312,7 +309,7 @@ This should contain the body of the research note, and may also be broken into s
 
 #### Tick records
 
-Records were sourced from the Australian National Insect Collection (ANIC), the Western Australia Museum (WAM), Cryptick Laboratory tick archive (Murdoch University) and the literature (including a thorough review of grey literature e.g. government reports).
+Records were sourced from the Australian National Insect Collection (ANIC), the Western Australia Museum (WAM), Cryptick Laboratory tick archive (Murdoch University) and the literature (including a thorough review of grey literature, e.g., government reports).
 The [Atlas of Living Australia](https://www.ala.org.au/) was also investigated to identify records of tick species. 
 Due to the known issues with accurate identification of records in the Living Atlas Australia database [@belbinAtlasLivingAustralia2021], this data was further investigated. 
 Tick species with occurrence records outside of their known historic distribution area were verified for likelihood of accurate identification.
@@ -330,25 +327,25 @@ Due to the widespread nature of *Am. triguttatum* a list of host records was als
 
 Samples were visualised using an Olympus SZ61 stereomicroscope (Olympus, Centre Valley, PA, United States) with an external Schott KL 1500 LED (Schott AG Mainz, Germany) light source.
 Photographs of tick specimens were taken using an Olympus SC30 digital camera (Olympus, Centre Valley, PA, United States) and analysis getIT software (Olympus, Centre Valley, PA, United States). 
-Instar, sex and species was identified using a combination of available morphological keys and species descriptions [@robertsAustralianTicks1970;@jacksonMorphologicalComparisonAdult2002;@laanObservationsBiologyDistribution2011;@barkerTicksAustraliaSpecies2014;@kwakPhylogeneticAnalysisAustralian2017].
+Instar, sex, and species was identified using a combination of available morphological keys and species descriptions [@robertsAustralianTicks1970;@jacksonMorphologicalComparisonAdult2002;@laanObservationsBiologyDistribution2011;@barkerTicksAustraliaSpecies2014;@kwakPhylogeneticAnalysisAustralian2017].
 Where possible *Am. triguttatum* specimens were assigned to subspecies according to that described in @robertsStatusMorphologicallyDivergent1962. 
 
 #### Genetic analysis of ticks
 
 **Sample collection**        
-Specimens in the Cryptick lab tick archive were used for molecular assays and generation of new sequence data. 
-These ticks were collected since 2016 from various sources including wildlife rehabilitation centres, veterinary clinics and research projects including collection of ticks from the environment or from wildlife. 
-In the case of ticks collected from wildlife, samples were collected as part of established research project as such that described in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa).
+Specimens in the Cryptick Laboratory tick archive were used for molecular assays and generation of new sequence data. 
+These ticks were collected since 2016 from various sources such as wildlife rehabilitation centres, veterinary clinics and research projects including collection of ticks from the environment or from wildlife. 
+In the case of ticks collected from wildlife, samples were collected as part of the research project described in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa).
 
 **DNA extraction and sequencing**        
-The complete details of all methods are described in the \@ref(ch2supp).
+The complete details of the methods is described in the \@ref(ch2supp).
 In brief, DNA was extracted from ticks and two molecular approaches were used: (i) multi-locus sequence typing (MSLT) assays with Sanger sequencing and (ii) development of a high-throughput assay to identify ticks.
 
-For the MLST assays primers were used to amplify ticks at the following mitochondrial loci: cytochrome c oxidase subunit I (COX1) [@songPhylogeneticPhylogeographicRelationships2011], 12S rDNA [@beatiAnalysisSystematicRelationships2001], 16S rDNA [@lvDevelopmentDNABarcoding2014] (see Table \@ref(tab:T2primers)).
-Purified PCR products were then subject to Sanger sequencing in the forward and reverse direction.
+For the MLST assays, primers were used to amplify ticks at the following mitochondrial loci: cytochrome c oxidase subunit I (COX1) [@songPhylogeneticPhylogeographicRelationships2011], 12S rDNA [@beatiAnalysisSystematicRelationships2001], 16S rDNA [@lvDevelopmentDNABarcoding2014] (see Table \@ref(tab:T2primers)).
+Purified PCR products were then subjected to Sanger sequencing in the forward and reverse direction.
 
-Following the results from the MLST approach it was decided the ~370 bp product of the 12S rDNA locus gave optimal results for species delimitation. 
-In addition, the short fragment size made it suitable to transferring the assay onto the Illumina MiSeq platform. 
+Following the results from the MLST approach, the ~370 bp product of the 12S rDNA locus was determined as providing optimal results for species delimitation. 
+In addition, the short fragment size made it suitable to transfer the assay onto the Illumina MiSeq platform. 
 In brief, extracted tick DNA was used to build libraries following the 16S Metagenomic Sequencing Library Preparation (Illumina Part \# 15044223 Rev. B).
 The amplicon PCR was carried out using the 12S rDNA pan-Ixodida primers, T1B and T2A [@beatiAnalysisSystematicRelationships2001] (\~370 bp product) with Illumina MiSeq adapters (Table \@ref(tab:T2primers)). 
 Libraries were then constructed and sequenced on the Illumina MiSeq using v2 chemistry (2 x 250 paired end).
@@ -373,8 +370,7 @@ Full details of analysis methods are available in supplementary material \@ref(c
 #### Australian ticks
 
 A list of all 74 tick species recorded in Australia is presented in Table \@ref(tab:T2humanrecords) and includes 60 hard ticks and 14 soft ticks.
-Five tick species are identified as introduced and are all associated with domesticated livestock and companion animals, including; two soft ticks 
-livestock and companion animals, these include two soft ticks *Argas persicus* (poultry),  *Argas persicus* (associated with poultry), *Otobius megnini* (importation with horses); and three hard ticks, *Haemaphysalis longicornis* (associated with cattle), *Rhipicephalus linnaei* (syn *Rhipicephalus sanguineus* tropical lineage) (associated with dogs) and *Rhipicephalus australis* (syn *Boophilus microplus*) (associated with cattle).
+Five tick species are identified as introduced and are associated with domesticated livestock and companion animals; these include two soft ticks *Argas persicus* (associated with poultry) and *Otobius megnini* (imported with horses); and three hard ticks, *Haemaphysalis longicornis* (associated with cattle), *Rhipicephalus linnaei* (syn *Rhipicephalus sanguineus* tropical lineage) (associated with dogs) and *Rhipicephalus australis* (syn *Boophilus microplus*) (associated with cattle).
 
 **Human records**       
 A review of human incidents of tick bite in Australia identified 28 species reported. 
@@ -389,12 +385,12 @@ Identification of incidents, referred to as "tick encounters", may prove a more 
 While this field of research has been conducted in the northern hemisphere [@hookHumanTickEncounters2021], similar studies have not been conducted in Australia.
 
 The list of human-tick records in Australia includes a diverse range of species however, the overwhelming evidence concludes that *Ix. holocyclus* and *Am. triguttatum* contribute to the vast majority (>90%) of tick bites [@goftonBacterialProfilingReveals2015;@geary30YearsSamples2020].
-An interesting discovery in the literature was the identification of the platypus tick *Ixodes ornithorynchi* from a human in northern Victoria [@geary30YearsSamples2020]. The specimen was submitted from a wildlife carer who had direct contact with platypus. In addition to the 28 species reporting biting human two tick species, *Argas lagenoplastis* and *Ornithodorus macmillani* were noted by @geary30YearsSamples2020 from birds' nests but were not directly associated with biting humans.
+An interesting observation in the literature was the identification of the platypus tick *Ixodes ornithorynchi* from a human in northern Victoria [@geary30YearsSamples2020]. The specimen was submitted from a wildlife carer who had direct contact with platypus. In addition to the 28 species reporting biting human two tick species, *Argas lagenoplastis* and *Ornithodorus macmillani* were noted by @geary30YearsSamples2020 from birds' nests but were not directly associated with biting humans.
 
 This review has provided a synthesis of tick-host records in Australia. 
 It is evident that some publications have reported a "new" host record, however review of extant museum collections or historic data has shown it had been previously recorded.
 For example, an incidence of *Ix. australiensis* biting a human was reported as a first record by @kwakFirstRecordsHuman2018, occurring in October 2017.
-However @rabyNewFociSpotted2016, reported the tick biting a person in May 2006.
+However, @rabyNewFociSpotted2016, reported the tick biting a person in May 2006.
 In addition, we note that *Ix. australiensis* wwas reported in close association with humans by @robertsAustralianTicks1970, however it was noted the tick was "crawling". An exhaustive review of all host records is not practical where the data is widely distributed in the literature; this serves to demonstrate the value of curated data, especially where it has the potential to be of public health significance.
 
 <!---
@@ -427,7 +423,7 @@ library(tidyverse)
 ch2_austicks <- read_excel("tables/Ch2-austicks.xlsx", 
     sheet = "summaryFinal")
 ch2_austicks = ch2_austicks %>%
-  select(Species, Authority, "H (a)", "Hosts (b)", Notes)
+  select(Species, Authority, "H (a)", "Hosts", Notes)
 ```
 
 ```{r T2humanrecords, echo=FALSE}
@@ -452,7 +448,7 @@ knitr::kable(ch2_austicks, booktabs = TRUE, linesep = "", escape = F, longtable 
   column_spec(c(2), width = "3cm")%>%
   column_spec(c(5), width = "6cm")%>%
   landscape() %>% 
-  footnote(alphabet = c("Reference of human biting ticks sourced from published and grey literature including museum records.", "Hosts are summarised into broad grouping for synthesis of data. Additional detail can be found in supplementary information."))
+  footnote(alphabet = c("Reference of human biting ticks sourced from published and grey literature including museum records."))
 ```
 
 \newpage
@@ -464,41 +460,43 @@ Records without a species identification or those with missing location data wer
 A final dataset of 6,282 observation records was used to build the occurrence map (Figure \@ref(fig:F2mapall)).
 
 It was noted that two species were not present in any museum record searches.
-*Argas lowryae* was described by @kaiserObservationsSubgenusArgas1975, and to the best of the authors' knowledge has not been recorded since these initial observations.
+*Argas lowryae* was described by @kaiserObservationsSubgenusArgas1975, and to the best of the authors' knowledge it has not been recorded since these initial observations.
 Another soft tick, the invasive spinose ear tick *Otobius mengini*, was also not identified from any museum records. 
-Instead a single observation of the species in Perth, Western Australia, that was reported by the state government [@mayberrySpinoseEarTick2003] was used in the occurrence map.
-In order to complete the occurrence map, data for missing tick species was sourced from the literature. 
+Instead, a single observation of the species in Perth, Western Australia, reported by the state government [@mayberrySpinoseEarTick2003] was used in the occurrence map.
+To complete the occurrence map, data for missing tick species was sourced from the literature. 
 Where possible, records for species that were outside of their historical distribution were individually inspected.
 
-**Atlas of Living Australia data**       
-In comparison to the curated data (Figure \@ref(fig:F2mapall)), a map of records based soley on data from Atlas of Living Australia was used to build the occurrence map.
+**Atlas of Living Australia data**
+
+In comparison to the curated data (Figure \@ref(fig:F2mapall)), a map of records based solely on data from Atlas of Living Australia was used to build an occurrence map.
 This analysis only identified 57 species (50 hard ticks and seven soft ticks). 
-Once records with missing data (i.e. no species level identification) were removed, a total of 2,293 records were identified and used to the build map presented in Figure \@ref(fig:FA21).
+Once records with missing data (i.e., no species level identification) were removed, a total of 2,293 records were identified and used to the build map presented in Figure \@ref(fig:FA21).
 
-**Most prevalent species**       
+**Most prevalent species**
+
 The species with the highest number of observations were *Am. triguttatum* (n = 1,286), *Ix. tasmani* (n = 1,159), *Ix. holocyclus* (n = 982), *Ix. cornuatus* (n = 219), and *Bt. auruginans* (n = 159).
-The three most common species were then selected for further analysis, including more detailed curation of records from the grey literature and individual species maps were produced.
+The three most common species were then selected for further analysis, including a more detailed curation of records from the grey literature and individual species maps were produced.
 
-Currently the *Am. triguttatum* is divided into four subspecies. 
-This has remained unchanged since it was introduced by @robertsStatusMorphologicallyDivergent1962.
-A total of 766 records were identified with subspecies status, of these 738 records also had location information.
-Distribution map of these four subspecies is presented in Figure \@ref(fig:F2atrigmapsubp).
+Currently *Am. triguttatum* is divided into four subspecies. 
+This has remained unchanged since it was established by @robertsStatusMorphologicallyDivergent1962.
+A total of 766 records were identified with subspecies status, of these 738 records had location information.
+A distribution map of these four subspecies is presented in Figure \@ref(fig:F2atrigmapsubp).
 After investigation of "*Am. triguttatum*" specimens recorded in Tasmania and Victoria, 
 it was determined these were either incorrectly identified or incorrectly entered into databases. 
 In the case of records from Tasmania, these specimens were identified as *Bt. hyrosauri*, while records from Victoria were assigned instead to either other *Amblyomma* species or as members of the genus *Bothriocroton*. 
 An example of incorrect records for this species is evident in the map produced using records collected from Atlas of Living Australia (Figure \@ref(fig:FA21)).
 *Amblyomma triguttatum* is a widespread tick present throughout Australia from the south-west coast of Western Australia up to the northeast of Queensland. 
-At present the species is considered absent from Tasmania and Victoria, however an invasive population has established on the Yorke Penninsula in South Australia [@mcdiarmidRangeExpansionTick2000].
+At present the species is considered absent from Tasmania and Victoria, however an invasive population has established on the Yorke Peninsula in South Australia [@mcdiarmidRangeExpansionTick2000].
 
-It is interesting that the distribution map (Figure \@ref(fig:F2atrigmapsubp)) of *Am. triguttatum* has not changed much since that drawn by @robertsStatusMorphologicallyDivergent1962.
+It is interesting that the distribution map (Figure \@ref(fig:F2atrigmapsubp)) of *Am. triguttatum* has changed minimally since that drawn by @robertsStatusMorphologicallyDivergent1962.
 It further enforces Roberts' early hypothesis that these disjunct populations are possibly distinct species.
 However, the authors note that despite our inspection of many thousands of *Am. triguttatum* specimens in the present study, no single morphological feature was identified that can exclusively and reliably delimit the sub-species. 
-This findings was outlined in the study by @robertsStatusMorphologicallyDivergent1962 and remain unchanged today.
+These findings was outlined in the study by @robertsStatusMorphologicallyDivergent1962 and remain unchanged today.
 
 Curation of records for *Ix. holocyclus* identified the species present along the east coast of Australia (Figure \@ref(fig:F2mapixhol)).
 It was identified along the coastline of Queensland, New South Wales and Victoria.
 *Ixodes tasmani* was identified in all states and territories except the Northern Territory (Figure \@ref(fig:F2mapixtas)).
-Records of the species in Western Australia were mainly confined to the south-west corner and the majority of records for this location were sourced from published articles and grey literature as opposed to museum collection records.
+Records of the species in Western Australia were mainly confined to the Southwest corner and most records for this location were sourced from published articles and grey literature as opposed to museum collection records.
 
 
 <!--
@@ -556,13 +554,9 @@ A cross-sectional study of hard ticks (acari: ixodidae) on horse farms to assess
 
 <!--\begin{landscape}-->
 
-\begin{landscape}
-
 ```{r F2mapall, out.width='95%', out.align = 'left',fig.scap = "Map of tick species present in Australia.", fig.cap = "Occurrence map of all known 74 species of ticks (Acari: Ixodida) present in Australia using record curated data.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch2-mapallticks.png")
 ```
-
-\end{landscape}
 
 <!--\end{landscape}-->
 
@@ -587,17 +581,17 @@ knitr::include_graphics("figures/ms-figs/Ch2-map-ixtas.png")
 
 #### Host records for *Amblyomma triguttatum*
 
-A review of host records is available in table \@ref(tab:T2atrig), and the majority of hosts identified were mammals. 
+A review of host records is available in table \@ref(tab:T2atrig), and identified the majority were from mammalian hosts. 
 Given its wide distribution among the mainland there are still many gaps in ecology and life history of *Am. triguttatum*.
 In comparison, similar tick species with a wide distribution in the northern hemisphere (e.g. *Ix. ricinus* and *Ix. scapularis*) have been extensively studied [@mihalcaRoleRodentsEcology2013;@tietjenComparativeEvaluationNorthern2020].
 
 A recognised issue in distribution studies more broadly is the identification of areas that truly represent absence, as opposed to a lack of investigation.
 *Amblyomma triguttatum* is considered an exophilic tick and can be classified as a 'hunter species'. 
-Observations by the authors note that this species can be found readily in the environment where there is human activity. 
-In addition *Am. triguttatum* is a relatively large tick with unfed adults reaching 3--5 mm in size [@robertsStatusMorphologicallyDivergent1962] and is readily identified on hosts. 
+Observations by the authors note that species can be found readily in the environment where there is human activity. 
+In addition, *Am. triguttatum* is a relatively large tick with unfed adults reaching 3--5 mm in size [@robertsStatusMorphologicallyDivergent1962] and is readily identified on hosts. 
 With these factors in mind the authors consider that a lack of *Am. triguttatum* identified is likely to be a true indicator of its absence, or at least of a small tick population size. 
-We note that in arid areas flora and fauna studies persist and these have been good sources of records based on museum data obtained in the present study. 
-Therefore until additional data is made available there is strong support that *Am. triguttatum* persists in disjunct populations throughout Australia.
+We note that in arid areas where flora and fauna studies persist, these have been good sources of records based on museum data obtained in the present study. 
+Therefore, until additional data is made available there is strong support that *Am. triguttatum* persists in disjunct populations throughout Australia.
 
 @waudbyHostsExoticOrnate2007 listed the domestic cat as a host and included a reference to @robertsAustralianTicks1970, however after reviewing the suite of Roberts' tick publications, we have not been able to identify such a record. 
 We note however that a host record from a cat was included in additional data obtained by @waudbyHostsExoticOrnate2007.
@@ -621,23 +615,24 @@ ch2_hosts <- ch2_hosts[,1:3]
 ```{r T2atrig, echo=FALSE}
 library(kableExtra)
 opts <- options(knitr.kable.NA = "")
-knitr::kable(ch2_hosts, longtable = T, booktabs = TRUE, linesep = "", caption = "List of host records for \\textit{Amblyomma triguttatum}. A denotes laboratory feeding. Abbreviations: Australian National Insect Collection (ANIC); Western Australian Museum (WAM). Where host records were ambiguous (e.g. kangaroo), taxa was assigned to the most commonly recorded species in the locality. Records from laboratory animals denoted by (*).", caption.short = "Host records for the ornate kangaroo tick.") %>%
+knitr::kable(ch2_hosts, longtable = T, booktabs = TRUE, linesep = "", caption = "List of host records for \\textit{Amblyomma triguttatum}. Abbreviations: Australian National Insect Collection (ANIC); Western Australian Museum (WAM). Where host records were ambiguous (e.g., kangaroo), taxa was assigned to the most commonly recorded species in the locality.", caption.short = "Host records for the ornate kangaroo tick.") %>%
   kable_styling(font_size = 8.5) %>%
   column_spec(1:2, width = "3cm") %>%
   column_spec(3, width = "6cm") %>%
   row_spec(c(1, 5, 7, 9, 34, 36, 39, 41, 44, 46, 52, 55), bold = T)  %>%
   column_spec(c(2), italic = T) %>%
-  kable_styling(latex_options = c("hold_position"))
+  kable_styling(latex_options = c("hold_position")) %>% 
+  footnote(alphabet = c("Host record reported from laboratory animals."))
 ```
 
 \newpage
 
 #### Molecular barcodes and Systematics
 
-Molecular systematics has become the dominant method of species identification in many disciplines including protozoology [@maiaCommentsSystematicRevision2016;@maslovRecentAdvancesTrypanosomatid2019] and microbiology [@margosControversiesBacterialTaxonomy2019].
-However for ectoparasites, including ticks, morphological tools remain the gold-standard. 
+Molecular systematics has become the dominant method of species identification in disciplines including protozoology [@maiaCommentsSystematicRevision2016;@maslovRecentAdvancesTrypanosomatid2019] and microbiology [@margosControversiesBacterialTaxonomy2019].
+However, for ectoparasites, including ticks, morphological tools remain the gold standard. 
 Therefore, the splitting of species based solely on molecular information without support of morphological features is unlikely to be useful to the field of tick taxonomy. 
-However, from an evolutionary perspective, the molecular information generated here will assist in phylogenetic reconstructions and may assist in refining species boundaries.
+However, from an evolutionary perspective the molecular information generated here will assist in phylogenetic reconstructions and may assist in refining species boundaries.
 
 New molecular barcodes generated in the present study are presented in Table \@ref(tab:T2MLSTseqs) which include GenBank accession numbers. 
 An approach to tick taxonomy incorporating both traditional and new technologies is needed and consideration needs to be given to the broader impact of species nomenclature. 
@@ -672,9 +667,9 @@ This included immature life stages where multiple specimens were pooled at the D
 Pooling of ticks (especially larvae and nymph stages) is implemented in many molecular studies of tick-borne pathogen or microbial characterisation to increase the throughput of samples [@estrada-penaPitfallsTickTickBorne2021].
 The ability to deliminate species with a short sequence length (~ 370 bp) make this high-throughput assay easily transferable to many short read sequence platforms. 
 The same extracted DNA or RNA used for pathogen detection and be used in the assay presented here to accurately determine species. 
-In particular, it is suited to the identification of immature tick life stages that are frequently ambiguous at a morphological level or where particular morphological features are missing which prevent species-level identification.
-The ability of the 12S rDNA locus as a barocding gene for ticks has been identified in similar studies [@lvAssessmentFourDNA2014;@kandumaMitochondrialNuclearMultilocus2019], and is shown by the level of phylogenetic separation among species shown in Figure \@ref(fig:F2NGStree) (see list of accession numbers and species identification in Table \@ref(tab:T2genbank)).
-For example, morphologically similar species such as *Ix. holocyclus* (OM830732) and *Ix. cornuatus* (OM830728) can be distinguished easily as demonstrated in Figure \@ref(fig:F2NGStree) (see also Table \@ref(tab:T2genbank)).
+In particular, it is suited to the identification of immature tick life stages whose identity is ambiguous or where certain morphological features are missing or damaged, which prevent species-level identification.
+An ability of the 12S rDNA locus as a barcoding gene for ticks has been identified in similar studies [@lvAssessmentFourDNA2014;@kandumaMitochondrialNuclearMultilocus2019], and is shown by the level of phylogenetic separation among species shown in Figure \@ref(fig:F2NGStree) (see list of accession numbers and species identification in Table \@ref(tab:T2genbank)).
+For example morphologically similar species, such as *Ix. holocyclus* (OM830732) and *Ix. cornuatus* (OM830728), can be distinguished easily as demonstrated in Figure \@ref(fig:F2NGStree) (see also Table \@ref(tab:T2genbank)).
 
 ```{r F2NGStree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of tick species from wildlife.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of Ixodida ZOTUs based on a 377 bp alignment of the 12S rRNA locus. Substitution model K3Pu +F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 indicated by shaded circles. Number of substitutions per nucleotide position is represented by the scale bar. Sequences generated in the present study represented in blue (ZOTUs), and red (reference sequences).", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch2-12SNGStree.png")
@@ -717,13 +712,13 @@ Estimating sample sizes for DNA barcoding [@zhangEstimatingSampleSizes2010].
 BMC Research Notes considers scientifically valid manuscripts irrespective of the interest of a study or its likely impact. In order to ensure submissions to BMC Research Notes are of maximum benefit to the research community, authors should clearly state the limitations of their work.
 -->
 
-The nature of using occurrence records to map distribution has a number of limitations [@fourcadeComparingSpeciesDistributions2016]. 
+The nature of using occurrence records to map distribution does have several limitations [@fourcadeComparingSpeciesDistributions2016]. 
 However, as ticks are obligate blood feeders which require a host, the nature of their life history makes occurrence data more suitable to map distributions. 
 In particular, where tick species are aggressive human biting species, such as *Am. triguttatum* [@gravesTickborneInfectiousDiseases2017], the absence of records is a useful indicator that the species is likely absent from that area. 
 Alternatively, low levels of human interactions in areas where the tick is present in the environment may also be responsible for absence of records. 
 A comprehensive search strategy was used and attempts were made to use a diverse range of sources (museum collections, public databases, grey literature etc.). 
 Therefore, we accept that it is possible that our occurrence maps may not represent the complete geographical distribution of all 74 tick species present in Australia. 
-The distribution maps produced included a large portion of data based on historical identifications. 
+Tick species distribution maps included a large portion of data based on historical identifications. 
 While every effort was made to ensure such records were from trusted sources, such as those identified by a suitability qualified person or collections from museum records, it is not possible to verify every single observation. 
 Where records outside of historic distributions or unusually sporadic data points were observed, efforts were made to verify specimen identification.
 
@@ -753,6 +748,6 @@ With rapid urbanization and the effects of climate change, the interface between
 Despite the well documented history of the discovery of Lyme disease in North America during the 1970's and 1980's [@ostfeldFunctionBiodiversityEcology2000], Australia continues to trail behind the rest of world with respect to knowledge about tick-borne diseases. 
 Without fundamental research into the natural history, ecology and molecular systematics of Australian ticks, the country is ill-equipped to understand the dynamics of potential tick-borne infections.
 
-It is hoped that the data presented from this research will provide the necessary foundations to further explore Australian tick systematics. 
+It is expected that the data presented from this research will provide the necessary foundations to further explore Australian tick systematics. 
 It is important that previous records are met with a healthy dose of criticism and work can begin towards a clearer understanding on Australian ticks.
 
