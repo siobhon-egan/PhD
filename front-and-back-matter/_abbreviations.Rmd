@@ -13,6 +13,7 @@
 \item[gDNA] Genomic DNA
 \item[gGAPDH] Glycosomal glyceraldehyde phosphate dehydrogenase gene
 \item[GTR] General time reversible
+\item[HTS] High-throughput sequencing
 \item[Hz] Hertz
 \item[ITS2] Internal transcribed spacer 2 region
 \item[LB] Lyme Borreliosis
@@ -27,7 +28,6 @@
 \item[mt] Mitochondrial gene
 \item[n] Samlpe number
 \item[NCBI] National Centre for Biotechnology Information
-\item[NGS] Next Generation Sequencing
 \item[NJ] Neighbour joining 
 \item[NSW] New South Wales
 \item[NT] Northern Territory

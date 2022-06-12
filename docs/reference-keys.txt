@@ -65,7 +65,7 @@ litrev
 ticks
 tick-systematics
 tick-biology-and-ecology
-tick-borne-diseases
+tick-borne-diseases-in-humans
 worldwide-summary
 anaplasmataceae
 borrelia
@@ -74,7 +74,7 @@ rickettsia
 viruses
 eukaryotes
 infectious-human-tick-borne-pathogens-in-australia
-anaplamataceae
+anaplasmataceae-1
 borrelia-1
 coxiella-1
 rickettsia-1
@@ -113,10 +113,10 @@ bioinformatics
 target-pcrs
 phylogeny
 results
-next-generation-sequencing
-bacteria-16s-metabarcoding
+high-throughput-sequencing
+bacteria-16s-rrna-metabarcoding
 taxa-of-interest
-anaplasmataceae-1
+anaplasmataceae-2
 midichloria
 coxiellaceae
 rickettsiaceae
@@ -125,7 +125,7 @@ bartonella
 francisella-and-mycoplasma
 discussion
 taxa-of-interest-1
-anaplasmataceae-2
+anaplasmataceae-3
 midichloria-1
 coxiellaceae-1
 rickettsiaceae-1
@@ -184,8 +184,7 @@ synthesis-of-key-findings-in-thesis-chapters
 a-one-health-approach
 australian-programs
 value-of-notifiable-disease-inclusion
-wildlife-at-urban-interfaces
-unique-microbes-in-australia-pathogen-evolution
+unique-microbes-at-the-urban-wildlife-interface-in-australia
 limitations-1
 future-direction-and-recommendations
 new-technologies
