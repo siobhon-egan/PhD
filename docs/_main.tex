@@ -4316,6 +4316,7 @@ There is growing evidence that organisms previously not considered of clinical i
 Suspected infection with \emph{Rickettsia rickettsii} (Rocky Mountain spotted fever) in humans was later identified as \emph{Rickettsia amblyommi} infection \autocite{appersonTickBorneDiseasesNorth2008}.
 Since the description of the genus \emph{Neoehrlichia}, reports of human infection have grown with a number of novel genotypes identified \autocite{wassCultivationCausativeAgent2019}.
 Closely related to \hl{\emph{Coxiella burnetii}}, the bacterium `\emph{Candidatus} Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite \autocite{angelakisCandidatusCoxiellaMassiliensis2016}.
+\hl{While chapter \ref{wildlife-bacteria} describes the identification of a novel member of the rodent \emph{Borrelia}-clade, it is important to note that currently there is no evidence to suggest it can be transmitted to humans or cause disease}.
 
 It is important that preconceived ideas of pathogens or disease aetiologies are continually challenged.
 A recent large-scale retrospective study on human blood samples in the United States which employed the bacterial profiling methods used in Chapter \ref{wildlife-bacteria}, identified a number of previously unrecognised tick-associated bacteria in clinical samples including \emph{Anaplasma}, \emph{Borrelia}, and \emph{Rickettsia} species \autocite{kingryTargetedMetagenomicsClinical2020}.
@@ -5180,10 +5181,10 @@ Species & Isolate & Host Scientific & Location (a) & 18S rRNA & gGAPDH\\
 %%%%% REFERENCES
 \setlength{\baselineskip}{0pt} % JEM: Single-space References
 \setquotestyle{english}
-\DeclareFieldFormat[inbook,thesis,article]{title}{\mkbibemph{#1}\addperiod} % italic title with period
+\DeclareFieldFormat[inbook,thesis,article]{title}{{#1}\addperiod} % italic title with period
 \renewbibmacro{in:}{} % remove the word in before journal title
 \renewbibmacro{en.}{} % remove the word in before journal title
-\DeclareFieldFormat{journaltitle}{\textbf{#1}\addcomma} % bold journal title with comma
+\DeclareFieldFormat{journaltitle}{\mkbibemph{#1}\addcomma} % bold journal title with comma
 \DeclareFieldFormat[article]{volume}{{#1}\addcolon\space}
 \printbibliography[heading=bibintoc,title={\bibtitle}]
 

@@ -473,10 +473,10 @@ $body$
 $if(use-biblatex)$
 \setlength{\baselineskip}{0pt} % JEM: Single-space References
 \setquotestyle{english}
-\DeclareFieldFormat[inbook,thesis,article]{title}{\mkbibemph{#1}\addperiod} % italic title with period
+\DeclareFieldFormat[inbook,thesis,article]{title}{{#1}\addperiod} % italic title with period
 \renewbibmacro{in:}{} % remove the word in before journal title
 \renewbibmacro{en.}{} % remove the word in before journal title
-\DeclareFieldFormat{journaltitle}{\textbf{#1}\addcomma} % bold journal title with comma
+\DeclareFieldFormat{journaltitle}{\mkbibemph{#1}\addcomma} % bold journal title with comma
 \DeclareFieldFormat[article]{volume}{{#1}\addcolon\space}
 \printbibliography[heading=bibintoc,title={\bibtitle}]
 $endif$

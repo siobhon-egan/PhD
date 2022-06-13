@@ -234,6 +234,7 @@ There is growing evidence that organisms previously not considered of clinical i
 Suspected infection with *Rickettsia rickettsii* (Rocky Mountain spotted fever) in humans was later identified as *Rickettsia amblyommi* infection [@appersonTickBorneDiseasesNorth2008]. 
 Since the description of the genus *Neoehrlichia*, reports of human infection have grown with a number of novel genotypes identified [@wassCultivationCausativeAgent2019].
 Closely related to [*Coxiella burnetii*]{.correction}, the bacterium '*Candidatus* Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite [@angelakisCandidatusCoxiellaMassiliensis2016].
+[While chapter \@ref(wildlife-bacteria) describes the identification of a novel member of the rodent *Borrelia*-clade, it is important to note that currently there is no evidence to suggest it can be transmitted to humans or cause disease]{.correction}.  
 
 It is important that preconceived ideas of pathogens or disease aetiologies are continually challenged.
 A recent large-scale retrospective study on human blood samples in the United States which employed the bacterial profiling methods used in Chapter \@ref(wildlife-bacteria), identified a number of previously unrecognised tick-associated bacteria in clinical samples including *Anaplasma*, *Borrelia*, and *Rickettsia* species [@kingryTargetedMetagenomicsClinical2020].
