@@ -275,8 +275,8 @@ For a subset of samples where microbes of interest were identified after initial
 Primers 338F and 806R were used to target an \~450 bp product. 
 Reactions and thermal cycling conditions were carried out as per the 27F-Y / 338R assay, except for an increased concentration of MgCl~2~ to 2.0 mM.
 
-To confirm morphological identification tick gDNA underwent amplicon metabarcoding approach targeting the 12S rDNA gene.
-Pan-Ixodida primers T1B/T2A [@beatiAnalysisSystematicRelationships2001] were used to amplify an ~370 bp product of the 12S rDNA gene
+To confirm morphological identification tick gDNA underwent amplicon metabarcoding approach targeting the mitochondrial 12S rRNA gene.
+Pan-Ixodida primers T1B/T2A [@beatiAnalysisSystematicRelationships2001] were used to amplify an ~370 bp product of the *12S rRNA*
 Reactions were carried out as per the bacteria 27F-Y / 338R assay, except only 1 $\mu$M of tick gDNA template was added.
 Thermal cycling conditions were as follows; 95$^\circ$C for 5 mins, followed by 5 cycles of 95$^\circ$C for 15 secs, 51$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 25 cycles of 95$^\circ$C for 30 secs, 53$^\circ$C for 30 secs, 72$^\circ$C for 1 min; and a final extension of 72$^\circ$C for 5 mins. 
 
@@ -316,7 +316,7 @@ Bacterial data taxonomy was assigned to ASVs using the q2‐feature‐classifier
 Taxonomic assignments were confirmed using BLAST analysis (BLASTN 2.11.0+ [@zhangGreedyAlgorithmAligning2000; @morgulisDatabaseIndexingProduction2008]) against the NCBI nucleotide collection (nt) database (accessed January 2021). 
 Taxonomic lineage was then retrieved from NCBI taxonomy database using TaxonKit [@weissHostReproductiveCycle2021] and adjusted to the lowest common ancestor based on percentage identity and e-value score.
 
-Tick *12S rDNA* metabarcoding sequences generated were analysed USEARCH v11 [@edgarSearchClusteringOrders2010] pipeline.
+Tick *12S rRNA* metabarcoding sequences generated were analysed USEARCH v11 [@edgarSearchClusteringOrders2010] pipeline.
 Briefly paired end reads were merged and sequences matching forward and reverse primers were retrieved (max number of mismatches = 2). 
 Sequences were then quality filtered and singletons were removed. 
 The unoise3 [@edgarUNOISE2ImprovedErrorcorrection2016] algorithm was used to perform denoising (error-correction) and generate zero-radius taxonomic units (zOTUs) equivalent to amplicon sequence variants (ASVs). 
@@ -370,9 +370,9 @@ The optimal evolutionary model was selected using ModelFinder [@kalyaanamoorthyM
 The hosts species sampled in the present study were the black rat (*Rattus rattus*), brown antechinus (*Antechinus stuartii*), brush-tailed possum (*Trichosurus vulpecula*), bush rat (*Rattus fuscipes*), chuditch (*Dasyurus geoffroii*), Rusa deer (*Rusa timorensis*), long-nosed bandicoot (*Perameles nasuta*), quenda (*Isoodon fusciventer*), rabbit (*Oryctolagus cuniculus*) and swamp rat (*Rattus lutreolus*) (Table \@ref(tab:T3hosts)).
 Ticks identified from wildlife hosts were *Am. triguttatum*, *Ix. antechini*, *Ix. australiensis*, *Ix. holocyclus*, *Ix. tasmani* and *Ix. trichosuri*. 
 Molecular screening was performed on 257 ticks pooled into 205 gDNA extracts. 
-Metabarcoding of ticks at the 12S rRNA gene confirmed morphological analysis and accurate differentiation of morphologically similar species. 
+Metabarcoding of ticks at the mitochondrial 12S rRNA gene confirmed morphological analysis and accurate differentiation of morphologically similar species. 
 These results identified that mixed tick species were detected in five gDNA pools and in all cases, these were larvae of *Ix. holocyclus* and *Ix. trichosuri* (Table \@ref(tab:T3ticks)). 
-A subset of representative 12S rRNA tick zOTU sequences were deposited under accession numbers MW665133--MW665150.
+A subset of representative *12S rRNA* tick zOTU sequences were deposited under accession numbers MW665133--MW665150.
 
 ```{r include=FALSE}
 library(readxl)
@@ -682,7 +682,7 @@ Therefore, the absence of spotted fever or typhus group *Rickettsia* from mammal
 Recent studies utilising qPCR have reported *Rickettsia* in 15.4% (23/149) *Ix. holocyclus* from NSW [@gravesIxodesHolocyclusTicktransmitted2016] and 6.4% (13/203) ticks collected from wildlife in north-east Queensland [@hussain-yusufScreeningRickettsiaCoxiella2020]. 
 Additional reports also recognise the presence of spotted fever group *Rickettsia* in Australian ticks [@cookScrubTyphusOther1967;@campbellRickettsiosesAustraliaIsolation1974;@gravesRickettsiosesAustralia2006].
 
-The lack of *Rickettsia* identified in ticks may be due to the highly abundant endosymbionts *Midichloria* or Coxiellaceae in *Ix. holocyclus* and *Ix. tasmani* respectively. 
+The lack of *Rickettsia* identified in ticks may be due to the highly abundant endosymbionts *Midichloria* or *Coxiellaceae* in *Ix. holocyclus* and *Ix. tasmani* respectively. 
 While there are limited comparable studies that have used bacterial metabarcoding on wildlife blood samples, previous research has shown that molecular methods successfully identify *Rickettsia* in reservoir hosts [@ndeerehMolecularSurveillanceSpotted2017;@martelloBorreliaBurgdorferiSensu2019;@chaorattanakaweeAmpliconBasedNextGeneration2021]. Flinders Island Spotted Fever, caused by *R. honei* is associated with reptiles and the southern reptile tick *Bo. hydrosauri* [@stenosAponommaHydrosauriReptileassociated2003]. 
 A closely related strain, named *R. honei marmionii*, has been identified from various regions in Australia and is associated with *Haemaphysalis novaeguineae* [@laneEvidenceSpottedFeverlike2005a;@unsworthFlindersIslandSpotted2007]. 
 Interestingly no *Haemaphysalis* ticks were identified from hosts in the present study.

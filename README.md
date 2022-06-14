@@ -2,9 +2,13 @@
 
 Siobhon Egan, 2022 PhD Thesis.
 
+[Online Book](https://siobhonlegan.com/PhD/)
+
 Customised for Murdoch University from the template [oxforddown]https://github.com/ulyngs/oxforddown).
 Compiled using [bookdown](https://bookdown.org/), [RMarkdown](https://bookdown.org/yihui/rmarkdown/) and [RStudio](https://www.rstudio.com/).
 
+
+[onlinebook](https://siobhonlegan.com/PhD/)
 
 <!--# NOTE Major change: To build the thesis, you now simply knit **index.Rmd** - see details below.
 

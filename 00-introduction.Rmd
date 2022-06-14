@@ -73,10 +73,12 @@ All animal samples undertaken as part of this project was approved by appropriat
 ## Funding and support {-}
 
 - Australian Government Research Training Program (RTP) Course fees and Stipend Scholarship.
+- Australian Research Council (LP160100200),
 - Ecological society of Australia - Holsworth Research Endowment 2018--2020.
 - Australian Society for Parasitology - Student Travel Grant 2018 and 2019.
 - 5th National Postgraduate Training Workshop in Systematics from Society of Australian Systematic Biologists, Australian Biological Resources Study (ABRS), The University of Adelaide.
 - Concepts in Parasitology, Australian Society for Parasitology (place funded by Bayer Australia).
+
 
 ## Attribution Statements {-}
 

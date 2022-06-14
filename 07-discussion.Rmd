@@ -100,7 +100,7 @@ Possible vectors of the rodent associated *Borrelia* clade may include fleas, ch
 [The unique *Borrelia* identified from rodents raises a number of questions, given that it is widespread in the northern hemisphere. Firstly, the large geographical distribution of this clade is striking. Presently, the clade appears to be rodent-specific, and the vector and pathogenicity are not known]{.correction}.
 
 The long-nosed bandicoot and black rat had similarities with regard to their tick fauna, and bacterial and haemoprotozoal taxa of interest. 
-Results in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa) identified *Ix. holocyclus*, *Ix. tasmani* and *Ix. trichosuri* ticks on both hosts.
+Results in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa) identified *Ix. holocyclus*, *Ixodes tasmani* and *Ixodes trichosuri* ticks on both hosts.
 In Chapter \@ref(wildlife-bacteria) *Neoehrlichia* spp. were identified from both hosts and Chapter \@ref(wildlife-haemoprotozoa) identified overlap with species of *Theileria* and *Trypanosoma*. 
 Overall, the arboreal hosts, possums and chuditch, exhibited differences in the microbes and 'taxa of interest' identified, compared to the non-arboreal hosts.
 The separation of hosts by ecological niche (i.e. arboreal vs non-arboreal) is an interesting finding.
@@ -227,14 +227,17 @@ This would be particularly useful in wildlife disease, because at present descri
 
 ### "New" pathogen discovery
 
-[In Australia there have been many past studied conducted with respect to understanding tick-associated illness in humans with specific reference to identifying the agent of Lyme borreliosis, *Borrelia burgdorferi* sensu lato]{.correction}.
+[In Australia there have been many past studied conducted with respect to understanding tick-associated illness in humans with specific reference to identifying the agent of Lyme borreliosis, *B. burgdorferi* sensu lato]{.correction}.
 This was a period of focused searching for a very specific group of bacterium, the collective results of which did not provide any convincing evidence for its presence in Australian ticks [@chaladaThereLymelikeDisease2016]. 
 It is important that future researchers keep an open mind in terms of the definition of a "pathogen". 
 There is growing evidence that organisms previously not considered of clinical importance can cause disease.
-Suspected infection with *Rickettsia rickettsii* (Rocky Mountain spotted fever) in humans was later identified as *Rickettsia amblyommi* infection [@appersonTickBorneDiseasesNorth2008]. 
+Suspected infection with *Rickettsia rickettsii* (Rocky Mountain spotted fever) in humans was later identified as *Rickettsia amblyommatis* infection [@appersonTickBorneDiseasesNorth2008]. 
+[*Francisella* identified in Chapter \@ref(wildlife-bacteria) from ticks were only distantly related to *Francisella* sequences that were identified from a patient in the same city (Perth, Western Australia) [@aravena-romanFirstCaseFrancisella2015]. However, further investigation, including full genome characterisation, would be benefit public health and may assist identify potential causes of human infections.]{.correction}
+
 Since the description of the genus *Neoehrlichia*, reports of human infection have grown with a number of novel genotypes identified [@wassCultivationCausativeAgent2019].
-Closely related to [*Coxiella burnetii*]{.correction}, the bacterium '*Candidatus* Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite [@angelakisCandidatusCoxiellaMassiliensis2016].
-[While chapter \@ref(wildlife-bacteria) describes the identification of a novel member of the rodent *Borrelia*-clade, it is important to note that currently there is no evidence to suggest it can be transmitted to humans or cause disease]{.correction}.  
+Closely related to [*C. burnetii*]{.correction}, the bacterium '*Candidatus* Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite [@angelakisCandidatusCoxiellaMassiliensis2016].
+[While Chapter \@ref(wildlife-bacteria) describes the identification of a novel member of the rodent *Borrelia*-clade, it is important to note that currently there is no evidence to suggest it can be transmitted to humans or cause disease]{.correction}.  
+
 
 It is important that preconceived ideas of pathogens or disease aetiologies are continually challenged.
 A recent large-scale retrospective study on human blood samples in the United States which employed the bacterial profiling methods used in Chapter \@ref(wildlife-bacteria), identified a number of previously unrecognised tick-associated bacteria in clinical samples including *Anaplasma*, *Borrelia*, and *Rickettsia* species [@kingryTargetedMetagenomicsClinical2020].
@@ -251,7 +254,7 @@ However, the value of these efforts is limited by the lack of underlying biologi
 In many cases, making assumptions based on northern hemisphere data is appropriate.
 However due to Australia's unique landscape and fauna, much of this underlying data remains unknown, as shown by the number of novel microbes identified in the present thesis.
 
-For example, the lack of detection of *Rickettsia australis* in Chapter \@ref(wildlife-bacteria) raises questions about the life history of this pathogen. 
+For example, the lack of detection of *R. australis* in Chapter \@ref(wildlife-bacteria) raises questions about the life history of this pathogen. 
 Despite sampling the recognised vectors and vertebrate reservoirs [@campbellRickettsiosesAustraliaIsolation1974;@sextonSpottedFeverGroup1991] in an area endemic for Queensland tick typhus, the aetiological agent was not detected.
 This result may be due to sampling bias however it may also indicate that there are additional vertebrate reservoirs involved in the life cycle of this bacterium. 
 
@@ -264,14 +267,14 @@ The COVID-19 pandemic has brought to light, once again, the threat that zoonotic
 While pandemics are defined as the worldwide spread of a disease^[https://www.who.int/csr/disease/swineflu/frequently_asked_questions/pandemic/en/], it serves as an important reminder of the speed with which infectious diseases can move across country boarders.
 It highlights that the job of 'disease surveillance' is never finished, and requires continuous and rigorous scientific research. 
 These lessons are directly applicable in the context of tick-borne disease in Australia. 
-For many decades Australian research was largely focused on the very specific dynamics of *Borrelia burgdorferi* sensu lato and *Ix. holocyclus* [@chaladaThereLymelikeDisease2016]. 
+For many decades Australian research was largely focused on the very specific dynamics of *B. burgdorferi* sensu lato and *Ix. holocyclus* [@chaladaThereLymelikeDisease2016]. 
 In the last ten years a more holistic approach to tick-associated microbes has uncovered numerous novel microbes, yet their significance with respect to human illness, if any, is unknown. 
 While this research is still underway, the lessons of COVID-19, and emergence of novel microbes cannot be forgotten.
 The effect of infectious diseases spread far beyond individual health, impacting financial, social and cultural aspects of human life. 
 
 The COVID-19 pandemic has shown that important decisions about human and animal health must be based on scientific fact and clear evidence and this includes open and transparent data. 
 The uncertain origin of the SARS-CoV-2 virus highlights the value of wildlife surveillance and documentation of the complete suite of microbes from wildlife [@burkiOriginSARSCoV22020], even if the significance of such microbes are not recognised at the time of discovery. 
-Work conducted in the present thesis did not identify any definitive human pathogens such as those known in the northern-hemisphere (e.g. *Borrelia burgdorferi* sensu lato, causative agent of Lyme borreliosis).
+Work conducted in the present thesis did not identify any definitive human pathogens such as those known in the northern-hemisphere (e.g. *B. burgdorferi* sensu lato, causative agent of Lyme borreliosis).
 As the focus for this work was on wildlife reservoirs, no conclusions can be made about the ability for the microbes identified in this thesis to be transmitted or cause disease in people.
 However, it is hoped that data collected here will provide an important database and microbe catalogue to support future studies on the health of both humans and animals. 
 Pathogen genomics is becoming more common place in public health agencies [@armstrongPathogenGenomicsPublic2019].
@@ -303,7 +306,7 @@ The molecular barcoding data gathered in Chapter \@ref(austicks) will also be us
 This sequence data has been made publicly available on sequence repositories.
 The data generated in the present thesis has already been supported and cited in recent literature. 
 For example, the polyphyly described within the *Herpetosoma* subgenus in Chapter \@ref(black-rat) has been cited in reviews of the phylum Euglenozoa [@kostygovEuglenozoaTaxonomyDiversity2021]. 
-Chapter \@ref(tas-devil) proposed that *Tr. cyclops*-like sequences identified from the Tasmanian devil should be given subspecies or genotype status, based on comparative sequence similarity thresholds at the gGAPDH locus.
+Chapter \@ref(tas-devil) proposed that *Trypanosoma cyclops*-like sequences identified from the Tasmanian devil should be given subspecies or genotype status, based on comparative sequence similarity thresholds at the gGAPDH locus.
 A recent study (which included cultivation and molecular analysis), subsequently identified *Tr. cyclops* from leeches in Queensland, supporting the findings in Chapter \@ref(tas-devil) and the subspecies *Tr. cyclops australiensis* was proposed by the authors [@ellisNewSubspeciesTrypanosoma2021]. 
 It is envisaged that future studies will continue to find the data generated in the present thesis a useful resource.
 

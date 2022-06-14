@@ -125,7 +125,7 @@ This chapter is written as a "data resource" to synthesize information about Aus
 Curation of records has been performed using data collected from a diverse range of sources. 
 Updated occurrence maps for three highly prevalent species; *Amblyomma triguttatum*, *Ixodes holocyclus* and *Ixodes tasmani* are presented along with an overall map of all 74 tick species present in Australia. This chapter also presents new genetic information for Australian ticks. 
 Molecular "barcodes" are presented for target mitochondrial loci, providing valuable genetic references for species identification. In addition, a [high-throughput sequencing]{.correction} assay is also described using pan-Ixodida primers. 
-This provides a high-throughput method to identify ticks by sequencing a ~370 bp product of the 12S rDNA gene on the Illumina MiSeq. 
+This provides a high-throughput method to identify ticks by sequencing a ~370 bp product of the mitochondrial 12S rRNA gene on the Illumina MiSeq. 
 This chapter contains information gathered from a range of resources. 
 It is presented in the context of a data centric chapter, and will be submitted to journal BMC Research Notes in the format for a 'Research Note'.
 
@@ -150,9 +150,9 @@ This project was also part supported by The Holsworth Wildlife Research Endowmen
 **Data availability:** 
 
 The datasets generated during the current study have been made available in the public repositories and the code used in analysis is available on GitHub.
-Illumina MiSeq data generated from the metabarcoding of ticks targeting the 12S rRNA gene has been deposited in the European nucleotide archive under the project accession number PRJEB46056 (ERP130244), which includes the following sample accession numbers: ERS6635126--ERS6635348 (BioSample # SAMEA8952359--SAMEA8952582).
+Illumina MiSeq data generated from the metabarcoding of ticks targeting the mitochondrial 12S rRNA gene has been deposited in the European nucleotide archive under the project accession number PRJEB46056 (ERP130244), which includes the following sample accession numbers: ERS6635126--ERS6635348 (BioSample # SAMEA8952359--SAMEA8952582).
 Nucleotide data for a subset of zOTUs generated are available for the molecular identification of ticks and has been uploaded to GenBank under accession numbers MW665133--MW665150.
-Nucleotide data for multilocus sequence typing (MLST) barcode sequence data produced by Sanger sequencing has been deposited in GenBank under the following accession numbers: OM791407--OM791437 (*COI*), OM756760--OM756765 (*18S rRNA*), OM830716--OM830764 (*12S rDNA*), OM830384--OM830429 (*16S rRNA*).
+Nucleotide data for multilocus sequence typing (MLST) barcode sequence data produced by Sanger sequencing has been deposited in GenBank under the following accession numbers: OM791407--OM791437 (*COI*), OM756760--OM756765 (*18S rRNA*), OM830716--OM830764 (*12S rRNA*), OM830384--OM830429 (*16S rRNA*).
 Code used for analysis and supporting data files used for bioinformatics and statistical analysis are available on GitHub repository [github.com/siobhon-egan/wildlife-ticks](https://github.com/siobhon-egan/wildlife-ticks) and the [project website](https://siobhonlegan.com/wildlife-ticks/).
 
 \vspace{5mm}
@@ -190,7 +190,7 @@ Updated occurrence maps revealed that three widespread tick species *Amblyomma t
 The present study also provides a review of records including curation of those provided in public databases; a [companion website](https://siobhonlegan.com/wildlife-ticks/) also provides interactive maps of these records for readers to investigate. 
 In addition, new genetic data has been generated for mitochondrial loci from Australian ticks. 
 This information has been deposited in a public database (GenBank) and will assist in future efforts that seek to use molecular tools to confirm species identification. 
-The analysis of mitochondrial loci identified the 12S rDNA gene (~370 bp product) was particularly useful at delimitating species. 
+The analysis of mitochondrial loci identified the 12S rRNA gene (~370 bp product) was particularly useful at delimitating species. 
 As a result, a [high-throughput sequencing]{.correction} assay was developed for high-throughput species identification. 
 The curation of records and genetic data generated here provide new insights in Australian ticks.
 The findings reported here will be useful to shed new light for future studies on the ecology and systematics of ticks in Australia and be important in assessing public health significance of ticks as vectors for disease. 
@@ -342,13 +342,13 @@ In the case of ticks collected from wildlife, samples were collected as part of 
 The complete details of the methods is described in the \@ref(ch2supp).
 In brief, DNA was extracted from ticks and two molecular approaches were used: (i) multi-locus sequence typing (MSLT) assays with Sanger sequencing and (ii) development of a high-throughput assay to identify ticks.
 
-For the MLST assays, primers were used to amplify ticks at the following mitochondrial loci: *cytochrome c oxidase subunit I* (*COX1*) [@songPhylogeneticPhylogeographicRelationships2011], *12S rDNA* [@beatiAnalysisSystematicRelationships2001], *16S rDNA* [@lvDevelopmentDNABarcoding2014] (see Table \@ref(tab:T2primers)).
+For the MLST assays, primers were used to amplify ticks at the following mitochondrial loci: *cytochrome c oxidase subunit I* (*COX1*) [@songPhylogeneticPhylogeographicRelationships2011], *12S rRNA* [@beatiAnalysisSystematicRelationships2001], *16S rRNA* [@lvDevelopmentDNABarcoding2014] (see Table \@ref(tab:T2primers)).
 Purified PCR products were then subjected to Sanger sequencing in the forward and reverse direction.
 
-Following the results from the MLST approach, the ~370 bp product of the 12S rDNA gene was determined as providing optimal results for species delimitation. 
+Following the results from the MLST approach, the ~370 bp product of the 12S rRNA gene was determined as providing optimal results for species delimitation. 
 In addition, the short fragment size made it suitable to transfer the assay onto the Illumina MiSeq platform. 
 In brief, extracted tick DNA was used to build libraries following the 16S Metagenomic Sequencing Library Preparation (Illumina Part \# 15044223 Rev. B).
-The amplicon PCR was carried out using the 12S rDNA gene pan-Ixodida primers, T1B and T2A [@beatiAnalysisSystematicRelationships2001] (\~370 bp product) with Illumina MiSeq adapters (Table \@ref(tab:T2primers)). 
+The amplicon PCR was carried out using the 12S rRNA gene pan-Ixodida primers, T1B and T2A [@beatiAnalysisSystematicRelationships2001] (\~370 bp product) with Illumina MiSeq adapters (Table \@ref(tab:T2primers)). 
 Libraries were then constructed and sequenced on the Illumina MiSeq using v2 chemistry (2 x 250 paired end).
 
 #### Data analysis and bioinformatics
@@ -388,7 +388,7 @@ An interesting observation in the literature was the identification of the platy
 
 This review has provided a synthesis of tick-host records in Australia. 
 It is evident that some publications have reported a "new" host record, however review of extant museum collections or historic data has shown it had been previously recorded.
-For example, an incidence of *Ix. australiensis* biting a human was reported as a first record by @kwakFirstRecordsHuman2018, occurring in October 2017.
+For example, an incidence of *Ixodes australiensis* biting a human was reported as a first record by @kwakFirstRecordsHuman2018, occurring in October 2017.
 However, @rabyNewFociSpotted2016, reported the tick biting a person in May 2006.
 In addition, we note that *Ix. australiensis* wwas reported in close association with humans by @robertsAustralianTicks1970, however it was noted the tick was "crawling". An exhaustive review of all host records is not practical where the data is widely distributed in the literature; this serves to demonstrate the value of curated data, especially where it has the potential to be of public health significance.
 
@@ -473,7 +473,7 @@ Once records with missing data (i.e., no species level identification) were remo
 
 **Most prevalent species**
 
-The species with the highest number of observations were *Am. triguttatum* (n = 1,286), *Ix. tasmani* (n = 1,159), *Ix. holocyclus* (n = 982), *Ix. cornuatus* (n = 219), and *Bt. auruginans* (n = 159).
+The species with the highest number of observations were *Am. triguttatum* (n = 1,286), *Ix. tasmani* (n = 1,159), *Ix. holocyclus* (n = 982), *Ix. cornuatus* (n = 219), and *Bothriocroton auruginans* (n = 159).
 The three most common species were then selected for further analysis, including a more detailed curation of records from the grey literature and individual species maps were produced.
 
 Currently *Am. triguttatum* is divided into four subspecies. 
@@ -660,16 +660,16 @@ Cox1 barcoding versus multilocus species delimitation: validation of two mite sp
 
 **[High-throughput sequencing]{.correction} sequencing**
 
-[High-throughput sequencing]{.correction} sequencing targeting the 12S rDNA gene was successful at identifying tick species. 
+[High-throughput sequencing]{.correction} sequencing targeting the 12S rRNA gene was successful at identifying tick species. 
 This included immature life stages where multiple specimens were pooled at the DNA extraction level. 
 Pooling of ticks (especially larvae and nymph stages) is implemented in many molecular studies of tick-borne pathogen or microbial characterisation to increase the throughput of samples [@estrada-penaPitfallsTickTickBorne2021].
 The ability to deliminate species with a short sequence length (~ 370 bp) make this high-throughput assay easily transferable to many short read sequence platforms. 
 The same extracted DNA or RNA used for pathogen detection and be used in the assay presented here to accurately determine species. 
 In particular, it is suited to the identification of immature tick life stages whose identity is ambiguous or where certain morphological features are missing or damaged, which prevent species-level identification.
-An ability of the 12S rDNA gene [to act]{.corrected} as a barcoding gene for ticks has been identified in similar studies [@lvAssessmentFourDNA2014;@kandumaMitochondrialNuclearMultilocus2019], and is shown by the level of phylogenetic separation among species shown in Figure \@ref(fig:F2NGStree) (see list of accession numbers and species identification in Table \@ref(tab:T2genbank)).
+An ability of the 12S rRNA gene [to act]{.corrected} as a barcoding gene for ticks has been identified in similar studies [@lvAssessmentFourDNA2014;@kandumaMitochondrialNuclearMultilocus2019], and is shown by the level of phylogenetic separation among species shown in Figure \@ref(fig:F2NGStree) (see list of accession numbers and species identification in Table \@ref(tab:T2genbank)).
 For example morphologically similar species, such as *Ix. holocyclus* (OM830732) and *Ix. cornuatus* (OM830728), can be distinguished easily as demonstrated in Figure \@ref(fig:F2NGStree) (see also Table \@ref(tab:T2genbank)).
 
-```{r F2NGStree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of tick species from wildlife.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of Ixodida ZOTUs based on a 377 bp alignment of the 12S rDNA gene Substitution model K3Pu +F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 indicated by shaded circles. Number of substitutions per nucleotide position is represented by the scale bar. Sequences generated in the present study represented in blue (ZOTUs), and red (reference sequences).", echo=FALSE}
+```{r F2NGStree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of tick species from wildlife.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of Ixodida ZOTUs based on a 377 bp alignment of the 12S rRNA gene Substitution model K3Pu +F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 indicated by shaded circles. Number of substitutions per nucleotide position is represented by the scale bar. Sequences generated in the present study represented in blue (ZOTUs), and red (reference sequences).", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch2-12SNGStree.png")
 ```
 

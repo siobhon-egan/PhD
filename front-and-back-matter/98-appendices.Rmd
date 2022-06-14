@@ -48,17 +48,17 @@ The supernatant was then used for subsequent extraction using DNeasy Blood and T
 
 #### Targeted assays and Sanger sequencing
 
-A multilocus sequence typing (MSLT) approach was used to obtain sequence information from 3 mitochondrial genetic markers. These were; *cytochrome c oxidase subunit I* (*COX1*), *12S rDNA*, *16S rDNA* (primers outlined in table \@ref(tab:T2primers). 
+A multilocus sequence typing (MSLT) approach was used to obtain sequence information from 3 mitochondrial genetic markers. These were; *cytochrome c oxidase subunit I* (*COX1*), *12S rRNA*, *16S rRNA* (primers outlined in table \@ref(tab:T2primers). 
 All reactions were carried out in 25 $\mu$L volumes, each containing; 1X buffer (KAPA Biosystems, South Africa), 2.5 mM MgCl~2~, 0.4 $\mu$M of primer, 200 mM of each dNTP, 1.0 U of Taq (KAPA Biosystems, South Africa), and between 1$\mu$L (modern specimens) 5 $\mu$L (museum specimens) of gDNA was added. MLST assays on museum DNA were performed in a separate dedicated facility away from modern DNA. 
 
-The COX1 locus was amplified using a hemi-nested assay with primers HCO2064/HCO1215 in the primary assay and HCO2064/HCO1240 from Song et al. [-@songPhylogeneticPhylogeographicRelationships2011]. 
+The COX1 gene was amplified using a hemi-nested assay with primers HCO2064/HCO1215 in the primary assay and HCO2064/HCO1240 from Song et al. [-@songPhylogeneticPhylogeographicRelationships2011]. 
 Despite repeated attempts for many specimens of *Amblyomma* amplification using a single round PCR was not successful. Previous research has demonstrated the primer pair HCO2064/HCO1240 is successful at amplifying COX1 gene from tick specimens of the genera *Ixodes*, *Haemaphysalis* and *Rhipicephalus* [@evansAutomaticBarcodeGap2019]. 
 However this assay did not achieve reliable repeatable results for *Am. triguttatum*, therefore a hemi-nested PCR assay was used. 
 Reactions were carried out in 25$\mu$L reactions, each containing; 1X buffer (KAPA Biosystems, South Africa), 2.5 mM MgCl~2~, 0.4$\mu$M of each primer (HCO2064/HCO1215 and HCO2064/HCO1240), 0.25 mM of each dNTP, 1 U of Taq (KAPA Biosystems, South Africa) and 1$\mu$L of either tick DNA or primary product. Thermal cycling conditions for both assays were as followed: 95$^\circ$C for 2 mins, followed by 35 (modern specimens) or 50 (museum specimens) cycles of 95$^\circ$C for 30 secs, 48$^\circ$C for 30 secs, 72$^\circ$C for 50 secs, and a final extension of 72$^\circ$C for 2 mins.
 
-A 450 bp product of the *16S rDNA* gene was amplified [@lvDevelopmentDNABarcoding2014]. Reactions were carried out in 25$\mu$L reactions each containing: 1X buffer (KAPA Biosystems, South Africa), 2.5mM MgCl~2~, 0.4$\mu$M of each primer (16S-F/16S-R1), 0.25 mM of each dNTP, 1 U of Taq (KAPA Biosystems, South Africa) and 1$\mu$L of tick gDNA. A touchdown approach was used for the 16S assays were as followed; 95$^\circ$C for 5 mins, followed by 5 cycles of 95$^\circ$C for 30 secs, 49$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 5 cycles of 95$^\circ$C for 30 secs, 47$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 5 cycles of 95$^\circ$C for 30 secs, 45$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 25 cycles of 95$^\circ$C for 30 secs, 43$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; and a final extension of 68$^\circ$C for 5 mins.
+A 450 bp product of the mitochondrial 16S rRNA gene was amplified [@lvDevelopmentDNABarcoding2014]. Reactions were carried out in 25$\mu$L reactions each containing: 1X buffer (KAPA Biosystems, South Africa), 2.5mM MgCl~2~, 0.4$\mu$M of each primer (16S-F/16S-R1), 0.25 mM of each dNTP, 1 U of Taq (KAPA Biosystems, South Africa) and 1$\mu$L of tick gDNA. A touchdown approach was used for the *16S rRNA* assays were as followed; 95$^\circ$C for 5 mins, followed by 5 cycles of 95$^\circ$C for 30 secs, 49$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 5 cycles of 95$^\circ$C for 30 secs, 47$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 5 cycles of 95$^\circ$C for 30 secs, 45$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 25 cycles of 95$^\circ$C for 30 secs, 43$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; and a final extension of 68$^\circ$C for 5 mins.
 
-A 370bp product of the 12S rDNA gene was amplified. Reactions were carried out in 25$\mu$L reactions each containing: 1X buffer (KAPA Biosystems, South Africa), 2.5mM MgCl~2~, 0.4$\mu$M of each primer (T1B/T2A), 0.25mM of each dNTP, 1 U of Taq (KAPA Biosystems, South Africa) and 1$\mu$L of tick gDNA.Thermal cycling conditions were as followed; 95$^\circ$C for 5 mins, followed by 5 cycles of 95$^\circ$C for 15 secs, 51$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 25 cycles of 95$^\circ$C for 30 secs, 53$^\circ$C for 30 secs, 72$^\circ$C for 1 min; and a final extension of 72$^\circ$C for 5 mins.
+A 370bp product of the mitochondrial 12S rRNA gene was amplified. Reactions were carried out in 25$\mu$L reactions each containing: 1X buffer (KAPA Biosystems, South Africa), 2.5mM MgCl~2~, 0.4$\mu$M of each primer (T1B/T2A), 0.25mM of each dNTP, 1 U of Taq (KAPA Biosystems, South Africa) and 1$\mu$L of tick gDNA.Thermal cycling conditions were as followed; 95$^\circ$C for 5 mins, followed by 5 cycles of 95$^\circ$C for 15 secs, 51$^\circ$C for 30 secs, 68$^\circ$C for 30 secs; 25 cycles of 95$^\circ$C for 30 secs, 53$^\circ$C for 30 secs, 72$^\circ$C for 1 min; and a final extension of 72$^\circ$C for 5 mins.
 
 Amplified products were visualised on a 1% agarose gel stained with SYBR Safe (Invitrogen, USA) and bands of the correct size were excised using a sterile scalpel blade and purified using previously described methods [@yangSpecificQuantitativeDetection2013]. Sanger sequencing was carried out in both directions and sequencing was performed at the Australian Genome Research Facility (Perth, Western Australia) on an Applied Biosystems 3730xl DNA Analyzer using BigDye(TM) Terminator v3.1 Cycle Sequencing Kit.
 
@@ -72,7 +72,7 @@ idx <- c(1:4,7:12,21:23)
 ch2_primers <- ch2_primers[idx,1:3]
 ```
 
-(ref:T2primercap) Primers used to amplify mitochondrial genes of ticks (Ixodida). The following loci were targeted; *cytochrome c oxidase subunit 1* (COX1), *12S rDNA*, *16S rDNA*. References **1.** Song et al. [-@songPhylogeneticPhylogeographicRelationships2011], **2.** Beati et al. [-@beatiAnalysisSystematicRelationships2001], **3.** Lv et al. [-@lvDevelopmentDNABarcoding2014].
+(ref:T2primercap) Primers used to amplify mitochondrial genes of ticks (Ixodida). The following loci were targeted; *cytochrome c oxidase subunit 1* (COX1), *12S rRNA*, *16S rRNA*. References **1.** Song et al. [-@songPhylogeneticPhylogeographicRelationships2011], **2.** Beati et al. [-@beatiAnalysisSystematicRelationships2001], **3.** Lv et al. [-@lvDevelopmentDNABarcoding2014].
 
 ```{r T2primers, echo=FALSE}
 library(kableExtra)
@@ -202,7 +202,7 @@ knitr::include_graphics("figures/ms-figs-appendix/FigA-3.1.png")
 
 \newpage
 
-```{r FA32, out.width='85%', out.align = 'left',fig.scap = "Rarefaction curves of bacterial 16S rRNA sequencing from wildlife samples.", fig.cap = "Rarefaction curves (number of ASVs) of wildlife blood, tick and tissue samples from bacterial 16S rRNA profiling (step size = 100). Rarefaction curves were used to determine how adequate sequencing depth was in detecting the complete theoretical suite of bacterial organisms present; of note, rarefaction plots excluded OTUs considered environmental contaminants (described methods).", echo=FALSE}
+```{r FA32, out.width='85%', out.align = 'left',fig.scap = "Rarefaction curves of bacterial \\textit{16S rRNA} sequencing from wildlife samples.", fig.cap = "Rarefaction curves (number of ASVs) of wildlife blood, tick and tissue samples from bacterial \\textit{16S rRNA} profiling (step size = 100). Rarefaction curves were used to determine how adequate sequencing depth was in detecting the complete theoretical suite of bacterial organisms present; of note, rarefaction plots excluded OTUs considered environmental contaminants (described methods).", echo=FALSE}
 knitr::include_graphics("figures/ms-figs-appendix/FigA-3.2.png")
 ```
 
@@ -400,17 +400,17 @@ The following electronic supplementary files are available for download on [FigS
 
 #### Supplementary table E1.2
 
-**Supplementary table E1.2:** Genetic similarity of Anaplasmataceae sequences based on a 1,244 bp alignment of the 16S rRNA locus. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
+**Supplementary table E1.2:** Genetic similarity of *Anaplasmataceae* sequences based on a 1,244 bp alignment of the 16S rRNA gene. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
 [Anaplasmataceae genetic diversity table](https://ndownloader.figshare.com/files/27452720)
 
 #### Supplementary table E1.3
 
-**Supplementary table E1.3:** Genetic similarity of *Borrelia* sequences based on a 431 bp alignment of the 16S rRNA locus. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
+**Supplementary table E1.3:** Genetic similarity of *Borrelia* sequences based on a 431 bp alignment of the 16S rRNA gene. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
 [*Borrelia* genetic diversity table](https://figshare.com/ndownloader/files/35862953)
 
 #### Supplementary table E1.4
 
-**Supplementary table E1.4:**  Genetic similarity of *Bartonella* sequences based on a 522 bp alignment of the 16S rRNA-ITS locus. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
+**Supplementary table E1.4:**  Genetic similarity of *Bartonella* sequences based on a 522 bp alignment of the 16S rRNA-ITS gene. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
 [*Bartonella* genetic diversity table](https://ndownloader.figshare.com/files/27452723)
 
 ---
@@ -437,12 +437,12 @@ The following electronic supplementary files are available for download on [FigS
 
 #### Supplementary table E2.2
 
-**Supplementary table E2.2:** Genetic similarity of piroplasm sequences based on an 852 bp alignment of the 18S rRNA locus. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
+**Supplementary table E2.2:** Genetic similarity of piroplasm sequences based on an 852 bp alignment of the 18S rRNA gene. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
 [Piroplasm genetic diversity table](https://figshare.com/ndownloader/files/30578457)
 
 #### Supplementary table E2.3
 
-**Supplementary table E2.3:** Genetic similarity of *Hepatozoon* sequences based on an 819 bp alignment of the 18S rRNA locus. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
+**Supplementary table E2.3:** Genetic similarity of *Hepatozoon* sequences based on an 819 bp alignment of the 18S rRNA gene. Sequences generated from the present study in bold. Bottom half of matrix showing sequence similarity and top half containing genetic distance data. 
 [*Hepatozoon* genetic diversity table](https://figshare.com/ndownloader/files/30578463)
 
 ---

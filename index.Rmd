@@ -18,7 +18,7 @@ knit: (function(input, ...) {
 #####################
 title: |
   Ecology of Ticks and Microbes in \
-  Australia Wildlife
+  Australian Wildlife
 author: Siobhon Lee Egan
 qual: Bachelor of Science (Honours)
 university: Murdoch University
@@ -57,7 +57,7 @@ bibliography: [bibliography/references.bib, bibliography/additional-references.b
 # candidate number and word count
 masters-submission: false
 candidate-number: 31555716
-word-count: "10,052"
+word-count: "64,715"
 
 # if you want to use a different title page altogether, provide a path to a 
 # .tex file here and it will override the default Oxford one

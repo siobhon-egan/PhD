@@ -150,9 +150,8 @@ As a result, relatively little data has been collected on eutherian haemoprotozo
 It is possible that such endemic haemoprotozoans could be involved in spillover event(s); thus, from a public health perspective, it is essential to collect baseline data on the health and parasite communities of all Australian wildlife, particularly in urban and peri-urban areas. 
 In addition, further surveillance may also shed light on the status of *Babesia microti* in Australia, given the events described above.
 
-
 This study aimed to document three haemoprotozoan groups (i) trypanosomes (*Leishmania* spp. and *Trypanosoma* spp.), (ii) piroplasms (*Babesia* spp. and *Theileria* spp.) and (iii) *Hepatozoon* spp., from Australian wildlife in urban and peri-urban areas. 
-Using amplicon metabarcoding and Sanger sequencing, a semi-targeted approach was used with assays targeting conserved regions of the *18S rRNA* gene. 
+Using amplicon metabarcoding and Sanger sequencing, a semi-targeted approach was used with assays targeting conserved regions of the 18S rRNA gene. 
 The focus of this study was to screen wildlife blood and tissue biopsy samples and their ticks for haemoprotozoans.
 
 ## Methods
@@ -352,7 +351,7 @@ No tick samples were positive for *Tr. lewisi*-like sequences.
 *Trypanosoma noyesi* was identified in a single brush-tailed possum blood sample from Western Australia. 
 *Trypanosoma vegrandis* (zOTU 47; GenBank: KC753534, 100% similarity) was identified in an *Am. triguttatum* (nymph) (ex quenda) from Western Australia. 
 
-```{r Ch4tryptree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of trypanosomes species from wildlife.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of trypanosome zOTUs based on a 426 bp alignment of the 18S rRNA locus. Substitution model TIM3e + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by filled circles. Number of substitutions per nucleotide position is represented by the scale-bar. Sequences generated in the present study are in bold.", echo=FALSE}
+```{r Ch4tryptree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of trypanosomes species from wildlife.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of trypanosome zOTUs based on a 426 bp alignment of the 18S rRNA gene. Substitution model TIM3e + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by filled circles. Number of substitutions per nucleotide position is represented by the scale-bar. Sequences generated in the present study are in bold.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch4-trypNGStree.png")
 ```
 
@@ -372,7 +371,7 @@ All *Babesia* sequences were obtained from 72.2% (95% CI: 49.4–88.5%) of brush
 The most similar sequence to those obtained in the present study was *Babesia* sp. BP1 obtained from *Ix. tasmani* (GenBank: MG251435, 99.7--100% similar) ex. brush-tailed possum (NSW) [@lohMolecularSurveillancePiroplasms2018]. 
 The next most similar was *Babesia lohae* sequences identified from *Ix. tasmani* ex brush-tailed possum (GenBank: MG251436, 98.3--98.6% similar) [@lohMolecularSurveillancePiroplasms2018] and *Ix. holocyclus* ex. domestic cat (GenBank: MG593272, 98.2--98.5% similar) [@greayEndemicExoticNovel2018] (see genetic distances in [Supplementary Table E2.2](#supplementary-table-e2.2)).
 
-```{r F4pirotree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of piroplasm species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of piroplasm species based on an 852 bp alignment of the 18S rRNA locus. Substitution model TIM3 + F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by filled circles. Number of substitutions per nucleotide position is represented by the scale-bar. Sequences generated in the present study are in bold.", echo=FALSE}
+```{r F4pirotree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of piroplasm species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of piroplasm species based on an 852 bp alignment of the 18S rRNA gene. Substitution model TIM3 + F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by filled circles. Number of substitutions per nucleotide position is represented by the scale-bar. Sequences generated in the present study are in bold.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch4-pirotree.png")
 ```
 
@@ -385,7 +384,7 @@ The bush rat genotype was most similar to sequences from olive grass mice (*Abro
 The next most similar sequence to the bush rat genotype was *Hepatozoon ophisauri* (host unknown) from Iran (Zechmeisterova, unpublished) (GenBank: MN723845, 98.8% similar).
 Microscopy of blood films from positive individuals identified oval shaped *Hepatozoon* gametocytes within leukocytes (Figure \@ref(fig:microscopy)D-E). 
 
-```{r F4hepattree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of \\textit{Hepatozoon} species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of \\textit{Hepatozoon} based on an 829 bp alignment of the 18S rRNA locus. Substitution model HKY + F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by filled circles. Number of substitutions per nucleotide position is represented by the scale-bar. Sequences generated in the present study are in bold.", echo=FALSE}
+```{r F4hepattree, out.width='95%', out.align = 'left',fig.scap = "Phylogeny of \\textit{Hepatozoon} species.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of \\textit{Hepatozoon} based on an 829 bp alignment of the 18S rRNA gene. Substitution model HKY + F + I + G4 with 10,000 replicates. Node values correspond to bootstrap support where values > 0.7 are indicated by filled circles. Number of substitutions per nucleotide position is represented by the scale-bar. Sequences generated in the present study are in bold.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch4-hepattree.png")
 ```
 
@@ -412,7 +411,7 @@ The level of sequences retained in the present study (~23.3%) were similar to th
 However, more widespread comparisons are difficult to make as in many cases sequences retained throughout bioinformatics are not adequately reported [@squarreDiversityTrypanosomesWildlife2020;@wahabNovelMetabarcoded18S2020].
 Due to the nature of the Illumina sequencing platform, artificial sequences or chimeras can be generated, particularly when libraries are prepared by PCR amplification methods. 
 Steps taken to avoid the impact of this included using primers without degenerate bases, including a G/C clamp at the 3' end of primers, use of high fidelity Taq polymerases and minimising the number of PCR cycles [@bradleyDesignEvaluationIllumina2016]. 
-The issue of abundance comparisons in amplicon sequencing has still not been well resolved. While attempts are beginning to improve in the case of bacterial 16S amplicon studies, there is still much work to be done for 18S amplicon studies. 
+The issue of abundance comparisons in amplicon sequencing has still not been well resolved. While attempts are beginning to improve in the case of bacterial *16S rRNA* amplicon studies, there is still much work to be done for *18S rRNA* amplicon studies. 
 Differences in amplification efficiencies among targets and gene copy number variations are two of the main factors impacting sequence abundance measures in amplicon sequencing [@bradleyDesignEvaluationIllumina2016].
 Therefore, comparisons of sequence numbers as a measure for trypanosome abundance were not made in the present study.
 
@@ -514,7 +513,7 @@ In comparison, *Hepatozoon* spp. from Australian marsupials have been described 
 The identity of *H. tachyglossi* however, remains uncertain after suggestions that its identification in the blood stream may have represented disseminated *Eimeria echidnae* stages [@slapetaDeepsequencingResolveComplex2017]. 
 Since its morphological identification within monocytes of echidna blood smear [@clarkHepatozoonTachyglossiSp2005;@ploegHepatozoonTachyglossiShortbeaked2008] there has not been any genetic information obtained about this species.
 
-The analysis of *Hepatozoon* phylogeny was restricted due to previous studies which amplified different regions of the 18S rRNA gene 
+The analysis of *Hepatozoon* phylogeny was restricted due to previous studies which amplified different regions of the 18S rRNA gene.
 Alignments often resulted in poor overlap between sequences and as such a comparison with all genotypes was not possible. 
 The most similar sequences to the black rat genotype were from wild rodents in Thailand (Dantrakool et al. unpublished). 
 A study by the same authors noted morphological reports of the haemoparasite in mononucleated leukocytes of individuals positive for *Babesia* [@dantrakoolIdentificationNewType2004]. 
@@ -555,11 +554,11 @@ Future research on haemoprotozoan diversity in native Australian rodents is reco
 
 ### Value of amplicon sequencing - eukaryote diagnostic
 
-The development of robust high-throughput sequencing methods targeting the bacterial 16S rRNA locus has resulted in a rapid uptake of bacterial microbiome studies. 
+The development of robust high-throughput sequencing methods targeting the bacterial 16S rRNA gene has resulted in a rapid uptake of bacterial microbiome studies. 
 Using short read sequencing platforms, the parallel sequencing method is ideal for profiling the suite of microbes present in almost any sample type. 
 However, the uptake for eukaryote community analysis has been hindered by the lack of a robust, universal method [@hugerthSystematicDesign18S2014]. 
 At present, eukaryotic community sequencing is largely based on protocols outlined by the earth microbiome project (https://earthmicrobiome.org/) which uses generic eukaryote *18S rRNA* primers. 
-However, the co-amplification of host DNA and bacterial 16S rRNA sequences means that this method lacks specificity and sensitivity making it impractical in many situations [@kounosuImproved18S28S2019]. 
+However, the co-amplification of host DNA and bacterial *16S rRNA* sequences means that this method lacks specificity and sensitivity making it impractical in many situations [@kounosuImproved18S28S2019]. 
 In addition, the amplification biases of primers and the ability to differentiate species varies between the hypervariable regions. 
 As a result, studies on pathogen or parasite prevalence still largely use these semi-targeted approaches [@ghafarTargetedNextGenerationSequencing2020;@wahabNovelMetabarcoded18S2020]. 
 A semi-targeted molecular approach using primers targeting conserved regions of the nuclear 18S rRNA gene provides a number of advantages over using generic eukaryote primers [@bradleyDesignEvaluationIllumina2016;@cannonHighthroughputSequencingAssay2018a].

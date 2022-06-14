@@ -26,7 +26,7 @@ nocite: |
 \nocite{cooperDetectionCoxiellaBurnetii2013} \nocite{greayIlluminatingBacterialMicrobiome2021} \nocite{brodyCaseTickTyphus1946} \nocite{popeIsolationRickettsiaResembling1955} \nocite{owenDetectionIdentificationNovel2006} \nocite{owenPotentiallyPathogenicSpotted2006} \nocite{sentausaGenomeSequenceRickettsia2013} \nocite{liHighPrevalenceRickettsia2010} \nocite{abdadRickettsiaGravesiiSp2017} \nocite{owenDetectionCharacterisationRickettsiae2007} \nocite{bennettCoxiellaBurnetiiWestern2011}
 \nocite{jefferiesTwoSpeciesCanine2003}
 \nocite{jonssonProductivityHealthEffects2008}
-\nocite{{angusHistoryCattleTick1996}
+\nocite{angusHistoryCattleTick1996}
 
 Ticks (Acari: Ixodida) are a group of blood-feeding arthropods and represent one of the most important vector groups that affect human and animal health. Almost 900 species of tick have been described globally, and 10% have been documented to transmit a variety of pathogens to livestock, companion animals and humans [@jongejanGlobalImportanceTicks2004]. 
 Ticks can carry a diverse range of infectious microbes such as viruses, piroplasms, spirochaetes and rickettsiales [@pfaffleEcologyTickborneDiseases2013]. 
@@ -71,7 +71,7 @@ Molecular and morphological analysis suggests *Ixodes* endemic to Australia, New
 Although not all of these species have undergone molecular systematic analysis, there is a clear grouping of this distinct lineage (Figure \@ref(fig:F1treeixod)). 
 The previously recognised genus *Aponomma* belonged to the hard tick family, Ixodidae, and was poorly defined.
 To correct this a new genus was created called *Bothriocroton* and all indigenous Australian *Aponomma* species were moved to this new genus [@keiransAponommaBothriocrotonGlebopalma1994;@klompenNewSubfamilyBothriocrotoninae2002].
-Since the creation of the genus *Bothriocroton* new species have been described and reinstated, bringing the total extant species to seven, all of which are endemic to the Australiasian region (Figure \@ref(fig:F1treeixod)) (*Bt. tachyglossi*, *Bt. auruginans*, *Bt. concolor*, *Bt. hydrosauri*, *Bt. undatum*, *Bt. glebopalma*, and *Bt. oudemansi*) [@keiransAponommaBothriocrotonGlebopalma1994;@klompenNewSubfamilyBothriocrotoninae2002;@andrewsSystematicStatusAponomma2006;@beatiBothriocrotonOudemansiNeumann2008]. 
+Since the creation of the genus *Bothriocroton* new species have been described and reinstated, bringing the total extant species to seven, all of which are endemic to the Australiasian region (Figure \@ref(fig:F1treeixod)) (*Bothriocroton tachyglossi*, *Bothriocroton auruginans*, *Bothriocroton concolor*, *Bothriocroton hydrosauri*, *Bothriocroton undatum*, *Bothriocroton glebopalma*, and *Bothriocroton oudemansi*) [@keiransAponommaBothriocrotonGlebopalma1994;@klompenNewSubfamilyBothriocrotoninae2002;@andrewsSystematicStatusAponomma2006;@beatiBothriocrotonOudemansiNeumann2008]. 
 The remainding members of the former *Aponomma* genus were transferred to *Amblyomma*, however some issues of polyphyly within the genus *Amblyomma* remained [@burgerPhylogeneticAnalysisTicks2012;@burgerPhylogeneticAnalysisMitochondrial2013]. 
 To correct this issue two new genera have since been established, *Robertsicus* and *Archaeocroton* [@barkerTwoNewGenera2018].
 
@@ -80,7 +80,7 @@ knitr::include_graphics("figures/ms-figs/Ch1-treeixod.pdf")
 ```
 
 To date Australia has 74 extant described tick species (Figure \@ref(fig:F1ausixod)). 
-Five of these were introduced with domestic animals following European arrival in 1788: *Argas persicus*, *Otobius megnini*, *Haemaphysalis longicornis*, *Rhipicephalus sanguineus* (recently proposed as *Rh. linnaei*), and *Rhipicephalus australis* (*Boophilus microplus)* [@barkerTicksAustraliaSpecies2014]. 
+Five of these were introduced with domestic animals following European arrival in 1788: *Argas persicus*, *Otobius megnini*, *Haemaphysalis longicornis*, *Rhipicephalus sanguineus* (recently proposed as *Rhipicephalus linnaei*), and *Rhipicephalus australis* (*Boophilus microplus)* [@barkerTicksAustraliaSpecies2014]. 
 The first new native Australian *Ixodes* tick was described in over 50 years, from woylies (*Bettongia penicillata*), a critically endangered marsupial in south-west Western Australia and was named *Ixodes woyliei* [@ashMorphologicalMolecularDescription2017]. 
 The text ‘Australian Ticks’ by Roberts [-@robertsAustralianTicks1970] remains the foundation reference guide on ticks in Australia, in particular the detailed specimen descriptions and taxonomic keys used for morphological identification. 
 The more recent guide, ‘Ticks of Australia’ by Barker and Walker [-@barkerTicksAustraliaSpecies2014], has provided a much needed update on the most common tick species that effect humans and animals in Australia.
@@ -95,17 +95,17 @@ Issues relating to classification and/or presence of Australian ticks include:
 (ii) the distinction between *Amblyomma australiense* and *Amblyomma echidnae* remains unclear [@guglielmoneCommentsControversialTick2009]. *Amblyomma australiense* was originally described from a museum specimens of the long-beaked echidna (*Zaglossus bruijnii*) in the Kimberly.
 Roberts [-@robertsAustralianTicks1970] leaves open the possibility that *Am. echidnae* is a subspecies of *Am. australiense*. 
 (iii) the status of *Bt. tachyglossi* was resurrected by Andrews [-@andrewsSystematicStatusAponomma2006], however prior to that it was considered a synonym of *Bt. hydrosauri*, therefore records prior to 2006 should be treated with caution;
-(iv) records of *Haempahysalis longicornis* were previously referred to as *Haemaphysalis bispinosa* [@robertsSystematicStudyAustralian1963], it is now recognised that *Ha. bispinosa* is a distinct species distributed across parts of Asia and early records were attributed.
+(iv) records of *Ha. longicornis* were previously referred to as *Haemaphysalis bispinosa* [@robertsSystematicStudyAustralian1963], it is now recognised that *Ha. bispinosa* is a distinct species distributed across parts of Asia and early records were attributed.
 
 Changes in tick nomenclature and taxonomy can cause disruption to ecologists, veterinarians and physicians.
 In many instances changes in species names takes many years to filter through for use by the broader scientific community and for new names to be fully adopted.
-For example, the reptile tick *Bt. hydrosauri* (formerly *Aponomma hydrosauri*) is an important vector of human disease (*Rickettsia honei)*, and its changing species name can cause confusion to the public and medical professionals (e.g. @stenosAponommaHydrosauriReptileassociated2003). 
+For example, the reptile tick *Bt. hydrosauri* (formerly *Aponomma hydrosauri*) is an important vector of human disease (*R. honei*), and its changing species name can cause confusion to the public and medical professionals (e.g. @stenosAponommaHydrosauriReptileassociated2003). 
 Additionally the lack of accurate keys and morphological descriptions is particularly challenging in these instances. 
 [In the case of tick-borne diseases. accurate tick identification can greatly assist in a timely diagnosis. In areas where tick-borne disease knowledge is limited, such as Australia, accurate tick identification is of great benefit to researchers and clinicians attempting to untangle novel disease causes]{.correction}. 
-In the case of *Ix. holocyclus* and *Ix. cornuatus*, only recently has sufficient keys and genetic data been published to allow the identification between these two morphologically very similar species [@songPhylogeneticPhylogeographicRelationships2011;@barkerTicksAustraliaSpecies2014;@kwakKeysMorphologicalIdentification2017]. 
+In the case of *Ixodes holocyclus* and *Ixodes cornuatus*, only recently has sufficient keys and genetic data been published to allow the identification between these two morphologically very similar species [@songPhylogeneticPhylogeographicRelationships2011;@barkerTicksAustraliaSpecies2014;@kwakKeysMorphologicalIdentification2017]. 
 *Ixodes holocyclus* remains the most important vector of illness to Australians being the cause of paralysis, mammalian meat allergy, significant local reactions [and]{.correction} allergic responses and the vector of rickettsial diseases. 
-[There are many suspected misidentifications of *Ix. holocyclus*; for example Tasmanian devils (*Sarcophilus harrisii*) in Tasmania (TAS) [@vilcinsDetectionHepatozoonSpotted2009], likely *Ix. cornuatus*, and numbats (*Myrmecobius fasciatus*), in Western Australia (WA) [@calabyObservationsBandedAnteater1960], likely *Ix. myrmecobii*.]{.correction}
-More recently the Australian brown dog tick has been renamed to *Rhipicephalus linnaei* [@slapetaTropicalLineageBrown2021], previously known as *Rhipicephalus sanguineus* tropical lineage.
+[There are many suspected misidentifications of *Ix. holocyclus*; for example Tasmanian devils (*Sarcophilus harrisii*) in Tasmania (TAS) [@vilcinsDetectionHepatozoonSpotted2009], likely *Ix. cornuatus*, and numbats (*Myrmecobius fasciatus*), in Western Australia (WA) [@calabyObservationsBandedAnteater1960], likely *Ixodes myrmecobii*.]{.correction}
+More recently the Australian brown dog tick has been renamed to *Rh. linnaei* [@slapetaTropicalLineageBrown2021], previously known as *Rh. sanguineus* tropical lineage.
 This name change is likely to create debate among taxonomist and the tick community, and therefore cause confusion for the general public. 
 While taxonomy is the foundation of biological science and must be corrected were appropriate, it does cause unavoidable consequences in the short term. 
 
@@ -131,7 +131,7 @@ However, there has been suggestions that this finding is simply due to the incom
 In Australia, the primary reference for tick-host associations remains Roberts [-@robertsAustralianTicks1970], although Barker and Walker [-@barkerTicksAustraliaSpecies2014] has provided an updated reference for 16 species of veterinary and medical importance. 
 Despite this update however, there is no single, up-to-date reference of tick-host associations. 
 In many cases these findings remain buried in research laboratories, special interest groups and other niches. 
-Since Roberts [-@robertsAustralianTicks1970] publication detailed studies on the biology, ecology [and]{.correction} distribution of native Australian ticks have only been carried out on a handful of species most notably; *Ornithodoros gurenyi* (QLD, NT, SA, WA) [@doubeEcologyKangarooTick1972;@doubeTwoRacesKangaroo1975], *Amblyomma triguttatum* (SA) [@waudbySeasonalDensityFluctuations2007]; *Bothriocroton hydrosauri* [@bullDispersalAustralianReptile1978;@andrewsMatingBehaviourAustralian1980;@belanHostDetectionFour1991;@chiltonInterspecificDifferencesMicrohabitat1993], *Ixodes cornuatus* (VIC, TAS) [@jacksonGeneticVariationTicks2000;@jacksonDistributionsParalysisTicks2007;@songPhylogeneticPhylogeographicRelationships2011], *Ix. holocyclus* (QLD, NSW, VIC) [@doubeSeasonalPatternsAbundance1979;@jacksonGeneticVariationTicks2000;@jacksonDistributionsParalysisTicks2007;@songPhylogeneticPhylogeographicRelationships2011], *Ixodes tasmani* (NSW) [@murdochEcologyCommonMarsupial2005], *Ha. bancrofti* (VIC) [@laanOccuranceTickHaemaphysalis2011]. 
+Since Roberts [-@robertsAustralianTicks1970] publication detailed studies on the biology, ecology [and]{.correction} distribution of native Australian ticks have only been carried out on a handful of species most notably; *Ornithodoros gurenyi* (QLD, NT, SA, WA) [@doubeEcologyKangarooTick1972;@doubeTwoRacesKangaroo1975], *Amblyomma triguttatum* (SA) [@waudbySeasonalDensityFluctuations2007]; *Bt. hydrosauri* [@bullDispersalAustralianReptile1978;@andrewsMatingBehaviourAustralian1980;@belanHostDetectionFour1991;@chiltonInterspecificDifferencesMicrohabitat1993], *Ix. cornuatus* (VIC, TAS) [@jacksonGeneticVariationTicks2000;@jacksonDistributionsParalysisTicks2007;@songPhylogeneticPhylogeographicRelationships2011], *Ix. holocyclus* (QLD, NSW, VIC) [@doubeSeasonalPatternsAbundance1979;@jacksonGeneticVariationTicks2000;@jacksonDistributionsParalysisTicks2007;@songPhylogeneticPhylogeographicRelationships2011], *Ixodes tasmani* (NSW) [@murdochEcologyCommonMarsupial2005], *Haemaphysalis bancrofti* (VIC) [@laanOccuranceTickHaemaphysalis2011]. 
 While these studies provide a solid foundation of Australian tick biology, in many cases they are largely limited to a relatively small study site. 
 An experimental investigation of *Ixodes hirsti* placed 1600 larvae on rats and chickens, however they found that no larvae attached to either host species, and none survived more than 24 hours [@laanObservationsBiologyDistribution2011]. 
 The authors described hosts removing the larvae by either eating or grooming.
@@ -160,24 +160,24 @@ Incidence of human tick-borne diseases are steadily increasing, with recent repo
 
 The family *Anaplasmataceae* are a group of obligate intracellular bacteria that reside in vacuoles of eukaryotic cells. 
 After a major taxonomic reorganisation in 2001, the phylogeny of the *Anaplasmataceae* family is now well accepted and includes *Ehrlichia*, *Anaplasma*, *Wolbachia*, *Neorickettsia* and the more recently described *Neoehrlichia* [@rarGeneticDiversityAnaplasma2021]. 
-Well known human pathogens in this group include *Anaplasma phagocytophilum* and *Ehrlichia chaffeensis* 
+Well known human pathogens in this group include *Anaplasma phagocytophilum* and *E, chaffeensis* 
 *Anaplasmataceae* are difficult to isolate and culture, and as such molecular tools are critical in the identification of members within this family. 
-Conserved genes such as *16S rRNA*, *groEL* and *gltA* (citrate synthase gene) are used to identify and classify this group of bacteria  [@kawaharaUltrastructurePhylogeneticAnalysis2004].
+Conserved genes such as *16S rRNA*, *groEL* and *gltA* are used to identify and classify this group of bacteria  [@kawaharaUltrastructurePhylogeneticAnalysis2004].
 
 *Anaplasma phagocytophilum* is the causative agent for granulocytic anaplasmosis in humans. The first case of human granulocytic anaplasmosis (HGA) was made in the United States in 1994 [@chenIdentificationGranulocytotropicEhrlichia1994].
 However, it was not until 2001 that it reflected its current name (previously named *Ehrlichia phagocytophilum*) [@dumlerReorganizationGeneraFamilies2001]. 
-*Anaplasma phagocytophilum* is also responsible for tick-borne fever in ruminants, equine anaplasmosis in horses and causes severe febrile diseases in dogs and cats [@rarAnaplasmaEhrlichiaCandidatus2011]. 
+*A. phagocytophilum* is also responsible for tick-borne fever in ruminants, equine anaplasmosis in horses and causes severe febrile diseases in dogs and cats [@rarAnaplasmaEhrlichiaCandidatus2011]. 
 The vast majority of HGA cases are known from the United States, most notably in the northeastern and upper mid-western regions [@mmwrFinal2009Reports2010]; [although present in Europe, the prevalence is significantly lower [@bakkenHumanGranulocyticAnaplasmosis2015]]{.correction}. 
-A number of *A. phagocytophilum* vectors have been identified, including *Ixodes scapularis* [@telfordPerpetuationAgentHuman1996;@hodzicAcquisitionTransmissionAgent1998], *Ixodes ricinus* [@lizPCRDetectionGranulocytic2000], *Ixodes persulcatus* [@eremeevaPrevalenceBacterialAgents2006], and *Ixodes ovatus* [@ohashiAnaplasmaPhagocytophilumInfected2005]. 
+A number of *A. phagocytophilum* vectors have been identified, including *Ixodes scapularis* [@telfordPerpetuationAgentHuman1996;@hodzicAcquisitionTransmissionAgent1998], *Ix. ricinus* [@lizPCRDetectionGranulocytic2000], *Ixodes persulcatus* [@eremeevaPrevalenceBacterialAgents2006], and *Ixodes ovatus* [@ohashiAnaplasmaPhagocytophilumInfected2005]. 
 The vertebrate reservoirs of *A. phagocytophilum* remain unclear due to the presence of numerous diverse strains, however animals such as white-footed mice, white-tailed deer [@telfordPerpetuationAgentHuman1996;@ravynIsolationEtiologicAgent2001], dusty-footed woodrats [@nicholsonDuskyFootedWoodRats1999] and chipmunks [@foleyDistinctEcologicallyRelevant2009] have been highlighted as important reservoirs. 
 
-Human ehrlichiosis is most notably caused by *Ehrlichia chaffeensis*. 
+Human ehrlichiosis is most notably caused by *E. chaffeensis*. 
 It was first identified in the United States as causing human monocytic ehrlichiosis (HME) [@andersonEhrlichiaChaffeensisNew1991]. 
 Since then 4,364 of confirmed HME have been reported to the CDC between 2003-2010 [@mmwrFinal2009Reports2010]. 
 In North America the lone star tick (*Amblyomma americanum*) and white-tailed deer are regarded as the most important vector and vertebrate reservoir of the bacteria [@rarAnaplasmaEhrlichiaCandidatus2011]. 
 To date, pathogen isolation has only been confirmed in the Unites States, however molecular and serological reports of the pathogen have been made throughout the world including Venezuela [@martinezEhrlichiaChaffeensisChild2008], Latin America [@gongora-biachiFirstCaseHuman1999;@dacostaMoreHumanMonocytotropic2006], South Korea [@parkDetectionAntibodiesAnaplasma2003], and Thailand [@heppnerHumanEhrlichiosisThailand1997]. 
 
-Using molecular tools, reports of an *Ehrlichia*-like organism were made from *Ixodes ricinus* ticks in the Netherlands [@schoulsDetectionIdentificationEhrlichia1999], and from rats (*Rattus norvegicus*) in China [@panEhrlichialikeOrganismGene2003]. 
+Using molecular tools, reports of an *Ehrlichia*-like organism were made from *Ix. ricinus* ticks in the Netherlands [@schoulsDetectionIdentificationEhrlichia1999], and from rats (*Rattus norvegicus*) in China [@panEhrlichialikeOrganismGene2003]. 
 Further studies showed there was no cross-reactivity of this organism with members of the genera *Anaplasma*, *Ehrlichia* or *Neorickettsia*, as such it was designated to be a new genus and was formally described by @kawaharaUltrastructurePhylogeneticAnalysis2004 as *Neoehrlichia mikurensis*. The first reports of *N. mikurensis* infection in humans were made in 2010 and 2011 [@fehrSepticemiaCausedTickborne2010;@vonloewenichDetectionCandidatusNeoehrlichia2010;@welinder-olssonFirstCaseHuman2010;@pekovaCandidatusNeoehrlichiaMikurensis2011] and were predominately from cases where patients were immunocompromised. 
 Two decades after its initial discovery, the first study was published detailing the cultivation of the organism [@wassCultivationCausativeAgent2019]. 
 Generally a rapid and full recovery is successful after treatment with antibiotics [@pekovaCandidatusNeoehrlichiaMikurensis2011]. 
@@ -187,9 +187,9 @@ Using transmission electron microscopy, *N. mikurensis* was recently identified 
 
 #### *Borrelia*
 
-Lyme borreliosis caused by a group of spirochaete bacteria (*Borrelia burgdorferi* sensu lato) is endemic to North America and Europe. 
-In North America the primary vector of *B. burgdorferi* s. l. is *Ixodes scapularis*, and major reservoir hosts are well known to include white-footed mice and white-tailed deer [@halseyRoleIxodesScapularis2018]. 
-In Europe the main vector responsible for Lyme Borreliosis is *Ixodes ricinus* [@kirsteinLocalVariationsDistribution1997] with a number of vertebrates identified as reservoir hosts throughout the continent, most notably hedgehogs (*Erinaceus europaeus*) and voles (*Myodes glareolus*) [@jahfariMeltingPotTickborne2017;@coipanGeneticDiversityBorrelia2018;@estrada-penaHighThroughputSequencing2018]. 
+Lyme borreliosis caused by a group of spirochaete bacteria (*B. burgdorferi* sensu lato) is endemic to North America and Europe. 
+In North America the primary vector of *B. burgdorferi* s. l. is *Ix. scapularis*, and major reservoir hosts are well known to include white-footed mice and white-tailed deer [@halseyRoleIxodesScapularis2018]. 
+In Europe the main vector responsible for Lyme Borreliosis is *Ix. ricinus* [@kirsteinLocalVariationsDistribution1997] with a number of vertebrates identified as reservoir hosts throughout the continent, most notably hedgehogs (*Erinaceus europaeus*) and voles (*Myodes glareolus*) [@jahfariMeltingPotTickborne2017;@coipanGeneticDiversityBorrelia2018;@estrada-penaHighThroughputSequencing2018]. 
 Lyme borreliosis is typically manifested by an erythema migrans skin lesion (60-80% of cases) [@rizzoliLymeBorreliosisEurope2011], and known to develop into arthritis or various skin disorders [@stanekLymeBorreliosis2012]. 
 Additional early symptoms may include fever, headaches, fatigue, and body aches and pains [@rizzoliLymeBorreliosisEurope2011;@clarkLymeBorreliosisHuman2013]. 
 [The development of neurological symptoms is another possible consequence of infection, and is known as Lyme neuroborreliosis, it has been documented in both North America and Europe [@clarkLymeBorreliosisHuman2013;@strleComparisonFindingsPatients2006].]{.correction}
@@ -200,7 +200,7 @@ Acute symptoms of relapsing fever in humans are generally non-specific (e.g. fev
 #### *Coxiella*
 
 An obligate intracellular bacteria, *Coxiella* has been isolated from a wide range of animals, and environmental samples throughout the world.
-*Coxiella burnetii* is the causative agent of Q fever that can cause disease in both humans and animals (mainly associated with livestock) [@gonzalez-barrioCoxiellaBurnetiiWild2018]. 
+*C. burnetii* is the causative agent of Q fever that can cause disease in both humans and animals (mainly associated with livestock) [@gonzalez-barrioCoxiellaBurnetiiWild2018]. 
 First discovered in Australia in 1935 after a cluster of abattoir workers became ill [@derrickFEVERNEWFEVER1937] the causative agent of the disease was not know, and the term Q fever was adapted meaning "query".
 Since then it has been described in multiple countries, with incidences of human infection usually associated with direct livestock contact.
 Despite the wide spread prevalence and economic impacts on the agriculture industry, the natural history of *C. burnetii* is not well understood. 
@@ -215,7 +215,7 @@ The genus *Rickettsia* (Rickettsiaceae) is a group of obligate intracellular bac
 Members of the genus *Rickettsia* can broadly be classified into (i) spotted fever group (SFG), (ii) typhus group (iii) *Rickettsia bellii* (ancestral) group and the (iv) *Rickettsia canadensis* group [@merhjRickettsialEvolutionLight2010]. 
 The SFG is the most notable group of tick-borne disease, mainly transmitted by Ixodidae ticks [@parolaUpdateTickBorneRickettsioses2013]. 
 Rocky-mountain spotted fever (RMSF), caused by *Rickettsia rickettsii* is the most well understood and studied SFG *Rickettsia*. 
-Important vectors of *R. rickettsii* in North and Central America include the Rocky Mountain wood tick (*Dermacentor andersoni*), the American dog tick (*Dermacentor variabilis*), the Cayenne tick (*Amblyomma cajennense*) and the brown dog tick (*Rhipicephalus sanguineus)* [@dantas-torresRockyMountainSpotted2007;@lopez-perezDiversityRickettsiaeDomestic2021]. 
+Important vectors of *R. rickettsii* in North and Central America include the Rocky Mountain wood tick (*Dermacentor andersoni*), the American dog tick (*Dermacentor variabilis*), the Cayenne tick (*Amblyomma cajennense*) and the brown dog tick (*Rh. sanguineus*) [@dantas-torresRockyMountainSpotted2007;@lopez-perezDiversityRickettsiaeDomestic2021]. 
 Although domestic dogs and wild mammals have been known to harbor the bacteria, the role of these reservoir hosts remains unclear.
 Dogs have been implicated as the main reservoir for *Rickettsia felis*, a flea-borne spotted-fever *Rickettsia* most common in companion animals [@ng-nguyenDomesticDogsAre2020].
 In other cases, small mammals, mainly rodents, are implicated in the life cycle of many *Rickettsia* species [@tomassoneNeglectedAspectsTickborne2018;@parisBriefHistoryMajor2020]
@@ -225,7 +225,7 @@ In other cases, small mammals, mainly rodents, are implicated in the life cycle 
 [At least 38 tick-transmitted viruses have been identified, with many more unclassified species [@labudaTickborneViruses2004]. With only one exception (African swine fever virus, family *Asfarviridae*) all tick-borne viruses recognised belong the RNA virus families (*Reoviridae*, *Rhabdoviridae*, *Orthomyxoviridae*, *Bunyaviridae* and *Flaviviridae*) [@labudaTickborneViruses2004]]{.correction}. 
 Tick-borne flaviviruses represent some of the most medically important arboviruses around the world. 
 Tick-borne encephalitis (TBE) (*Flaviviridae*: *Flavivirus*) is a growing public health issue in parts of Europe and Asia and highlights the complexity of the dynamics involved in tick-borne diseases [@gritsunTickborneEncephalitis2003]. 
-Natural vectors of the disease involved in transmission of the virus to humans mainly include, *Ixodes ricinus* and *Ixodes persulcatus* [@labudaTickborneViruses2004;@sussTickborneEncephalitis20102011].
+Natural vectors of the disease involved in transmission of the virus to humans mainly include, *Ix. ricinus* and *Ix. persulcatus* [@labudaTickborneViruses2004;@sussTickborneEncephalitis20102011].
 The virus has also been identified in field collected *Ixodes hexagonus* and studies have demonstrated that *Ixodes arboricola*, *Haemaphysalis concinna*, *Haemaphysalis inermis* and [*Haemaphysalis punctata*]{.correction} are also competent vectors [@gresikovaTickborneEncephalitis1998].
 Vertebrate hosts involved in the maintenance of TBE include voles (*M. arvalis*) and a variety of rodent species (*Apodemus* spp., *Microtus* spp., and *Myodes* spp.) [@achaziRodentsSentinelsPrevalence2011].
 
@@ -238,7 +238,7 @@ Piroplasms are a group of single-celled, intracellular parasites that belong to 
 Characterised by two main genera, *Babesia* and *Theileria*, they are the primary agents of eukaryote tick-borne diseases in vertebrates.
 Human babesiosis is a well-known infectious disease, recognised as an emerging public health issue in many parts of the world. 
 [There are over 100 species of *Babesia* (Apicomplexa: Piroplasmida) worldwide which have been identified in a wide range of wildlife and domestic animals [@kumarGlobalEmergenceHuman2021]. Six species of the *Babesia* are recognised as capable of infection humans. In North America human babesiosis is most commonly attributed with *Babesia microti*, followed by *Babesia duncani*. While there has been evidence to show presence of human babesiosis in latin American countries, the true causative agents have not been as extensively studied [@kumarGlobalEmergenceHuman2021]. In Europe *Babesia divergens* is the main cause of human babesiosis followed by *Babesia venatorum*, only a small number of cases have been attributed to *B. microti* and *Babesia crassa*-like agent [@hildebrandtHumanBabesiosisEurope2021;@vannierHumanBabesiosis2012]. Cases of babesiosis have been reported from several Asian countries with reports including *Babesia crassa*-like agents, *B. divergens*, *B. microti*, *B. venatorum*, and *Babesia* spp. KO1 [@kumarGlobalEmergenceHuman2021].]{.correction}
-*Ixodes scapularis* is the primary vector of *B. microti* to humans, with most cases reportedly [vectored]{.correction} by nymph ticks during late spring--early summer period [@spielmanEcologyIxodesDamminiborne1985;@swansonCoinfectionsAcquiredIxodes2006]. 
+*Ix. scapularis* is the primary vector of *B. microti* to humans, with most cases reportedly [vectored]{.correction} by nymph ticks during late spring--early summer period [@spielmanEcologyIxodesDamminiborne1985;@swansonCoinfectionsAcquiredIxodes2006]. 
 The primary vertebrate hosts identified in the transmission of the disease is the white-footed mouse (*Peromyscus leucopus*) [@spielmanEcologyIxodesDamminiborne1985]. 
 Manifestations of babesiosis are diverse, and can range from asymptomatic to debilitating illness that can lead to death.
 Most commonly patients experience fever, fatigue, chills and headaches, with symptoms appearing gradually 1--4 weeks after tick bite [@vannierHumanBabesiosis2008].
@@ -255,7 +255,7 @@ Although blood-sucking insects (class Insecta) are responsible for the majority 
 
 Filarial nematodes have been described from a number of tick species worldwide.
 Genetic characterisation has shown that similar species of filarial nematodes have recently been described from two widespread ticks in North America.
-Separate genetic analysis showed that closely related *Monanema*-like filarial nematodes were identified from *Amblyomma americanum* [@henningDiscoveryFilarialNematode2016] and *Ixodes scapularis* [@tokarzCharacterizationMonanemaNematode2020].
+Separate genetic analysis showed that closely related *Monanema*-like filarial nematodes were identified from *Am. americanum* [@henningDiscoveryFilarialNematode2016] and *Ix. scapularis* [@tokarzCharacterizationMonanemaNematode2020].
 [However, there is currently no evidence to suggest that these tick-associated nematodes are common causes of human disease [@tokarzCharacterizationMonanemaNematode2020].]{.correction}
 
 ### Infectious human tick-borne pathogens in Australia
@@ -263,17 +263,17 @@ Separate genetic analysis showed that closely related *Monanema*-like filarial n
 In comparison to the Northern Hemisphere, relatively few zoonotic tick-borne pathogens are recognised in Australia [@madison-antenucciEmergingTickBorneDiseases2020;@rochlinEmergingTickbornePathogens2020].
 Queensland Tick Typhus (QTT) was first identified [during World War II from]{.correction} soldiers training in Queensland. 
 After a tick bite, individuals developed an eschar, fever and vesicular rash [@andrewTickTyphusNorth1946]. 
-[Although initial reports put it in the spotted fever group, the causative agent, *Rickettsia australis* was later shown to be genetically different [@stenosRickettsialOutermembraneProtein2000]]{.correction}. 
+[Although initial reports put it in the spotted fever group, the causative agent, *R. australis* was later shown to be genetically different [@stenosRickettsialOutermembraneProtein2000]]{.correction}. 
 Early experimental work showed that *Ix. holocyclus* and *Ix. tasmani* were vectors of the bacteria [@campbellRickettsiosesAustraliaIsolation1974]. 
 Since its discovery it has been identified along the east coast of Australia [@campbellQueenslandTickTyphus1979;@wilsonQueenslandTickTyphus2013;@fergieQueenslandTickTyphus2017] (Table \@ref(tab:T1ausTBD)). 
 A recent study using real-time PCR identified that *R. australis* was present in 15.4% (23/149) [of]{.correction} *Ix. holocyclus* in north-east New South Wales [@gravesIxodesHolocyclusTicktransmitted2016].
 
 A spotted-fever-like illness was identified from a cluster of 26 patients from Flinders Island, Tasmania, a small community with a population of about 1000 [@stewartFlindersIslandSpotted1991].
-A serological investigation found that while 46% of patients were positive for the detection of *Rickettsia australis*, evidence suggested the aetiological agent was different [@gravesSpottedFeverGroup1993]. 
-It was later confirmed that patients were infected with *Rickettsia honei*, a pathogen originally isolated in Thailand [@gravesRickettsiaHonei2003]. 
-An investigation into the tick reservoir on the Island found that 63% of the reptile-associated tick *Bothriocroton hydrosauri* were positive for *R. honei* [@stenosAponommaHydrosauriReptileassociated2003] (Table \@ref(tab:T1ausTBD)). 
-Human infection of Q Fever, caused by the bacteria *Coxiella burnetii*, is usually acquired by inhalation of infectious aerosols from vertebrate hosts such as sheep, cattle and domestic pets.
-*Coxiella burnetii* has been identified in a number of ticks, including the human biting species *Ix. holocyclus* [@gravesIxodesHolocyclusTicktransmitted2016] and *Am. triguttatum* [@popeCoxiellaBurnetiKangaroos1960;@cooperSerologicalEvidenceCoxiella2012] (Table \@ref(tab:T1ausTBD)); however there is just a single published report of tick-borne Q fever in Australia (thought to be transmitted by *Am. triguttatum*) [@beamanPericarditisAssociatedTickborne1989].
+A serological investigation found that while 46% of patients were positive for the detection of *R. australis*, evidence suggested the aetiological agent was different [@gravesSpottedFeverGroup1993]. 
+It was later confirmed that patients were infected with *R. honei*, a pathogen originally isolated in Thailand [@gravesRickettsiaHonei2003]. 
+An investigation into the tick reservoir on the Island found that 63% of the reptile-associated tick *Bt. hydrosauri* were positive for *R. honei* [@stenosAponommaHydrosauriReptileassociated2003] (Table \@ref(tab:T1ausTBD)). 
+Human infection of Q Fever, caused by the bacteria *C. burnetii*, is usually acquired by inhalation of infectious aerosols from vertebrate hosts such as sheep, cattle and domestic pets.
+*C. burnetii* has been identified in a number of ticks, including the human biting species *Ix. holocyclus* [@gravesIxodesHolocyclusTicktransmitted2016] and *Am. triguttatum* [@popeCoxiellaBurnetiKangaroos1960;@cooperSerologicalEvidenceCoxiella2012] (Table \@ref(tab:T1ausTBD)); however there is just a single published report of tick-borne Q fever in Australia (thought to be transmitted by *Am. triguttatum*) [@beamanPericarditisAssociatedTickborne1989].
 
 \newpage
 
@@ -339,12 +339,12 @@ knitr::kable(ch1_anaplasm, booktabs = TRUE, linesep = "", caption.short = "\\tex
 
 At present four species of borreliae have been identified in Australia (Table \@ref(tab:T1borrelia)). 
 Two species were introduced *Borrelia theileri* and [*Borrelia anserina*]{.correction} with the importation of livestock. 
-Avian spirochaetosis is associated with disease in poultry caused by *B. anserina* and is transmitted by the soft tick *Argas persicus*. 
-Bovine spirochaetosis is caused by *B. theileri* and is transmitted with the cattle tick, *Rhipicephalus australis* (formerly *Boophilus microplus*) [@estrada-penaReinstatementRhipicephalusBoophilus2012]. 
+Avian spirochaetosis is associated with disease in poultry caused by *B. anserina* and is transmitted by the soft tick *Ar. persicus*. 
+Bovine spirochaetosis is caused by *B. theileri* and is transmitted with the cattle tick, *Rh. australis* (formerly *Bo. microplus*) [@estrada-penaReinstatementRhipicephalusBoophilus2012]. 
 The first native Australian *Borrelia* was described from long-haired rats (*Rattus villosissimus*) in north-western Queensland [@carleyNewSpeciesBorrella1962] and named *Borrelia queenslandica*. 
 The authors suggested the spirochaete was transmitted by the soft kangaroo tick (*Or. gurneyi*), however this was never confirmed. 
 To date *B. queensandica* has not been isolated since and as such no molecular data is available.
-A recent discovery has presented the first molecular description of a native Australian *Borrelia* and brings the total number of (*Borrelia*) species present in Australia to four. '*Candidatus* Borrelia tachyglossi' was genetically described from echidna biting ticks [*Bothriocroton concolor*]{.correction} [@lohNovelBorreliaSpecies2016;@lohMolecularCharacterizationCandidatus2017]. 
+A recent discovery has presented the first molecular description of a native Australian *Borrelia* and brings the total number of (*Borrelia*) species present in Australia to four. '*Candidatus* Borrelia tachyglossi' was genetically described from echidna biting ticks [*Bt. concolor*]{.correction} [@lohNovelBorreliaSpecies2016;@lohMolecularCharacterizationCandidatus2017]. 
 A novel species of *Borrelia* that falls within the [reptile *Borrelia* clade]{.correction} has also been identified in *Bothriocroton undatum* collected from the goanna in NSW [@panettaReptileassociatedBorreliaSpecies2017].
 
 
@@ -367,16 +367,16 @@ knitr::kable(T1borrelia, booktabs = TRUE, linesep = "", caption.short = "\\texti
 
 #### *Coxiella*
 
-Studies on the presence of *Coxiella burnetii* are particularly challenging due to the cross reactivity of serological assays and the conserved nature of the commonly used 16S rRNA gene (Table \@ref(tab:T1coxiella)). 
+Studies on the presence of *C. burnetii* are particularly challenging due to the cross reactivity of serological assays and the conserved nature of the commonly used 16S rRNA gene (Table \@ref(tab:T1coxiella)). 
 Therefore in this review I will only focus on molecular reports of *Coxiella* sp. from wildlife and ticks.
 Sequences that were 98--99% similar to *C. burnetii* have been identified in
 *Bothriocroton auruginans* from the common wombat (*Vombatus ursinus*) collected from Victoria [@vilcinsMolecularDetectionRickettsia2009;@beardMorphologicalIdentificationTicks2021].  
-Recent descriptions of *Coxiella burnetii* from native Australian tick species (*Ha. bancrofti*, and *Ix. holocyclus*) and the brown dog tick (*Rh. sanguineus*) are important in our understanding of the epidemiology of Q Fever in Australia [@chaladaMolecularSurveyTickBorne2018]. 
+Recent descriptions of *C. burnetii* from native Australian tick species (*Ha. bancrofti*, and *Ix. holocyclus*) and the brown dog tick (*Rh. sanguineus*) are important in our understanding of the epidemiology of Q Fever in Australia [@chaladaMolecularSurveyTickBorne2018]. 
 The positive detection of *C. burnetii* in these samples however has limited reliably due to the lack of DNA sequence results from the study. 
 The authors also noted the presence of *Coxiella*-like symbionts in *Am. triguttatum*, *Ix. holocyclus*, *Rh. australis* and *Or. capensis*, which were also not sequenced. 
 An investigation into the presence of *Coxiella* and *Coxiella*-like symbionts in Australian brown dog ticks (*Rh. linnaei* syn *Rh. sanguineus*) revealed the presence of a *Coxiella*-like symbiont (100% prevalence) [through targeted PCR and sequencing]{.correction} of the 16S rRNA gene [@oskamMolecularInvestigationPresence2017]. 
-Therefore without sequence results from PCR assays, the true presence of *Coxiella burnetii* as determined by @chaladaMolecularSurveyTickBorne2018 remains questionable.  
-*Coxiella burnetii* was recently detected in kangaroo meat that was intended for companion animal consumption [@shapiroMolecularDetectionCoxiella2020] using qPCR.
+Therefore without sequence results from PCR assays, the true presence of *C. burnetii* as determined by @chaladaMolecularSurveyTickBorne2018 remains questionable.  
+*C. burnetii* was recently detected in kangaroo meat that was intended for companion animal consumption [@shapiroMolecularDetectionCoxiella2020] using qPCR.
 One recent study stated that wildlife carers may be two times more likely to be infected with *C. burnetii* than the general public, however the study was hindered by a small sample size [@mathewsCoxiellaBurnetiiSeroprevalence2021]
 
 ```{r T1coxiella, echo=FALSE}
@@ -402,20 +402,20 @@ knitr::kable(ch1_coxiella, booktabs = TRUE, linesep = "", caption.short = "\\tex
 
 The identification of Flinders Island Spotted Fever (*R. honei*) was a significant breakthrough in the knowledge of tick-borne diseases in Australia. 
 However, ongoing research into the distribution of the disease, and more recently genetic information, has meant the label of “Flinders Island” Spotted Fever causes significant issues. 
-Only a few years after it was formally recognised, a new focus of *Rickettsia honei* spotted fever was identified in South Australia and Tasmania [@dyerNewFocusRickettsia2005;@unsworthNotOnlyFlinders2005]. 
-Lane et al. [-@laneEvidenceSpottedFeverlike2005a] identified a *Rickettsia honei*-like sequence from a *Haemaphysalis novaeguineae* tick. 
+Only a few years after it was formally recognised, a new focus of *R. honei* spotted fever was identified in South Australia and Tasmania [@dyerNewFocusRickettsia2005;@unsworthNotOnlyFlinders2005]. 
+Lane et al. [-@laneEvidenceSpottedFeverlike2005a] identified a *R. honei*-like sequence from a *Haemaphysalis novaeguineae* tick. 
 The patient was bitten by the tick in north-east Queensland and become acutely unwell developing signs of rickettsial disease (later report by Unsworth et al. [-@unsworthThreeRickettsiosesDarnley2007]). 
 Although molecular analysis did show similarities with *R. honei* strain TT-118 (Thai tick typhus), and *R. honei* (Flinders Island Spotted Fever), it was not able to fully resolve the relationships among the SFG rickettsia. 
 A report of seven patients exhibiting similar symptoms to Flinders Island Spotted Fever was later published [@unsworthThreeRickettsiosesDarnley2007]. 
 A combination of serological, molecular and culture techniques were used and *R. honei* subsp. marmionii was described in patients from Queensland, Tasmania and South Australia. 
 It again confirmed the presence of the novel genotype and subsequent illness caused by a *Haemaphysalis novaeguineae* bite from Cape York Peninsula in far north Queensland. 
 There have been no other identification of *R. honei* in a tick vector on mainland Australia. 
-A recent case described a negative serological result from a patient, however subsequent [shotgun sequencing]{.correction} of the blood showed it was positive for *Rickettsia honei* [@grahamDetectionSpottedFever2017]. 
+A recent case described a negative serological result from a patient, however subsequent [shotgun sequencing]{.correction} of the blood showed it was positive for *R. honei* [@grahamDetectionSpottedFever2017]. 
 The initial naming of the disease as "Flinders Island" Spotted Fever has potentially caused havoc on the diagnosis and treatment of the disease. 
 Due to the non-specific acute symptoms, and at times unusual sequelae of spotted-fever, it is plausible that treating physicians may not consider FISF as a possible aetiology due to geographical restrictions. 
 Scientifically sound and timely case reports are fundamental to ensure information is disseminated to the medical community.
 A number of case reports of a *Rickettsia*-like illness have also been identified from patients in Western Australia. 
-Molecular screening of a punch biopsy (taken at edge of eschar) sample taken from a patient bitten by *Ixodes australiensis* in Walpole, south-west Western Australia showed the presence of *Rickettsia* sp. (unable to identify to species). 
+Molecular screening of a punch biopsy (taken at edge of eschar) sample taken from a patient bitten by *Ix. australiensis* in Walpole, south-west Western Australia showed the presence of *Rickettsia* sp. (unable to identify to species). 
 Using a PCR assay the whole blood was negative, however serological testing showed evidence of acute infection with SFG *Rickettsia*; culture and PCR from the tick were negative [@rabyNewFociSpotted2016]. 
 A female patient was bitten by a tick 150 km east of Esperance and DNA extracted from acute phase serum underwent PCR for the rickettsial 17kD antigen gene which generated a 429 bp sequence showed 100% similarity to *R. honei*, and 99.7% to *R. gravesii*.
 It is unclear if *R. honei* has a larger geographical and vector range than previously thought or if in fact this was *R. gravesii* sequence showing a 1 bp mis-match to reference sequence [@rabyNewFociSpotted2016]. 
@@ -527,8 +527,8 @@ An epidemiological investigation was carried out at the time of the case and tes
 Subsequently a widespread serological investigation was carried out on Australian blood donor samples for the presence of *B. microti* which included 7000 patients and did not identify any positives samples [@faddyNoEvidenceWidespread2019].
 
 A number of piroplasms have been introduced to Australia, however they all related to livestock and domestic animals.
-*Babesia canis* and *Theileria orientalis* are both associated with introduced tick species, the brown dog ticks (*Rh. sanguinus*) and the Asian longhorned ticks (*Ha. longicornis*).
-[Cattle tick fever is caused by *Babesia bovis* and *Babesia bigemina* and is present across the North of Australia. The two species were introduced to Australia with importation of livestock and are both vectored by the cattle tick (*Rhipicephalus australis*; syn. *Boophilus microplus*) [@angusHistoryCattleTick1996].]{.correction}
+*Babesia canis* and *Theileria orientalis* are both associated with introduced tick species, the brown dog ticks (*Rh. sanguineus*) and the Asian longhorned ticks (*Ha. longicornis*).
+[Cattle tick fever is caused by *Babesia bovis* and *Babesia bigemina* and is present across the North of Australia. The two species were introduced to Australia with importation of livestock and are both vectored by the cattle tick (*Rh. australis*; syn. *Bo. microplus*) [@angusHistoryCattleTick1996].]{.correction}
 While *Th. orientalis* has been identified in native Australian tick species such as *Ha. bancrofti* [@lakewEndemicInfectionCattle2021], the overwhelming evidence suggests the main vector is *Ha. longicornis* [@marendyHaemaphysalisLongicornisLifecycle2019].
 However, there may be some variation of vector competence between the different genotypes of [*Th. orientalis* [@forshawTheileriaOrientalisIkeda2020]]{.correction}, widespread detection of this *Theileria* in native Australian ticks or animals has not yet been shown.
 
@@ -539,7 +539,7 @@ While traditionally not associated with ticks, an early study identified that ti
 Early studies using morphological tools identified trypanosomes within the Australian paralysis tick (*Ix. holocyclus*) collected from bandicoots infected with *Trypanosoma thylacis* [@mackerrasHaematozoaAustralianMammals1959].
 Molecular evidence of the relationship between Australian trypanosomes and ticks followed 50 years later from the opposite side of the country in south-west Australia. 
 Austen et al. [-@austenVectorTrypanosomaCopemani2011] identified *Trypanosoma copemani* from *Ixodes* sp. ticks collected from infected marsupials.
-Motile trypanosomes were observed in *Ixodes australiensis* collected from quokkas and the Gilbert's potoroo on Bald Island and the nature reserve Two Peoples Bay.
+Motile trypanosomes were observed in *Ix. australiensis* collected from quokkas and the Gilbert's potoroo on Bald Island and the nature reserve Two Peoples Bay.
 
 Australia was once considered free of *Leishmania*, however an endemic species has since been described after it was noted red kangaroos were showing signs of cutaneous leishmaniasis [@roseCutaneousLeishmaniasisRed2004].
 The species has formally been described as *Leishmania macropodum* [@barrattIsolationNovelTrypanosomatid2017] and although studies are limited, current evidence suggests day-biting midges, *Forcipomyia* (*Lasiohelea*), as a likely vector [@dougallEvidenceIncriminatingMidges2011;@panahiUtilisingNovelSurveillance2020].
@@ -577,7 +577,7 @@ The introduction of high throughput sequencing has revolutionised the analysis o
 Microbial diversity studies have adapted to high-throughput sequencing techniques using two broad appoaches by; (i) amplicon based - through targeting the hypervariable regions in the 16S rRNA gene; and (ii) shotgun sequencing - which sequences the entire suite of nucleic acid material in the extracted sample (variations can be made during library preparation) [@liuPracticalGuideAmplicon2020;@bhartiCurrentChallengesBestpractice2021]. 
 Despite the presumption that shotgun sequencing remains superior to amplicon metabarcoding approaches, studies have shown targeted *16S rRNA* metabarcoding can yield up to 50% more phyla than shotgun based methods [@tesslerLargescaleDifferencesMicrobial2017]. 
 The use of targeted *16S rRNA* metabarcoding is particularly favourable where the level of detection is low or where there is a large amount of host material.
-The first application of high throughput sequencing methods to study the tick microbiome was in *Rhipicephalus* (*Boophilus*) *microplus* [@andreottiAssessmentBacterialDiversity2011]. 
+The first application of high throughput sequencing methods to study the tick microbiome was in *Rhipicephalus* (*Bo.*) *microplus* [@andreottiAssessmentBacterialDiversity2011]. 
 Since then, high-throughput methods have shed light on the diversity of the tick microbiome [@greayRecentInsightsTick2018] [and seen a shift from the one tick - one pathogen understanding, towards the characterisation of the complete bacterial community present in ticks [@moutaillerCoinfectionTicksRule2016]]{.correction}.
 Bacterial metabarcoding approaches target one (or more) of the nine available hypervariable regions on the 16S rRNA gene; common regions sequenced include the V1-2 and V3-4 [@barbDevelopmentAnalysisPipeline2016;@yangSensitivityCorrelationHypervariable2016;@sperlingComparisonBacterial16S2017].
 The short amplicons hinders accurate taxonomic and follow up molecular analysis is needed to provide greater phylogenetic resolution.
@@ -593,14 +593,14 @@ Widely used programs include mothur [@schlossIntroducingMothurOpensource2009], Q
 All programs listed are free, with the exception of 64-bit version of USEARCH (32-bit version is freely available). 
 Generally, comparisons between these, and other pipelines, conclude that they remain more-or-less comparable – with the emphasis on customising the parameters to best suit each unique dataset [@nilakantaReviewSoftwareAnalyzing2014;@plummerComparisonThreeBioinformatics2015;@forsterComparisonThreeClustering2016].
 
-Large curated reference 16S datasets include GreenGenes [@desantisGreengenesChimerachecked16S2006], the Ribosomal Database project [@coleRibosomalDatabaseProject2009], SILVA [@pruesseSILVAComprehensiveOnline2007] and the EZ-Taxon [@chunEzTaxonWebbasedTool2007].
+Large curated reference *16S rRNA* datasets include GreenGenes [@desantisGreengenesChimerachecked16S2006], the Ribosomal Database project [@coleRibosomalDatabaseProject2009], SILVA [@pruesseSILVAComprehensiveOnline2007] and the EZ-Taxon [@chunEzTaxonWebbasedTool2007].
 These datasets provide an additional point of stability between studies and generate more comparable results.
 Bioinformatic pipelines and reference databases present an additional source of variation in analysis of HTS data, whereby a ‘one-size-fits-all’ approach is not appropriate. 
-The development of freely available applications and pipelines has provided a fundamental basis for 16S bioinformatic analyses [@schlossIntroducingMothurOpensource2009;@caporasoQIIMEAllowsAnalysis2010;@edgarSearchClusteringOrders2010]; however care must still be taken, particularly when forming comparisons between data sets analysed with different pipelines.
+The development of freely available applications and pipelines has provided a fundamental basis for *16S rRNA* bioinformatic analyses [@schlossIntroducingMothurOpensource2009;@caporasoQIIMEAllowsAnalysis2010;@edgarSearchClusteringOrders2010]; however care must still be taken, particularly when forming comparisons between data sets analysed with different pipelines.
 
 Estimates of abundance in microbiology are widely used to describe microbial community composition and diversity. 
-The genomic copy number of the 16S gene varies considerably, from 1- 15 copies in some bacteria [@loucaCorrecting16SRRNA2018]. 
-Therefore, the variation in abundance of 16S genes is due to both actual relative abundance differences in samples and variation in genomic 16S copy number among bacteria present. 
+The genomic copy number of the 16S rRNA gene varies considerably, from 1- 15 copies in some bacteria [@loucaCorrecting16SRRNA2018]. 
+Therefore, the variation in abundance of 16S rRNA genes is due to both actual relative abundance differences in samples and variation in 16S rRNA gene copy number among bacteria present. 
 In part this can be overcome through ecological models, such as an assessment of beta-diversity, which can be divided into two components; (i) turnover: difference between communities based on species presence/absence; and (ii) nestedness: differences in the abundance of species composition between communities [@baselgaPartitioningTurnoverNestedness2010;@baselgaBetapartPartioningBeta2017].
 
 ## One Health & Wildlife Surveillance
@@ -617,7 +617,7 @@ The One Health concept is based around a seamless interaction between veterinary
 The modern One Health trend usually focuses on zoonotic pathogens emerging from wildlife and production animal species [@dayOneHealthImportance2011]. 
 Understanding of the role wildlife reservoirs have in the maintenance of pathogenic hosts has significantly shifted our view on human health. 
 The use of wildlife surveillance as a tool for the detection of emerging zoonotic infectious disease is well established in some contexts. 
-For example, the sylvatic life cycle of *Trypanosoma cruzi* in South America [@denoyaEcologicalOverviewFactors2015], Ebola virus in Africa [@osterholmTransmissionEbolaViruses2015], Australian bat lyssavirus [@mayIdentificationFocusAreas2020]. 
+For example, the sylvatic life cycle of *Tr. cruzi* in South America [@denoyaEcologicalOverviewFactors2015], Ebola virus in Africa [@osterholmTransmissionEbolaViruses2015], Australian bat lyssavirus [@mayIdentificationFocusAreas2020]. 
 Research has shown that compared to human infection, these zoonotic microbes can be readily identified in their respective wildlife reservoirs.
 The mosquito-borne West Nile virus life cycle has been well documented and the sensitivity of detection is well understood.
 It shows that surveillance of sentinel hosts and vectors provide a quicker and more sensitive method detection method than waiting for signs of infected people [@lemonGlobalInfectiousDisease2007]. 
@@ -637,13 +637,13 @@ Lyme arthritis was first described in the scientific literature in 1977 from a c
 The illness was characterized by recurrent attack of asymmetric swelling and joint paint. 
 The authors described a geographical clustering of patients in sparsely settled areas with woody surrounds and peak disease occurrence in the summer months.
 As a result doctors concluded the disease was best explained by transmission of an infectious agent by an arthropod vector. 
-In 1982 a study demonstrated that *Ixodes dammini* (now recognised as *Ixodes scapularis* [@sandersIxodesDamminiJunior1998]), was responsible for the transmission of a [*Treponema*-like spirochaete]{.correction} causing long-lasting cutaneous lesions on rabbits 10-12 weeks after tick attachment [@burgdorferLymeDiseaseTickborne1982]. 
+In 1982 a study demonstrated that *Ixodes dammini* (now recognised as *Ix. scapularis* [@sandersIxodesDamminiJunior1998]), was responsible for the transmission of a [*Treponema*-like spirochaete]{.correction} causing long-lasting cutaneous lesions on rabbits 10-12 weeks after tick attachment [@burgdorferLymeDiseaseTickborne1982]. 
 It was the first of its study to investigate to the role of vectors in the transmission of Lyme borreliosis in North America. 
-A formal description of *Borrelia burgdorferi* followed [@johnsonBorreliaBurgdorferiSp1984] and in 1997 [@fraserGenomicSequenceLyme1997] was the third bacteria to have its genome sequenced.
+A formal description of *B. burgdorferi* followed [@johnsonBorreliaBurgdorferiSp1984] and in 1997 [@fraserGenomicSequenceLyme1997] was the third bacteria to have its genome sequenced.
 
 #### The ecology of *Borrelia* in North America
 
-In most areas of North America the primary vector of *B. burgdorferi* s. l. is *Ixodes scapularis*, and major reservoir hosts are well known to include white-footed mice and white-tailed deer [@halseyRoleIxodesScapularis2018]. 
+In most areas of North America the primary vector of *B. burgdorferi* s. l. is *Ix. scapularis*, and major reservoir hosts are well known to include white-footed mice and white-tailed deer [@halseyRoleIxodesScapularis2018]. 
 However pine squirrels and deer mice have been identified as host sentinel hosts for *Borrelia hermsii* in western North America [@cadenasIdentificationHostBloodmeal2007]. 
 Studies have identified significant difference in species diversity among sites, noting that islands have fewer species than mainland. 
 Body mass has also been shown to have an effect on transmission dynamics.
