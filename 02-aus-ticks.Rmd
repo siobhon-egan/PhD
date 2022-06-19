@@ -23,7 +23,7 @@ header-includes:
 - \usepackage{xcolor}
 - \usepackage{soul}
 always_allow_html: true
-bibliography: [bibliography/references.bib, bibliography/additional-references.bib, bibliography/bibtex.bib]
+bibliography: [bibliography/additional-references.bib, bibliography/bibtex.bib]
 ---
 
 \nocite{guglielmoneIxodidaeAcariIxodoidea2020}

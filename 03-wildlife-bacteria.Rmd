@@ -7,7 +7,7 @@ output:
     citation_package: biblatex
 bib-humanities: true
 documentclass: book
-#bibliography: [bibliography/references.bib, bibliography/additional-references.bib]
+#bibliography: [bibliography/bibtex.bib, bibliography/additional-references.bib]
 ---
 
 # Microbiome of ticks and wildlife {#wildlife-bacteria}

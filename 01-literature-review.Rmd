@@ -10,7 +10,7 @@ output:
   bookdown::word_document2: default
 documentclass: book
 always_allow_html: true
-bibliography: [bibliography/references.bib, bibliography/additional-references.bib, bibliography/bibtex.bib]
+bibliography: [bibliography/additional-references.bib, bibliography/bibtex.bib]
 nocite: |
   @guglielmoneIxodidaeAcariIxodoidea2020, @lohIdentificationTheileriaFuliginosalike2018, @cooperDetectionCoxiellaBurnetii2013, @greayIlluminatingBacterialMicrobiome2021, @brodyCaseTickTyphus1946, @popeIsolationRickettsiaResembling1955, @owenDetectionIdentificationNovel2006, @owenPotentiallyPathogenicSpotted2006, @sentausaGenomeSequenceRickettsia2013, @liHighPrevalenceRickettsia2010, @abdadRickettsiaGravesiiSp2017, @owenDetectionCharacterisationRickettsiae2007; @bennettCoxiellaBurnetiiWestern2011, @jonssonProductivityHealthEffects2008, @angusHistoryCattleTick1996
 ---

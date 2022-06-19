@@ -65,6 +65,10 @@
 \def\degree#1{\gdef\@degree{#1}}
 % Your qualifications
 \def\qual#1{\gdef\@qual{#1}}
+% The name of your centre within instite (if applicable)
+\def\centre#1{\gdef\@centre{#1}}
+% The name of your Institute (if applicable)
+\def\institute#1{\gdef\@institute{#1}}
 % Your candidate number (ie for master's submissions)
 \def\candidateno#1{\gdef\@candidateno{#1}}
 % Your word count (for master's submissions)
@@ -213,8 +217,12 @@
     {{\submittedtext} \par}
 \vspace*{1ex}
     {\it {\@degree} \par}
+\vspace*{2ex}
+    {{\@centre} \par}
 \vspace*{1ex}
-    {{\university} \par}
+    {{\@institute} \par}
+\vspace*{1ex}
+    {\bf {\university} \par}
 \vspace*{2ex}
     {\@degreedate} \par}
   \end{center}

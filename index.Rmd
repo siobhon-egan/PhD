@@ -21,6 +21,8 @@ title: |
   Australian Wildlife
 author: Siobhon Lee Egan
 qual: Bachelor of Science (Honours)
+centre: Centre for Biosecurity and One Health
+institute: Harry Butler Institute
 university: Murdoch University
 university-logo: templates/mulogo.png
 #university-footer: templates/mufooter.png
@@ -47,7 +49,7 @@ abbreviations: |
 #######################
 ## bibliography path ##
 #######################
-bibliography: [bibliography/references.bib, bibliography/additional-references.bib, bibliography/bibtex.bib]
+bibliography: [bibliography/additional-references.bib, bibliography/bibtex.bib]
 
 ########################
 ## PDF layout options ###
