@@ -355,7 +355,7 @@ No tick samples were positive for *Tr. lewisi*-like sequences.
 knitr::include_graphics("figures/ms-figs/Ch4-trypNGStree.png")
 ```
 
-```{r microscopy, out.width='95%', out.align = 'left',fig.scap = "Haemoprotozoans identified in wildlife blood films.", fig.cap = "Haemoprotozoa identified in wildlife blood films. (A) Trypomastigote of \\textit{Trypanosoma gilletti} from long-nosed bandicoot (LNB113). (B) Suspected amastigote of \\textit{Trypanosoma cyclops} from black rat (BR022). (C) Trypomastigote of \\textit{Trypanosoma cyclops} from black rat (BR025). (D-E) \\textit{Hepatozoon} gametocytes within leukocytes of a black rat (BR039). All scale-bars: 10 $\\mu M$.", echo=FALSE}
+```{r microscopy, out.width='95%', out.align = 'left',fig.scap = "Haemoprotozoans identified in wildlife blood films.", fig.cap = "Haemoprotozoa identified in wildlife blood films. (A) Trypomastigote of \\textit{Trypanosoma gilletti} from long-nosed bandicoot (LNB113). (B) Suspected amastigote of \\textit{Trypanosoma cyclops} from black rat (BR022). (C) Trypomastigote of \\textit{Trypanosoma cyclops} from black rat (BR025). (D-E) \\textit{Hepatozoon} gametocytes within leukocytes of a black rat (BR039). All scale-bars: 10 $\\mu$M.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch4-microscopy-images.png")
 ```
 

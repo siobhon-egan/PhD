@@ -561,17 +561,17 @@ knitr::include_graphics("figures/ms-figs/Ch2-mapallticks.png")
 
 \newpage
 
-```{r F2atrigmapsubp, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Am. triguttatum} subspecies.", fig.cap = "Occurrence map of the four \\textit{Am. triguttatum} subspecies recorded in Australia. Only records with a valid subspecies identified are included.", echo=FALSE}
+```{r F2atrigmapsubp, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Amblyomma triguttatum} subspecies.", fig.cap = "Occurrence map of the four \\textit{Amblyomma triguttatum} subspecies recorded in Australia. Only records with a valid subspecies identified are included.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch2-amtrisubsp.png")
 ```
 
 \newpage
 
-```{r F2mapixhol, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Ix. holocyclus}.", fig.cap = "Occurrence map of \\textit{Ix. holocyclus} records in Australia.", echo=FALSE}
+```{r F2mapixhol, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Ixodes holocyclus}.", fig.cap = "Occurrence map of \\textit{Ixodes holocyclus} records in Australia.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch2-map-ixhol.png")
 ```
 
-```{r F2mapixtas, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Ix. tasmani}.", fig.cap = "Occurrence map of \\textit{Ix. tasmani} records in Australia.", echo=FALSE}
+```{r F2mapixtas, out.width='95%', out.align = 'left',fig.scap = "Map of \\textit{Ixodes tasmani}.", fig.cap = "Occurrence map of \\textit{Ixodes tasmani} records in Australia.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch2-map-ixtas.png")
 ```
 

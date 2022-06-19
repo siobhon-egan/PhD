@@ -227,7 +227,7 @@ knitr::include_graphics("figures/ms-figs/Ch6-Fig2.png")
 knitr::include_graphics("figures/ms-figs/Ch6-Fig3.png")
 ```
 
-```{r F64, out.width='95%', out.align = 'left', fig.scap = "Phylogenetic tree of \\textit{Tr. cyclops} clade (\\textit{18S rRNA}, v7-8 region) from the Tasmanian devil.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of sequences from the \\textit{Trypanosoma cyclops} clade based on a 559 bp alignment of the 18S rRNA gene across the V7-8 hypervariable region using K2P + G4 substitution model. Node values correspond to bootstrap support / aBayes support, values less than 60 are hidden. Number of substitutions per nucleotide position is represented by the scale bar. Australian states abbreviated to QLD (Queensland), TAS (Tasmania) and VIC (Victoria). GenBank accession numbers for sequences are available in Supplementary Table A.5.", echo=FALSE}
+```{r F64, out.width='95%', out.align = 'left', fig.scap = "Phylogenetic tree of \\textit{Tr. cyclops} clade (\\textit{18S rRNA}, v7-8 region) from the Tasmanian devil.", fig.cap = "Maximum likelihood (ML) phylogenetic reconstruction of sequences from the \\textit{Trypanosoma cyclops} clade based on a 559 bp alignment of the 18S rRNA gene across the V7-8 hypervariable region using K2P + G4 substitution model. Node values correspond to bootstrap support / aBayes support, values less than 60 are hidden. Number of substitutions per nucleotide position is represented by the scale bar. Australian states abbreviated to QLD (Queensland), TAS (Tasmania) and VIC (Victoria). GenBank accession numbers for sequences are available in Supplementary Table A.5 and pairwise distances in Supplementary Table A.6.", echo=FALSE}
 knitr::include_graphics("figures/ms-figs/Ch6-Fig4.png")
 ```
 
