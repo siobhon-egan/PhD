@@ -124,7 +124,7 @@ By signing this document, the Candidate and Principal Supervisor acknowledge tha
 This chapter is written as a "data resource" to synthesize information about Australian ticks. 
 Curation of records has been performed using data collected from a diverse range of sources. 
 Updated occurrence maps for three highly prevalent species; *Amblyomma triguttatum*, *Ixodes holocyclus* and *Ixodes tasmani* are presented along with an overall map of all 74 tick species present in Australia. This chapter also presents new genetic information for Australian ticks. 
-Molecular "barcodes" are presented for target mitochondrial loci, providing valuable genetic references for species identification. In addition, a [high-throughput sequencing]{.correction} assay is also described using pan-Ixodida primers. 
+Molecular "barcodes" are presented for target mitochondrial loci, providing valuable genetic references for species identification. In addition, a high-throughput sequencing assay is also described using pan-Ixodida primers. 
 This provides a high-throughput method to identify ticks by sequencing a ~370 bp product of the mitochondrial 12S rRNA gene on the Illumina MiSeq. 
 This chapter contains information gathered from a range of resources. 
 It is presented in the context of a data centric chapter, and will be submitted to journal BMC Research Notes in the format for a 'Research Note'.
@@ -191,7 +191,7 @@ The present study also provides a review of records including curation of those 
 In addition, new genetic data has been generated for mitochondrial loci from Australian ticks. 
 This information has been deposited in a public database (GenBank) and will assist in future efforts that seek to use molecular tools to confirm species identification. 
 The analysis of mitochondrial loci identified the 12S rRNA gene (~370 bp product) was particularly useful at delimitating species. 
-As a result, a [high-throughput sequencing]{.correction} assay was developed for high-throughput species identification. 
+As a result, a high-throughput sequencing assay was developed for high-throughput species identification. 
 The curation of records and genetic data generated here provide new insights in Australian ticks.
 The findings reported here will be useful to shed new light for future studies on the ecology and systematics of ticks in Australia and be important in assessing public health significance of ticks as vectors for disease. 
 
@@ -209,7 +209,7 @@ We are not looking for a detailed and lengthy introduction to the topic and auth
 For data management plans, the introduction should briefly summarize the research project for which the data management plan was written.
 -->
 
-Ticks [(Acari: Ixodida)]{.correction} parasitise a range of vertebrate hosts and serve as vectors for numerous pathogens that affect both humans and animals. 
+Ticks (Acari: Ixodida) parasitise a range of vertebrate hosts and serve as vectors for numerous pathogens that affect both humans and animals. 
 Occurrence records of tick species are a valuable tool that is of interest to medical and veterinary industries.
 
 Tick species distribution records provide fundamental information that is required to assess the public health risk in relationship to diseases that ticks can cause. 
@@ -658,9 +658,9 @@ Analysis techniques can also influence the conclusions made and result if differ
 Cox1 barcoding versus multilocus species delimitation: validation of two mite species with contrasting effective population sizes [@klimovCox1BarcodingMultilocus2019]
 -->
 
-**[High-throughput sequencing]{.correction} sequencing**
+**High-throughput sequencing sequencing**
 
-[High-throughput sequencing]{.correction} sequencing targeting the 12S rRNA gene was successful at identifying tick species. 
+High-throughput sequencing sequencing targeting the 12S rRNA gene was successful at identifying tick species. 
 This included immature life stages where multiple specimens were pooled at the DNA extraction level. 
 Pooling of ticks (especially larvae and nymph stages) is implemented in many molecular studies of tick-borne pathogen or microbial characterisation to increase the throughput of samples [@estrada-penaPitfallsTickTickBorne2021].
 The ability to deliminate species with a short sequence length (~ 370 bp) make this high-throughput assay easily transferable to many short read sequence platforms. 

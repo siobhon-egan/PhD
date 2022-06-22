@@ -602,7 +602,7 @@ The lower incidence of *Trypanosoma* mixed infection observed in the present stu
 This might result in decreased host movement, lower exposure to potential vectors and differences in animal density and interaction with cohabiting species. 
 Systematic studies across the landscape gradient and capturing seasonal components will help understand the dynamics of trypanosome infection at the urban-wildland interface.
 
-[Despite declining costs, amplicon metabarcoding is still more expensive than targeted Sanger sequencing approaches]{.correction}; the main costs being additional labour required and bioinformatic analysis. 
+Despite declining costs, amplicon metabarcoding is still more expensive than targeted Sanger sequencing approaches; the main costs being additional labour required and bioinformatic analysis. 
 One of the main advantages of metabarcoding approaches is the ability to sequence a high number of positive samples (where a positive sample is defined as the presence of amplified PCR product visible via electrophoresis or nucleic acid quantification). 
 In the case of haemoprotozoans, the number of positive samples is much lower than comparable metabarcoding studies like bacterial microbiome profiling. 
 Given the low level of haemoprotozoan mixed infections reported from previous studies [@hugginsNovelMetabarcodingDiagnostic2019] and results presented here, we conclude that targeted Sanger sequencing approaches still remain a valuable tool for pathogen detection, and in many cases, the benefits of reduced cost and increased sensitivity makes them more suitable than metabarcoding studies.

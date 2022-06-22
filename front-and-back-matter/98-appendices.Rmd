@@ -36,7 +36,7 @@ Supplementary material for Chapter \@ref(austicks) on Australian Ticks.
 
 #### DNA extraction
 
-Once ticks were identified they were surface-sterilised by washing in 10 % hypochlorite solution, rinsed in 70 % ethanol and DNA-free PBS, and then air-dried. Genomic DNA was extracted [from whole or halved specimens]{.correction} using the DNeasy Blood and Tissue kit (QIAGEN, Germany) for adults or the QIAamp DNA Mini Kit (QIAGEN, Germany) for nymphs and larvae. 
+Once ticks were identified they were surface-sterilised by washing in 10 % hypochlorite solution, rinsed in 70 % ethanol and DNA-free PBS, and then air-dried. Genomic DNA was extracted from whole or halved specimens using the DNeasy Blood and Tissue kit (QIAGEN, Germany) for adults or the QIAamp DNA Mini Kit (QIAGEN, Germany) for nymphs and larvae. 
 Due to the large number of larvae collected from some animals and the expected low DNA yeild, in comes cases up to 5 larvae were pooled based on host, species and engorgement status. 
 Ticks were placed in a 2 mL safe lock Eppendorf tube with a 5mm steel bead, frozen in liquid nitrogen for 1 min and homogenised by shaking at 40 Hz in a Tissue Lyser LT (QIAGEN, Germany). Final elution of DNA was adjusted according to tick size, between 30-150 $\mu$L of AE buffer was added to the silcon membrane. 
 Extraction controls (EXBs) consisting of 200 $\mu$L sterile DNA free PBS, were included randomly in each extraction batch.
@@ -44,7 +44,7 @@ Extraction controls (EXBs) consisting of 200 $\mu$L sterile DNA free PBS, were i
 Prior to DNA extraction ticks were washed in 10% bleach solution, followed by 80% ethanol and rinsed in sterile-DNA free PBS. For museum specimens ticks were extracted in a separate dedicated laboratory, away from modern DNA. Ticks were soaked in sterile 1X PBS solution for 24-48 hours to remove ethanol from specimens. For museum and reference samples non-destructive sampling was performed, where ticks were punctured using a sterile pin and soaked in proteinase K and lysis buffer overnight (16-18 hours) at 56$^\circ$C, 700 rpm. 
 DNA was then extracted using QIAamp DNA mini kit (Qiagen, Germany) following manusctures recommendations, except for final elution which was reduced to 30 $\mu$L of buffer AE and incubated for 30 mins, before final centrifugation. 
 In the case of modern specimens adults ticks were bisected and half was placed in proteinase K and lysis buffer overnight (16-18 hours) at 56$^\circ$C, 700 rpm, the other half was retained as a voucher and placed back into 90% ethanol. 
-The supernatant was then used for subsequent extraction using DNeasy Blood and Tissue kit (Qiagen, Germany) following manufactures recommendations. Strict laboratory hygiene was maintained throughout, equipment and [surfaces]{.correction} were cleaned with DNAaway in between each sample.
+The supernatant was then used for subsequent extraction using DNeasy Blood and Tissue kit (Qiagen, Germany) following manufactures recommendations. Strict laboratory hygiene was maintained throughout, equipment and surfaces were cleaned with DNAaway in between each sample.
 
 #### Targeted assays and Sanger sequencing
 

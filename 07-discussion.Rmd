@@ -70,7 +70,7 @@ Cooperation between university and government sectors would improve technical su
 ### Value of notifiable disease inclusion
 
 The Australian National Notifiable Diseases Surveillance System (established 1990) co-ordinates the surveillance on an agreed list of communicable diseases and disease groups in Australia. 
-The list includes a number of mosquito-borne viruses and some tick-associated diseases such as Q-fever [(*Coxiella burnetii*)]{.correction} and tularaemia (*Francisella tularensis*) ^[https://www1.health.gov.au/internet/main/publishing.nsf/Content/cda-surveil-nndss-casedefs-distype.htm].
+The list includes a number of mosquito-borne viruses and some tick-associated diseases such as Q-fever (*Coxiella burnetii*) and tularaemia (*Francisella tularensis*) ^[https://www1.health.gov.au/internet/main/publishing.nsf/Content/cda-surveil-nndss-casedefs-distype.htm].
 There are a number of tick (and vector) associated agents that are not included in this list, including *Babesia*, *Borrelia*, *Bartonella*, and *Rickettsia* spp. 
 State and territory jurisdictions have an expanded list of notifiable diseases, where some of the infectious agents mentioned above are included.
 For example, in Western Australia, *Rickettsia* infection (including spotted fevers and all forms of typhus fever) is notifiable ^[https://ww2.health.wa.gov.au/Articles/N_R/Rickettsia-typhus-and-others].
@@ -85,19 +85,19 @@ A similar approach with the causative agent of human buruli ulcer (*Mycobacteriu
 Thus, a central recording system of tick-borne infection in Australia will be a useful step towards obtaining a better understanding of the impact and distribution of disease.
 
 
-## [Unique microbes at the urban-wildlife interface in Australia]{.correction}
+## Unique microbes at the urban-wildlife interface in Australia
 
-[The local emergence of vector-borne diseases is driven by human factors which then enhance enzootic cycles; in contrast, pathogen invasion results from anthropogenic movements (such as trade and travel) where conditions (such as host(s), vector(s), and climate) are suitable for a pathogen [@kilpatrickDriversDynamicsControl2012].]{.correction} 
-[Current surveillance of infectious diseases generally targets threats to human and livestock health.Research conducted in this thesis provides further supports for the growing body of evidence that there is an absence of known Northern hemisphere tick-borne pathogens in Australia. There have now been several studies using molecular tools (including both targeted and generic assays) demonstrating that Australian ticks and wildlife harbour a unique diversity of microbes, and not any of the recognised pathogens referred to above  [@goftonBacterialProfilingReveals2015;@eganBacterialCommunityProfiling2020;@hussain-yusufScreeningRickettsiaCoxiella2020]. This thesis demonstrates that the additional inclusion of wildlife health is important for surveillance programs.]{.correction}
+The local emergence of vector-borne diseases is driven by human factors which then enhance enzootic cycles; in contrast, pathogen invasion results from anthropogenic movements (such as trade and travel) where conditions (such as host(s), vector(s), and climate) are suitable for a pathogen [@kilpatrickDriversDynamicsControl2012]. 
+Current surveillance of infectious diseases generally targets threats to human and livestock health.Research conducted in this thesis provides further supports for the growing body of evidence that there is an absence of known Northern hemisphere tick-borne pathogens in Australia. There have now been several studies using molecular tools (including both targeted and generic assays) demonstrating that Australian ticks and wildlife harbour a unique diversity of microbes, and not any of the recognised pathogens referred to above  [@goftonBacterialProfilingReveals2015;@eganBacterialCommunityProfiling2020;@hussain-yusufScreeningRickettsiaCoxiella2020]. This thesis demonstrates that the additional inclusion of wildlife health is important for surveillance programs.
 
 In particular, there has been little recent research on the potentially zoonotic pathogens of the invasive black rat in Australia [@banksReviewEvidencePotential2012]. 
 The present thesis identified a number of novel microbes from black rats and reported new host records.
 For example, a novel *Borrelia* sp. was identified from tissue samples in Sydney. 
 Phylogenetic analysis showed this genotype formed a distinct clade with other rodent-associated sequences reported from Spain and United States of America.
 It was interesting that this species was not identified in any of the ticks that were collected at the same time, which indicates that transmission may involve another vector or route.
-The main vectors of the relapsing fever *Borrelia* group are the soft ticks (family Argasidae), while *Borrelia recurrentis* is transmitted by the human body louse [(*Pediculus humanus humanus*)]{.correction} [@gilIdentificationNewBorrelia2005]. 
+The main vectors of the relapsing fever *Borrelia* group are the soft ticks (family Argasidae), while *Borrelia recurrentis* is transmitted by the human body louse (*Pediculus humanus humanus*) [@gilIdentificationNewBorrelia2005]. 
 Possible vectors of the rodent associated *Borrelia* clade may include fleas, chiggers, mites, and lice.
-[The unique *Borrelia* identified from rodents raises a number of questions, given that it is widespread in the northern hemisphere. Firstly, the large geographical distribution of this clade is striking. Presently, the clade appears to be rodent-specific, and the vector and pathogenicity are not known]{.correction}.
+The unique *Borrelia* identified from rodents raises a number of questions, given that it is widespread in the northern hemisphere. Firstly, the large geographical distribution of this clade is striking. Presently, the clade appears to be rodent-specific, and the vector and pathogenicity are not known.
 
 The long-nosed bandicoot and black rat had similarities with regard to their tick fauna, and bacterial and haemoprotozoal taxa of interest. 
 Results in Chapters \@ref(wildlife-bacteria) and \@ref(wildlife-haemoprotozoa) identified *Ix. holocyclus*, *Ixodes tasmani* and *Ixodes trichosuri* ticks on both hosts.
@@ -115,7 +115,7 @@ The adaptation of black rats to urban life, means that this species should actua
 In other words it is the native wildlife that are invasive when they encroach on urban areas.
 Where there are long periods of co-habitation between vertebrate species, it can make it difficult to understand the true movement of pathogens and untangle the dynamics of spillover events.
 In the case of the *Tr. lewisi*-like sequences reported in Chapters \@ref(wildlife-haemoprotozoa) and \@ref(black-rat), it is most likely that spillover of this protozoan occurred from black rats to native rodents, however the timing and impact of this event(s) are unclear.
-[It is noted from a zoonotic perspective that *Tr. lewisi* infection is rarely reported. While the first report of human infection was recorded in Thailand [@sarataphanDiagnosisTrypanosomaLewisilike2007], there is no evidence to suggest it is a widespread cause of trypanosomiasis]{.correction}.
+It is noted from a zoonotic perspective that *Tr. lewisi* infection is rarely reported. While the first report of human infection was recorded in Thailand [@sarataphanDiagnosisTrypanosomaLewisilike2007], there is no evidence to suggest it is a widespread cause of trypanosomiasis.
 The movement of *Theileria* cf. *peramelis* identified in Chapter \@ref(wildlife-haemoprotozoa) is most likely to have occurred from long-nosed bandicoots into black rats. 
 This is due to the phylogenetic position of the parasite species within the native marsupial *Theileria* clade, consistent with coevolution within the bandicoot.
 Further genomic sequencing will be useful to understand the dynamics of microbial spillover events between introduced and native wildlife hosts [@zohdyCoevolutionEffectDriver2019].
@@ -153,7 +153,7 @@ Human babesiosis is the most prevalent zoonotic protozoal tick-borne disease in 
 However, the zoonotic potential of the many unique *Babesia* spp. and other tick-associated microbes detected from the very different Australian fauna remains unknown. 
 Despite its importance as a pathogen to both humans and animals, the taxonomic classification of the piroplasm group (i.e. genera *Babesia*, *Cytauxzoon* and *Theileria*) is unresolved [@papariniFirstMolecularCharacterization2015;@schreegMitochondrialGenomeSequences2016;@barbosaSequenceAnalysesMitochondrial2019]. 
 Importantly, with respect to any discussion about zoonotic potential, the *Babesia microti* group (responsible for human babesiosis), is distinct from the *Babesia* spp. identified in native Australian mammals [@schreegMitochondrialGenomeSequences2016;@barbosaSequenceAnalysesMitochondrial2019]. 
-Consistent with other recent descriptions, the present study did not identify *Babesia microti*, an important finding given it was the causative agent identified in the single case of endemic babesosis previously reported [@senanayakeFirstReportHuman2012].
+Consistent with other recent descriptions, the present study did not identify *Babesia microti*, an important finding given it was the causative agent identified in the single case of endemic babesiosis previously reported [@senanayakeFirstReportHuman2012].
 Phylogenetic analysis in Chapter \@ref(wildlife-haemoprotozoa) on the *Babesia* sp. from possums revealed that it was related to other *Babesia* sequences within the marsupial clade. 
 The potential of this organism to cause disease in either wildlife hosts or humans remains to be determined.
 
@@ -227,21 +227,21 @@ This would be particularly useful in wildlife disease, because at present descri
 
 ### "New" pathogen discovery
 
-[In Australia there have been many past studied conducted with respect to understanding tick-associated illness in humans with specific reference to identifying the agent of Lyme borreliosis, *B. burgdorferi* sensu lato]{.correction}.
+In Australia there have been many past studied conducted with respect to understanding tick-associated illness in humans with specific reference to identifying the agent of Lyme borreliosis, *B. burgdorferi* sensu lato.
 This was a period of focused searching for a very specific group of bacterium, the collective results of which did not provide any convincing evidence for its presence in Australian ticks [@chaladaThereLymelikeDisease2016]. 
 It is important that future researchers keep an open mind in terms of the definition of a "pathogen". 
 There is growing evidence that organisms previously not considered of clinical importance can cause disease.
 Suspected infection with *Rickettsia rickettsii* (Rocky Mountain spotted fever) in humans was later identified as *Rickettsia amblyommatis* infection [@appersonTickBorneDiseasesNorth2008]. 
-[*Francisella* identified in Chapter \@ref(wildlife-bacteria) from ticks were only distantly related to *Francisella* sequences that were identified from a patient in the same city (Perth, Western Australia) [@aravena-romanFirstCaseFrancisella2015]. However, further investigation, including full genome characterisation, would be benefit public health and may assist identify potential causes of human infections.]{.correction}
+*Francisella* identified in Chapter \@ref(wildlife-bacteria) from ticks were only distantly related to *Francisella* sequences that were identified from a patient in the same city (Perth, Western Australia) [@aravena-romanFirstCaseFrancisella2015]. However, further investigation, including full genome characterisation, would benefit public health and may assist identify potential causes of human infections.
 
 Since the description of the genus *Neoehrlichia*, reports of human infection have grown with a number of novel genotypes identified [@wassCultivationCausativeAgent2019].
-Closely related to [*C. burnetii*]{.correction}, the bacterium '*Candidatus* Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite [@angelakisCandidatusCoxiellaMassiliensis2016].
-[While Chapter \@ref(wildlife-bacteria) describes the identification of a novel member of the rodent *Borrelia*-clade, it is important to note that currently there is no evidence to suggest it can be transmitted to humans or cause disease]{.correction}.  
+Closely related to *C. burnetii*, the bacterium '*Candidatus* Coxiella massiliensis' was described from a patient showing symptoms including an eschar after a tick bite [@angelakisCandidatusCoxiellaMassiliensis2016].
+While Chapter \@ref(wildlife-bacteria) describes the identification of a novel member of the rodent *Borrelia*-clade, it is important to note that currently there is no evidence to suggest it can be transmitted to humans or cause disease.  
 
 
 It is important that preconceived ideas of pathogens or disease aetiologies are continually challenged.
 A recent large-scale retrospective study on human blood samples in the United States which employed the bacterial profiling methods used in Chapter \@ref(wildlife-bacteria), identified a number of previously unrecognised tick-associated bacteria in clinical samples including *Anaplasma*, *Borrelia*, and *Rickettsia* species [@kingryTargetedMetagenomicsClinical2020].
-With [ongoing]{.correction} discoveries showing a high diversity of microbial agents in ticks, it is important that diagnostic tests are re-evaluated with these newly discovered microbes.
+With ongoing discoveries showing a high diversity of microbial agents in ticks, it is important that diagnostic tests are re-evaluated with these newly discovered microbes.
 For example, a commonly used qPCR assay was found to also detect a number of *Anaplasmataceae* species including *Aanaplasma phagocytophilum*, *Ehrlichia chaffeensis*, *Ehrlichia ewingii* and *Ehrlichia canis* [@murphyPrevalenceDistributionHuman2017].
 While it is helpful that diagnostic assays can detect related microbes it also means that the true aetiological agent can be incorrectly attributed to the disease.
 Thus, a broader approach to disease and more generally microbial^[microbe is used within the encompassing definition to include bacteria, protozoa, viruses and other microscopic organisms] surveillance using newer non-targeted molecular techniques is recommended for future studies.
